@@ -1,6 +1,6 @@
 <?php
-	if(isset($_SESSION['name'])){
-		echo $_SESSION['name'];
+	if(isset($_GET['name'])){
+		echo $_GET['name'].$_GET['gender'].$_GET['email'];
 		echo 'yes';
 	}
 	echo 'no';
