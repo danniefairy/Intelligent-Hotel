@@ -40,7 +40,7 @@ if (isset($accessToken)) {
   $_SESSION['email'] = $profile['email'];
   $_SESSION['birthday'] = $profile['birthday'];
   
-  //header('location: ../');
+  header('location: ../fb_login.php');
   exit;
 } else {
     echo "Unauthorized access!!!";
