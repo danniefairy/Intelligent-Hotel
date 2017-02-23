@@ -25,7 +25,7 @@ if (isset($accessToken)) {
 
   try {
   
-    $requestProfile = $fb->get("/me?fields=name,email");
+    $requestProfile = $fb->get("/me?fields=name,gender,birthday,email");
     $profile = $requestProfile->getGraphNode()->asArray();
   } catch(Facebook\Exceptions\FacebookResponseException $e) {
     // When Graph returns an error
