@@ -10,7 +10,10 @@
 	session_start();
 	if(isset($_SESSION['name']))
 	{
-		echo $_SESSION['name']."<br>".$_SESSION['gender']."<br>".$_SESSION['age_range']."<br>".$_SESSION['email'];
+		echo $_SESSION['name']."<br>".$_SESSION['gender']."<br>".$_SESSION['email'];
+		foreach ($_SESSION['age_range'] as $key => $value) {
+			echo $value;
+		}
 	}
 ?>
 </body>
