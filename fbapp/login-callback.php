@@ -25,7 +25,7 @@ if (isset($accessToken)) {
 
   try {
   
-    $requestProfile = $fb->get("/me?fields=name,gender,email");
+    $requestProfile = $fb->get("/me?fields=name,gender,email,birthday");
     $profile = $requestProfile->getGraphNode()->asArray();
   } catch(Facebook\Exceptions\FacebookResponseException $e) {
     // When Graph returns an error
@@ -38,7 +38,7 @@ if (isset($accessToken)) {
   $_SESSION['name'] = $profile['name'];
   $_SESSION['gender'] = $profile['gender'];
   $_SESSION['email'] = $profile['email'];
-  //$_SESSION['birthday'] = $profile['birthday'];
+  $_SESSION['birthday'] = $profile['birthday'];
   
   header('location: ../');
   exit;
