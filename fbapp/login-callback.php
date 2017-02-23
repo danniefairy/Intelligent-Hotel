@@ -35,7 +35,10 @@ if (isset($accessToken)) {
     echo 'Facebook SDK returned an error: ' . $e->getMessage();
   }
 
-  $_SESSION['name'] = $profile['email'];
+  $_SESSION['name'] = $profile['name'];
+  $_SESSION['gender'] = $profile['gender'];
+  $_SESSION['birthday'] = $profile['birthday'];
+  $_SESSION['email'] = $profile['email'];
   header('location: ../');
   exit;
 } else {
