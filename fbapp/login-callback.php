@@ -39,7 +39,7 @@ if (isset($accessToken)) {
   $_SESSION['gender'] = $profile['gender'];
   $_SESSION['email'] = $profile['email'];
   
-  header('location: ../index.php');
+  header('location: ../main.php');
   exit;
 } else {
     echo "Unauthorized access!!!";
