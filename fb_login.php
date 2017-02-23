@@ -10,7 +10,7 @@
 	session_start();
 	if(isset($_SESSION['name']))
 	{
-		echo $_SESSION['name'].$_SESSION['gender'].$_SESSION['birthday'].$_SESSION['email'];
+		echo $_SESSION['name']."<br>".$_SESSION['gender']."<br>".$_SESSION['birthday']."<br>".$_SESSION['email'];
 	}
 ?>
 </body>
