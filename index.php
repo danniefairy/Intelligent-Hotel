@@ -27,6 +27,8 @@
       <div class="material-button alt-2"><span class="shape"></span></div>
 
       <div class="title"  style="text-align:center;">
+        <h2 style="font-size:2vw;">Are you ready for your journey?</h2>
+        <h2 style="font-size:2vw;">Let's login and fulfill your dream!</h2>
         <!--FB登入-->
         <script type="text/javascript" src="./fbapp/fb.js"></script>
         <div class="fb-login-button" data-scope="public_profile,email" onlogin="checkLoginState();" data-size="xlarge"></div>
