@@ -307,7 +307,7 @@
    width: 140px;
    height: 140px;
    border-radius: 50%;
-   background: #00fa9a;
+   background-color: rgb(14, 255, 173);
    position: absolute;
    top: 40px;
    right: -70px;
