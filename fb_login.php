@@ -12,6 +12,7 @@
 	{
 		echo $_SESSION['name'];
 	}
+	echo 123;
 ?>
 </body>
 </html>
