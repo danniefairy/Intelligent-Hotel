@@ -355,8 +355,8 @@
 
 .material-button.active,
 .alt-2.active {
-   top: 50%;
-   right: 50%;
+   top: 95%;
+   right: 70%;
    transform: translate(50%, -50%) rotate(0deg);
    -webkit-transform: translate(50%, -50%) rotate(0deg);
    -ms-transform: translate(50%, -50%) rotate(0deg);
