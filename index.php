@@ -47,11 +47,5 @@
     </div>
 </div>
   
-
-<?php
-    sessoin_start();
-    echo $_SESSION['birthday'];
-?>
-  
 </body>
 </html>
