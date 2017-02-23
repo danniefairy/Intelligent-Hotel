@@ -89,8 +89,8 @@ $(function() {
             $(".box").addClass("back");
          }, 200)
          $(this).addClass('active').animate({
-            "width": "1500px",
-            "height": "1500px"
+            "width": "1600px",
+            "height": "1600px"
          });
 
          setTimeout(function() {
