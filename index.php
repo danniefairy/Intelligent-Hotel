@@ -22,14 +22,9 @@
       <div class="title"  style="text-align:center;">
         <h2 style="font-size:47px;">Ready for your journey</h2>
         <h2 style="font-size:2vw;">Let's login and fulfill your dream!</h2>
-        <br>
-        <br>
-        <br>
         <!--FB登入-->
         <script type="text/javascript" src="./fbapp/fb.js"></script>
-        
-        <fb:login-button data-scope="public_profile,email" onlogin="checkLoginState();" data-size="xlarge" size="xlarge">Login with Facebook</fb:login-button>
-
+        <fb:login-button data-scope="public_profile,email" onlogin="checkLoginState();" data-size="xlarge" size="xlarge" >Login with Facebook</fb:login-button>
       </div>
    </div>
 
