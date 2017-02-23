@@ -9,14 +9,13 @@
 <body>
 <div class="materialContainer">
    <div class="box">
-
         <div class="title">Intelligent Hotel Service</div>
             <h2>&nbsp</h2><br>
             <img style="float:right; height:300px;" src="./login/icon.jpg" >
             <h2 style="font-size:1.5vw;">I.H.S provide every traveler the most convinent and diversified vacation. Without any annoying preparation for your itinerary, I.H.S can help you schedule your tour and give you a unforgettable memory.</h2><br>            
     </div>
 
-   <div class="overbox">
+   <div class="overbox" style="top-margin:150%;">
       <div class="material-button alt-2"><span class="shape"></span></div>
 
       <div class="title"  style="text-align:center;">
