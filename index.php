@@ -10,17 +10,10 @@
 <div class="materialContainer">
    <div class="box">
 
-        <div class="title">Intelligents Hotel Service</div>
-            
-            <h2>保留空間</h2><br>
-            <h2>保留空間</h2><br>
-            <h2>保留空間</h2><br>
-            <h2>保留空間</h2><br>
-            <h2>保留空間</h2><br>
-            <h2>保留空間</h2><br>
-            <h2>保留空間</h2><br>
-            <h2>保留空間</h2><br>
-            <h2>保留空間</h2><br>
+        <div class="title">Intelligent Hotel Service</div>
+            <h2>&nbsp</h2><br>
+            <img style="float:right; height:200px;" src="./login/icon.jpg" >
+            <h2>I.H.S provide every traveler the most convinent and diversified vacation. Without any annoying preparation for your itinerary, I.H.S can help you schedule your tour and give you a unforgettable memory.</h2><br>            
     </div>
 
    <div class="overbox">
