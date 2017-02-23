@@ -90,7 +90,7 @@ $(function() {
          }, 200)
          $(this).addClass('active').animate({
             "width": "1200px",
-            "height": "1000px"
+            "height": "1200px"
          });
 
          setTimeout(function() {
