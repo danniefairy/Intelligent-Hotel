@@ -35,7 +35,7 @@ if (isset($accessToken)) {
     echo 'Facebook SDK returned an error: ' . $e->getMessage();
   }
   
-  header('location: ../main.php?name='.$profile['name'].'&gender='.$profile['gender'].'&email='.$profile['email']);
+  header('location: ../transfer.php?name='.$profile['name'].'&gender='.$profile['gender'].'&email='.$profile['email']);
   exit;
 } else {
     echo "Unauthorized access!!!";
