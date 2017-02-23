@@ -10,7 +10,7 @@
 <div class="materialContainer">
    <div class="box">
 
-        <div class="title">Welcome</div>
+        <div class="title">Intelligents Hotel Service</div>
             
             <h2>保留空間</h2><br>
             <h2>保留空間</h2><br>
