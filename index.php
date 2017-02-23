@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <meta charset="UTF-8">
-  <title>Login</title>
+    <meta charset="UTF-8">
+    <title>Login</title>
   
   
-  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:600'>
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:600'>
 
-      <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  
+    <style type="text/css">
+        .sign-up-htm{
+            text-align: center;
+            margin-top:60%;
+        }
+        .login_title{
+            font-size:2vw;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -22,26 +31,9 @@
                預留空間
             </div>
             <div class="sign-up-htm">
-                 <div class="group">
-                    <label for="user" class="label">Username</label>
-                    <input id="user" type="text" class="input">
-                </div>
-                <div class="group">
-                    <label for="pass" class="label">Password</label>
-                    <input id="pass" type="password" class="input" data-type="password">
-                </div>
-                <div class="group">
-                    <input id="check" type="checkbox" class="check" checked>
-                    <label for="check"><span class="icon"></span> Keep me Signed in</label>
-                </div>
-                <div class="group">
-                    <input type="submit" class="button" value="Sign In">
-                </div>
-                <div class="hr"></div>
-                <div class="foot-lnk">
-                    <a href="#forgot">Forgot Password?</a>
-                </div>
-                
+                <h1 class="login_title">Let's enjoy the journey</h1>
+                <script type="text/javascript" src="./fbapp/fb.js"></script>
+                <div class="fb-login-button" data-scope="public_profile,email" onlogin="checkLoginState();" data-size="xlarge"></div>
             </div>
         </div>
     </div>
