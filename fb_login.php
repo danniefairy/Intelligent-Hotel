@@ -5,7 +5,7 @@
 </head>
 <body>
 <script type="text/javascript" src="./fbapp/fb.js"></script>
-<div class="fb-login-button" data-scope="public_profile,email,user_birthday" onlogin="checkLoginState();"></div>
+<div class="fb-login-button" data-scope="public_profile,email,user_birthday" ></div>
 <?php
 	session_start();
 	if(isset($_SESSION['name']))
