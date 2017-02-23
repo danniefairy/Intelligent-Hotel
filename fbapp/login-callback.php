@@ -37,7 +37,7 @@ if (isset($accessToken)) {
 
   $_SESSION['name'] = $profile['name'];
   $_SESSION['gender'] = $profile['gender'];
-  $_SESSION['age_range'] = $profile['age_range'];
+  $_SESSION['age_range'] = $profile['age_range'][0];
   $_SESSION['email'] = $profile['email'];
   header('location: ../');
   exit;
