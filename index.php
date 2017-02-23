@@ -13,7 +13,7 @@
         <div class="title">Intelligent Hotel Service</div>
             <h2>&nbsp</h2><br>
             <img style="float:right; height:300px;" src="./login/icon.jpg" >
-            <h2 style="font-size:2vw;">I.H.S provide every traveler the most convinent and diversified vacation. Without any annoying preparation for your itinerary, I.H.S can help you schedule your tour and give you a unforgettable memory.</h2><br>            
+            <h2 style="font-size:1.5vw;">I.H.S provide every traveler the most convinent and diversified vacation. Without any annoying preparation for your itinerary, I.H.S can help you schedule your tour and give you a unforgettable memory.</h2><br>            
     </div>
 
    <div class="overbox">
