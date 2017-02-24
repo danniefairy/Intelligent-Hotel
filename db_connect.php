@@ -1,8 +1,8 @@
 <?php
 	//連接到MYSQL
-	$dbserver='localhost';
-	$dbuser='Mifriend';
-	$dbpassowrd='Mifriend';
+	$dbserver='ja-cdbr-azure-east-a.cloudapp.net';
+	$dbuser='b8662980002331';
+	$dbpassowrd='0d378942';
 
 	$connect=mysqli_connect($dbserver,$dbuser,$dbpassowrd);
 	if(mysqli_connect_errno($connect))
@@ -13,7 +13,7 @@
 	echo "<br>";
 
 	//選擇資料庫
-	if(!mysqli_select_db($connect,'Mifriend'))
+	if(!mysqli_select_db($connect,'hotel'))
 		die('can not use db');
 	else
 		//echo 'test db can be used';
