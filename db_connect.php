@@ -13,7 +13,7 @@
 	echo "<br>";
 
 	//選擇資料庫
-	if(!mysqli_select_db($connect,'danniehoteldb'))
+	if(!mysqli_select_db($connect,'danniehotel'))
 		die('can not use db');
 	else
 		//echo 'test db can be used';
