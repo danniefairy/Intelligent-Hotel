@@ -13,11 +13,6 @@
 			$gender=$_GET['gender'];
 			$email=$_GET['email'];
 
-			if(empty($gender))
-				$gender="null";
-			if(empty($email))
-				$email="null";
-
 			$search="SELECT * FROM `hotel` WHERE `name`=\"$name\" AND `email`=\"$email\"";
 			$result=mysqli_query($connect,$search);
 			if(mysqli_fetch_array($result))
