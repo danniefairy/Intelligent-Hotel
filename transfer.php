@@ -26,7 +26,7 @@
 			}
 			else{
 				$insert="INSERT INTO `hotel` (`name`,`gender`,`email`) VALUES (\"$name\",\"$gender\",\"$email\")";
-				mysqli_query($connect,$insert);
+				echo mysqli_query($connect,$insert);
 				echo "<br>".$insert;
 			}
 
