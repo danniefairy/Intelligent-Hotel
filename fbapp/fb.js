@@ -60,7 +60,7 @@
             fb_email = response.email;
             fb_gender = response.gender;
             
-            window.location = "http://aeit.nutc.edu.tw/Mifriend/hotel/transfer.php?name="+fb_name+"&gender="+fb_gender+"&email="+fb_email;
+            window.location = "http://danniehotel.azurewebsites.net/transfer.php?name="+fb_name+"&gender="+fb_gender+"&email="+fb_email;
           });
         }
         
