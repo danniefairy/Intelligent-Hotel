@@ -1,4 +1,10 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
         var fb_id;
         var fb_name;
         var fb_email;
@@ -63,4 +69,7 @@
             window.location = "http://aeit.nutc.edu.tw/Mifriend/hotel/transfer.php?name="+fb_name+"&gender="+fb_gender+"&email="+fb_email;
           });
         }
-        
+        </script>
+        <fb:login-button data-scope="public_profile,email" onlogin="checkLoginState();" data-size="xlarge" size="xlarge" >Login with Facebook</fb:login-button>
+</body>
+</html>

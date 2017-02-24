@@ -1,6 +1,6 @@
 <?php
 	//連接到MYSQL
-	$dbserver='163.17.140.253/csieMyAdmin';
+	$dbserver='localhost';
 	$dbuser='Mifriend';
 	$dbpassowrd='Mifriend';
 
@@ -13,7 +13,7 @@
 	echo "<br>";
 
 	//選擇資料庫
-	if(!mysqli_select_db($connect,'test'))
+	if(!mysqli_select_db($connect,'Mifriend'))
 		die('can not use db');
 	else
 		//echo 'test db can be used';
