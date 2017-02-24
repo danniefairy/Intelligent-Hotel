@@ -17,7 +17,7 @@
 			$result=mysqli_query($connect,$search);
 			if(mysqli_fetch_array($result))
 			{
-				echo "exist";
+				echo "<br>exist";
 			}
 			else{
 				$insert="INSERT INTO `hotel` (`name`,`gender`,`email`) VALUES (\"$name\",\"$gender\",\"$email\")";
@@ -29,7 +29,7 @@
 			$result=mysqli_query($connect,$search);
 			$id=mysqli_fetch_array($result)[0];
 
-			//header("Location: ./Home/index.php?id=".$id);
+			header("Location: ./Home/index.php?id=".$id);
 			die();
 		}
 	?>
