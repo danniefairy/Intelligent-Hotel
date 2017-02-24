@@ -8,7 +8,7 @@
 	if(mysqli_connect_errno($connect))
 		die("fail to connect the db");
 	else
-		//echo 'connect successfully';
+		echo 'connect successfully';
 
 	echo "<br>";
 
@@ -16,7 +16,7 @@
 	if(!mysqli_select_db($connect,'danniehotel'))
 		die('can not use db');
 	else
-		//echo 'test db can be used';
+		echo 'test db can be used';
 
 	echo "<br>";
 
