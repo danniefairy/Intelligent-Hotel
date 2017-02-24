@@ -13,6 +13,11 @@
 			$gender=$_GET['gender'];
 			$email=$_GET['email'];
 
+			if(empty($gender))
+				$gender="null";
+			if(empty($email))
+				$email="null";
+
 			$search="SELECT * FROM `hotel` WHERE `name`=\"$name\" AND `email`=\"$email\"";
 			$result=mysqli_query($connect,$search);
 			if(mysqli_fetch_array($result))
@@ -29,7 +34,7 @@
 			$result=mysqli_query($connect,$search);
 			$id=mysqli_fetch_array($result)[0];
 
-			header("Location: ./Home/index.php?id=".$id);
+			//header("Location: ./Home/index.php?id=".$id);
 			die();
 		}
 	?>
