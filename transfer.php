@@ -32,8 +32,8 @@
 			$search="SELECT `id` FROM `hotel` WHERE `name`=\"$name\" AND `email`=\"$email\"";
 			$result=mysqli_query($connect,$search);
 			$id=mysqli_fetch_array($result)[0];
-
-			header("Location: ./Home/index.php?fb_id=".$_GET['id']);
+			$fb_id=$_GET['id'];
+			header("Location: ./Home/index.php?fb_id=".$fb_id);
 			die();
 		}
 	?>
