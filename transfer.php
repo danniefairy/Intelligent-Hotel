@@ -9,6 +9,7 @@
 	    include 'db_connect.php';
 		if(isset($_GET['name'])){
 			echo $_GET['name'].$_GET['gender'].$_GET['email'];
+			echo '<script>console.log($_GET[\'name\'])</script>';
 			$name=$_GET['name'];
 			$gender=$_GET['gender'];
 			$email=$_GET['email'];
