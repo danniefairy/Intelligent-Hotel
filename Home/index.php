@@ -113,7 +113,7 @@
 				</div>
 				<div data-src="images/slide2.jpg">
 					<div class="caption fadeIn">
-						<h2>Local Food</h2>
+						<h2>Delicacy</h2>
 						<div class="price">
 							
 							<span></span>
