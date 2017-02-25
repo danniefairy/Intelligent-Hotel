@@ -6,6 +6,7 @@
 </head>
 <body>
 	<?php
+		header("Content-Type:text/html; charset=utf-8");
 	    include 'db_connect.php';
 		if(isset($_GET['name'])){
 			echo $_GET['name'].$_GET['gender'].$_GET['email'];
