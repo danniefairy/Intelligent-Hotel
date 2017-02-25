@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/camera.css">
 		<link rel="stylesheet" href="css/owl.carousel.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mycss.css">
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery-migrate-1.2.1.js"></script>
 		<script src="js/script.js"></script>
@@ -24,6 +25,7 @@
 		<script src="js/jquery.mobile.customized.min.js"></script>
 		<!--<![endif]-->
 		<script src="booking/js/booking.js"></script>
+
 		<script>
 			$(document).ready(function(){
 			jQuery('#camera_wrap').camera({
@@ -120,16 +122,8 @@
 						</div>
 						<a href="#">LEARN MORE</a>
 					</div>
-				<style type="text/css">
-					.arrange{
-						    font-size: 45px;
-						    line-height: 30px;
-						    color: #f3aa29;
-						    font-weight: 300;
-						    margin-bottom: 20px;
-						}
-				</style>
 				</div>
+				<!--add here-->
 				<div data-src="images/slide3.jpg">
 					<div class="caption fadeIn">
 						<p class="arrange">Arrangement</p>
@@ -149,8 +143,8 @@
 					<div class="banner">
 						<img src="images/ban_img1.jpg" alt="">
 						<div class="label">
-							<div class="title">Barcelona</div>
-							<div class="price">FROM<span>$ 1000</span></div>
+							<div class="title">Souvenir</div>
+							<div class="price"><span></span></div>
 							<a href="#">LEARN MORE</a>
 						</div>
 					</div>
@@ -159,8 +153,8 @@
 					<div class="banner">
 						<img src="images/ban_img2.jpg" alt="">
 						<div class="label">
-							<div class="title">GOA</div>
-							<div class="price">FROM<span>$ 1.500</span></div>
+							<div class="title">Traffic Information</div>
+							<div class="price"><span></span></div>
 							<a href="#">LEARN MORE</a>
 						</div>
 					</div>
@@ -169,8 +163,8 @@
 					<div class="banner">
 						<img src="images/ban_img3.jpg" alt="">
 						<div class="label">
-							<div class="title">PARIS</div>
-							<div class="price">FROM<span>$ 1.600</span></div>
+							<div class="title">Mobile Payment</div>
+							<div class="price"><span></span></div>
 							<a href="#">LEARN MORE</a>
 						</div>
 					</div>

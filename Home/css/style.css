@@ -79,6 +79,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+
 h2 {
     font-size: 72px;
     line-height: 30px;
@@ -86,8 +87,6 @@ h2 {
     font-weight: 300;
     margin-bottom: 20px;
 }
-
-
 
 h3 {
     font-size: 30px;
@@ -714,7 +713,6 @@ footer {
 .caption .price {
     display: none;
 }
-
 
 .caption {
     padding-top: 20px;
