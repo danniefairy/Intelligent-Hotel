@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>About</title>
+		<title>Lobby</title>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="images/favicon.ico">
@@ -100,7 +100,7 @@
 							
 							<span></span>
 						</div>
-						<a href="#">LEARN MORE</a>
+						<a href="./about/about.php">About us</a>
 					</div>
 				</div>
 				<div data-src="images/slide1.jpg">
@@ -143,7 +143,7 @@
 					<div class="banner">
 						<img src="images/ban_img1.jpg" alt="">
 						<div class="label">
-							<div class="title">Souvenir</div>
+							<div class="title">Souvenir<br><br></div>
 							<div class="price"><span></span></div>
 							<a href="#">LEARN MORE</a>
 						</div>
@@ -163,7 +163,7 @@
 					<div class="banner">
 						<img src="images/ban_img3.jpg" alt="">
 						<div class="label">
-							<div class="title">Mobile Payment</div>
+							<div class="title">Mobile Payment<br><br></div>
 							<div class="price"><span></span></div>
 							<a href="#">LEARN MORE</a>
 						</div>
