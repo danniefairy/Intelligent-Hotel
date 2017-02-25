@@ -25,7 +25,7 @@ if (isset($accessToken)) {
 
   try {
   
-    $requestProfile = $fb->get("/me?fields=name,email");
+    $requestProfile = $fb->get("/me?fields=name,,gender,email");
     $profile = $requestProfile->getGraphNode()->asArray();
   } catch(Facebook\Exceptions\FacebookResponseException $e) {
     // When Graph returns an error
@@ -35,8 +35,8 @@ if (isset($accessToken)) {
     echo 'Facebook SDK returned an error: ' . $e->getMessage();
   }
 
-  $_SESSION['name'] = $profile['name'];
-  header('location: ../');
+  //$_SESSION['name'] = $profile['name'];
+  header('location: ../transfer.php?name='.$profile['name']."&gender=".$profile['gender']."&email=".$profile['email']);
   exit;
 } else {
     echo "Unauthorized access!!!";
