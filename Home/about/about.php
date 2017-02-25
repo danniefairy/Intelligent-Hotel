@@ -57,7 +57,7 @@
 					<div class="menu_block">
 						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 							<ul class="sf-menu">
-								<li><a href="../index.php">ABOUT</a></li>
+								<li><a href="../index.php">Home</a></li>
 								<li><a href="../index-1.html">HOT TOURS</a></li>
 								<li><a href="../index-2.html">SPECIAL OFFERS</a></li>
 								<li><a href="../index-3.html">BLOG</a></li>
