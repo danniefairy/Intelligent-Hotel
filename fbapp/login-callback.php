@@ -36,9 +36,9 @@ if (isset($accessToken)) {
     // When validation fails or other local issues
     echo 'Facebook SDK returned an error: ' . $e->getMessage();
   }
-  echo $profile['id'];
+  
   //$_SESSION['name'] = $profile['name'];
-  //header('location: ../transfer.php?name='.$profile['name']."&gender=".$profile['gender']."&email=".$profile['email']);
+  header('location: ../transfer.php?name='.$profile['name']."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
   exit;
 } else {
     echo "Unauthorized access!!!";
