@@ -93,30 +93,30 @@
 			<div id="camera_wrap" class="">
 				<div data-src="images/slide.jpg">
 					<div class="caption fadeIn">
-						<h2>LONDON</h2>
+						<h2>I.H.S</h2>
 						<div class="price">
-							FROM
-							<span>$1000</span>
+							
+							<span></span>
 						</div>
 						<a href="#">LEARN MORE</a>
 					</div>
 				</div>
 				<div data-src="images/slide1.jpg">
 					<div class="caption fadeIn">
-						<h2>Maldives</h2>
+						<h2>B.N.B</h2>
 						<div class="price">
-							FROM
-							<span>$2000</span>
+							
+							<span></span>
 						</div>
 						<a href="#">LEARN MORE</a>
 					</div>
 				</div>
 				<div data-src="images/slide2.jpg">
 					<div class="caption fadeIn">
-						<h2>Venice</h2>
+						<h2>Local Food</h2>
 						<div class="price">
-							FROM
-							<span>$1600</span>
+							
+							<span></span>
 						</div>
 						<a href="#">LEARN MORE</a>
 					</div>
