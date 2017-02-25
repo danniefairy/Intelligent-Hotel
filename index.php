@@ -23,7 +23,7 @@
         <h2 style="font-size:30px ;">Let's login and fulfill your dream!</h2>
         <!--FB登入-->
         <script type="text/javascript" src="./fbapp/fb.js"></script>
-        <fb:login-button data-scope="public_profile,email" onlogin="checkLoginState();" data-size="xlarge" size="xlarge" >Login Facebook</fb:login-button>
+        <fb:login-button data-scope="public_profile,email" onlogin="checkLoginState();" data-size="xlarge" size="xlarge" >Login with Facebook</fb:login-button>
       </div>
    </div>
 
