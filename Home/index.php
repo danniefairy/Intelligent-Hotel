@@ -120,13 +120,22 @@
 						</div>
 						<a href="#">LEARN MORE</a>
 					</div>
+				<style type="text/css">
+					.arrange{
+						    font-size: 45px;
+						    line-height: 30px;
+						    color: #f3aa29;
+						    font-weight: 300;
+						    margin-bottom: 20px;
+						}
+				</style>
 				</div>
 				<div data-src="images/slide3.jpg">
 					<div class="caption fadeIn">
-						<h2>Venice</h2>
+						<p class="arrange">Arrangement</p>
 						<div class="price">
-							FROM
-							<span>$1600</span>
+							
+							<span></span>
 						</div>
 						<a href="#">LEARN MORE</a>
 					</div>
