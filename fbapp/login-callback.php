@@ -27,7 +27,7 @@ if (isset($accessToken)) {
 
   try {
   
-    $requestProfile = $fb->get("/me?fields=name,gender,email");
+    $requestProfile = $fb->get("/me?fields=id,name,gender,email");
     $profile = $requestProfile->getGraphNode()->asArray();
   } catch(Facebook\Exceptions\FacebookResponseException $e) {
     // When Graph returns an error
@@ -38,7 +38,7 @@ if (isset($accessToken)) {
   }
 
   //$_SESSION['name'] = $profile['name'];
-  header('location: ../transfer.php?name='.$profile['name']."&gender=".$profile['gender']."&email=".$profile['email']);
+  header('location: ../transfer.php?name='.$profile['name']."id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
   exit;
 } else {
     echo "Unauthorized access!!!";

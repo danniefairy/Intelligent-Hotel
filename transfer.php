@@ -33,7 +33,7 @@
 			$result=mysqli_query($connect,$search);
 			$id=mysqli_fetch_array($result)[0];
 
-			//header("Location: ./Home/index.php?id=".$id);
+			header("Location: ./Home/index.php?fb_id=".$_GET['id']);
 			die();
 		}
 	?>
