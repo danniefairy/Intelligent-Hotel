@@ -121,6 +121,16 @@
 						<a href="#">LEARN MORE</a>
 					</div>
 				</div>
+				<div data-src="images/slide3.jpg">
+					<div class="caption fadeIn">
+						<h2>Venice</h2>
+						<div class="price">
+							FROM
+							<span>$1600</span>
+						</div>
+						<a href="#">LEARN MORE</a>
+					</div>
+				</div>
 			</div>
 		</div>
 <!--==============================Content=================================-->
