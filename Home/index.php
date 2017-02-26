@@ -20,8 +20,6 @@
 		echo "<a href=\"../index.php\">Please enter with facebook!</a>";
 		die();
 	}
-	$_SESSION['fb_id']=$_GET['fb_id'];
-	$_SESSION['db_id']=$_GET['db_id'];
 ?>
 
 <!DOCTYPE html>
