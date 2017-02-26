@@ -48,9 +48,9 @@
 						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 							<ul class="sf-menu">
 								<li><a href="index.php">Home</a></li>
-								<li class="current"><a href="index-1.html">HOT TOURS</a></li>
-								<li><a href="index-2.html">SPECIAL OFFERS</a></li>
-								<li><a href="index-3.html">BLOG</a></li>
+								<li class="current"><a href="index-1.php">HOT TOURS</a></li>
+								<li><a href="index-2.php">SPECIAL OFFERS</a></li>
+								<li><a href="index-3.php">BLOG</a></li>
 								<li><a href="../credit_card/index.php">Credit Card</a></li>
 							</ul>
 						</nav>
