@@ -91,22 +91,21 @@
 				<div class="grid_5">
 					<h3>CONTACT INFO</h3>
 					<div class="map">
-						<p>TemplateMonster provides 24/7 support for all its <span class="col1"><a href="http://www.templatemonster.com/website-templates.php" rel="nofollow">premium products</a></span>. Freebies go without it.</p>
-						<p>If you have any questions regarding the customization of the chosen free theme, ask <span class="col1"><a href="http://www.templatetuning.com/" rel="nofollow">TemplateTuning</a></span> to help you on a paid basis.</p>
+						<p>Our main purpose is to give every customer a easy way to schedule a better itinerary. We help you to customize your suitable tour. On one hand , our system can give you lots of information about local culture and useful recommendations based on big data analysis, on the other hand we also cooperate with banks so you can use mobile payment to schedule your vacation unstressfully.</p>
 						<div class="clear"></div>
 						<!--google map-->
 					<figure id="google_map" style="min-height:285px;"></figure>
 						<!--google map-->
 						<address>
 							<dl>
-								<dt>The Company Name Inc. <br>
-									8901 Marmora Road,<br>
-									Glasgow, D04 89GR.
+								<dt>IHS Inc. <br>
+									 No. 7, Section 5, Xinyi Rd,<br>
+									Xinyi District, Taipei City, 110
 								</dt>
-								<dd><span>Freephone:</span>+1 800 559 6580</dd>
-								<dd><span>Telephone:</span>+1 800 603 6035</dd>
-								<dd><span>FAX:</span>+1 800 889 9898</dd>
-								<dd>E-mail: <a href="#" class="col1">mail@demolink.org</a></dd>
+								<dd><span>Freephone:</span>02 2900 0000</dd>
+								<dd><span>Telephone:</span>02 8890 0000</dd>
+								<dd><span>FAX:</span>02 8891 0000</dd>
+								<dd>E-mail:ihs@gmail.com</dd>
 							</dl>
 						</address>
 					</div>
