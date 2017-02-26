@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Special Offers</title>
+		<title>Hot Tours</title>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="images/favicon.ico">
@@ -25,7 +25,7 @@
 		<script>
 		$(document).ready(function(){
 			$().UItoTop({ easingType: 'easeOutQuart' });
-			});
+		});
 		</script>
 		<!--[if lt IE 8]>
 		<div style=' clear: both; text-align:center; position: relative;'>
@@ -47,9 +47,9 @@
 					<div class="menu_block">
 						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 							<ul class="sf-menu">
-								<li><a href="index.php">ABOUT</a></li>
-								<li><a href="index-1.html">HOT TOURS</a></li>
-								<li class="current"><a href="index-2.html">SPECIAL OFFERS</a></li>
+								<li><a href="index.php">Home</a></li>
+								<li class="current"><a href="index-1.html">HOT TOURS</a></li>
+								<li><a href="index-2.html">SPECIAL OFFERS</a></li>
 								<li><a href="index-3.html">BLOG</a></li>
 								<li><a href="../credit_card/index.php">Credit Card</a></li>
 							</ul>
@@ -69,53 +69,89 @@
 <!--==============================Content=================================-->
 		<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
 			<div class="container_12">
-				<div class="grid_8">
-					<h3>Special offers</h3>
-					<div class="block2">
-						<img src="images/page3_img1.jpg" alt="" class="img_inner fleft">
-						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">Barcelona</a></div>
-							<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel
-							<br>
-							<a href="#" class="link1">LEARN MORE</a>
+				<div class="banners">
+					<div class="grid_4">
+						<div class="banner">
+							<img src="images/page2_img1.jpg" alt="">
+							<div class="label">
+								<div class="title">NEW ZEALAND</div>
+								<div class="price">from<span>$ 1.200</span></div>
+								<a href="#">LEARN MORE</a>
+							</div>
 						</div>
 					</div>
-					<div class="block2">
-						<img src="images/page3_img2.jpg" alt="" class="img_inner fleft">
-						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">Moscow</a></div>
-							<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel
-							<br>
-							<a href="#" class="link1">LEARN MORE</a>
+					<div class="grid_4">
+						<div class="banner">
+							<img src="images/page2_img2.jpg" alt="">
+							<div class="label">
+								<div class="title">GOA</div>
+								<div class="price">from<span>$ 1.500</span></div>
+								<a href="#">LEARN MORE</a>
+							</div>
 						</div>
 					</div>
-					<div class="block2">
-						<img src="images/page3_img3.jpg" alt="" class="img_inner fleft">
-						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">Thailand</a></div>
-							<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel
-							<br>
-							<a href="#" class="link1">LEARN MORE</a>
+					<div class="grid_4">
+						<div class="banner">
+							<img src="images/page2_img3.jpg" alt="">
+							<div class="label">
+								<div class="title">FRANCE</div>
+								<div class="price">from<span>$ 1.600</span></div>
+								<a href="#">LEARN MORE</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="grid_3 prefix_1">
-					<h5>CHOOse the country</h5>
-					<ul class="list">
-						<li><a href="#">Albania</a></li>
-						<li><a href="#">American Samoa</a></li>
-						<li><a href="#">Antarctica</a></li>
-						<li><a href="#">Argentina</a></li>
-						<li><a href="#">Armenia</a></li>
-						<li><a href="#">Australia</a></li>
-						<li><a href="#">Austria</a></li>
-						<li><a href="#">Bahrain</a></li>
-						<li><a href="#">Barbados</a></li>
-						<li><a href="#">Belgium</a></li>
-						<li><a href="#">Belize</a></li>
-						<li><a href="#">Bermudas</a></li>
-					</ul>
-					<a href="#" class="link1">VIEW A<span class="low">ll</span></a>
+					<div class="clear"></div>
+					<div class="grid_4">
+						<div class="banner">
+							<img src="images/page2_img4.jpg" alt="">
+							<div class="label">
+								<div class="title">CANADA</div>
+								<div class="price">from<span>$ 2000</span></div>
+								<a href="#">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="banner">
+							<img src="images/page2_img5.jpg" alt="">
+							<div class="label">
+								<div class="title">TURKEY</div>
+								<div class="price">from<span>$ 1.500</span></div>
+								<a href="#">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="banner">
+							<img src="images/page2_img6.jpg" alt="">
+							<div class="label">
+								<div class="title">EGYPT</div>
+								<div class="price">from<span>$ 1.500</span></div>
+								<a href="#">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="grid_4">
+						<div class="banner">
+							<img src="images/page2_img7.jpg" alt="">
+							<div class="label">
+								<div class="title">JAPAN</div>
+								<div class="price">from<span>$ 1000</span></div>
+								<a href="#">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="banner">
+							<img src="images/page2_img8.jpg" alt="">
+							<div class="label">
+								<div class="title">BRAZIL</div>
+								<div class="price">from<span>$ 1.700</span></div>
+								<a href="#">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

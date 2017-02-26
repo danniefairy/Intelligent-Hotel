@@ -5,10 +5,11 @@
 		die();
 	}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Hot Tours</title>
+		<title>Blog</title>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="images/favicon.ico">
@@ -25,7 +26,7 @@
 		<script>
 		$(document).ready(function(){
 			$().UItoTop({ easingType: 'easeOutQuart' });
-		});
+			});
 		</script>
 		<!--[if lt IE 8]>
 		<div style=' clear: both; text-align:center; position: relative;'>
@@ -47,10 +48,10 @@
 					<div class="menu_block">
 						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 							<ul class="sf-menu">
-								<li><a href="index.php">ABOUT</a></li>
-								<li class="current"><a href="index-1.html">HOT TOURS</a></li>
+								<li><a href="index.php">Home</a></li>
+								<li><a href="index-1.html">HOT TOURS</a></li>
 								<li><a href="index-2.html">SPECIAL OFFERS</a></li>
-								<li><a href="index-3.html">BLOG</a></li>
+								<li class="current"><a href="index-3.html">BLOG</a></li>
 								<li><a href="../credit_card/index.php">Credit Card</a></li>
 							</ul>
 						</nav>
@@ -69,89 +70,54 @@
 <!--==============================Content=================================-->
 		<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
 			<div class="container_12">
-				<div class="banners">
-					<div class="grid_4">
-						<div class="banner">
-							<img src="images/page2_img1.jpg" alt="">
-							<div class="label">
-								<div class="title">NEW ZEALAND</div>
-								<div class="price">from<span>$ 1.200</span></div>
-								<a href="#">LEARN MORE</a>
-							</div>
+				<div class="grid_7">
+					<h3>Recent Posts</h3>
+					<div class="blog">
+						<time datetime="2014-10-01">15<span>Feb</span></time>
+						<div class="extra_wrapper">
+							<div class="text1 col1"><a href="#">uamnibh Edet Mertolo numi</a></div>Posted by
+							<a href="#">Admin</a>
 						</div>
+						<div class="clear"></div>
+						<img src="images/page4_img1.jpg" alt="" class="img_inner">
+						<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh.
+						<br>
+						<a href="#" class="link1">LEARN MORE</a>
 					</div>
-					<div class="grid_4">
-						<div class="banner">
-							<img src="images/page2_img2.jpg" alt="">
-							<div class="label">
-								<div class="title">GOA</div>
-								<div class="price">from<span>$ 1.500</span></div>
-								<a href="#">LEARN MORE</a>
-							</div>
+					<div class="blog">
+						<time datetime="2014-10-01">17<span>Feb</span></time>
+						<div class="extra_wrapper">
+							<div class="text1 col1"><a href="#">ERh EMertlo numolo</a></div>Posted by
+							<a href="#">Admin</a>
 						</div>
+						<div class="clear"></div>
+						<img src="images/page4_img2.jpg" alt="" class="img_inner">
+						<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh.
+						<br>
+						<a href="#" class="link1">LEARN MORE</a>
 					</div>
-					<div class="grid_4">
-						<div class="banner">
-							<img src="images/page2_img3.jpg" alt="">
-							<div class="label">
-								<div class="title">FRANCE</div>
-								<div class="price">from<span>$ 1.600</span></div>
-								<a href="#">LEARN MORE</a>
-							</div>
-						</div>
-					</div>
-					<div class="clear"></div>
-					<div class="grid_4">
-						<div class="banner">
-							<img src="images/page2_img4.jpg" alt="">
-							<div class="label">
-								<div class="title">CANADA</div>
-								<div class="price">from<span>$ 2000</span></div>
-								<a href="#">LEARN MORE</a>
-							</div>
-						</div>
-					</div>
-					<div class="grid_4">
-						<div class="banner">
-							<img src="images/page2_img5.jpg" alt="">
-							<div class="label">
-								<div class="title">TURKEY</div>
-								<div class="price">from<span>$ 1.500</span></div>
-								<a href="#">LEARN MORE</a>
-							</div>
-						</div>
-					</div>
-					<div class="grid_4">
-						<div class="banner">
-							<img src="images/page2_img6.jpg" alt="">
-							<div class="label">
-								<div class="title">EGYPT</div>
-								<div class="price">from<span>$ 1.500</span></div>
-								<a href="#">LEARN MORE</a>
-							</div>
-						</div>
-					</div>
-					<div class="clear"></div>
-					<div class="grid_4">
-						<div class="banner">
-							<img src="images/page2_img7.jpg" alt="">
-							<div class="label">
-								<div class="title">JAPAN</div>
-								<div class="price">from<span>$ 1000</span></div>
-								<a href="#">LEARN MORE</a>
-							</div>
-						</div>
-					</div>
-					<div class="grid_4">
-						<div class="banner">
-							<img src="images/page2_img8.jpg" alt="">
-							<div class="label">
-								<div class="title">BRAZIL</div>
-								<div class="price">from<span>$ 1.700</span></div>
-								<a href="#">LEARN MORE</a>
-							</div>
-						</div>
-					</div>
+				</div>
+				<div class="grid_3 prefix_1">
+					<h3 class="head1">CATEGORIES</h3>
+					<ul class="list">
+						<li><a href="#">Suspendisse massa mi </a></li>
+						<li><a href="#">Porttitor at velit id </a></li>
+						<li><a href="#">Congue adipiscing </a></li>
+						<li><a href="#">Vestibulum vitae porta </a></li>
+						<li><a href="#">Vivamus ac sodales </a></li>
+						<li><a href="#">Massa quis adipiscing </a></li>
+						<li><a href="#">Phasellus hendrerit </a></li>
+						<li><a href="#">Libero in sapien </a></li>
+						<li><a href="#">Dignissim vel imperdiet </a></li>
+					</ul>
+					<h3 class="head1">ARchives</h3>
+					<ul class="list">
+						<li><a href="#">November 2013</a></li>
+						<li><a href="#">October 2013</a></li>
+						<li><a href="#">September 2013</a></li>
+						<li><a href="#">August 2013</a></li>
+						<li><a href="#">July 2013</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>

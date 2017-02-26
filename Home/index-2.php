@@ -5,11 +5,10 @@
 		die();
 	}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Blog</title>
+		<title>Special Offers</title>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="images/favicon.ico">
@@ -48,10 +47,10 @@
 					<div class="menu_block">
 						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 							<ul class="sf-menu">
-								<li><a href="index.php">ABOUT</a></li>
+								<li><a href="index.php">Home</a></li>
 								<li><a href="index-1.html">HOT TOURS</a></li>
-								<li><a href="index-2.html">SPECIAL OFFERS</a></li>
-								<li class="current"><a href="index-3.html">BLOG</a></li>
+								<li class="current"><a href="index-2.html">SPECIAL OFFERS</a></li>
+								<li><a href="index-3.html">BLOG</a></li>
 								<li><a href="../credit_card/index.php">Credit Card</a></li>
 							</ul>
 						</nav>
@@ -70,54 +69,53 @@
 <!--==============================Content=================================-->
 		<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
 			<div class="container_12">
-				<div class="grid_7">
-					<h3>Recent Posts</h3>
-					<div class="blog">
-						<time datetime="2014-10-01">15<span>Feb</span></time>
+				<div class="grid_8">
+					<h3>Special offers</h3>
+					<div class="block2">
+						<img src="images/page3_img1.jpg" alt="" class="img_inner fleft">
 						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">uamnibh Edet Mertolo numi</a></div>Posted by
-							<a href="#">Admin</a>
+							<div class="text1 col1"><a href="#">Barcelona</a></div>
+							<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel
+							<br>
+							<a href="#" class="link1">LEARN MORE</a>
 						</div>
-						<div class="clear"></div>
-						<img src="images/page4_img1.jpg" alt="" class="img_inner">
-						<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh.
-						<br>
-						<a href="#" class="link1">LEARN MORE</a>
 					</div>
-					<div class="blog">
-						<time datetime="2014-10-01">17<span>Feb</span></time>
+					<div class="block2">
+						<img src="images/page3_img2.jpg" alt="" class="img_inner fleft">
 						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">ERh EMertlo numolo</a></div>Posted by
-							<a href="#">Admin</a>
+							<div class="text1 col1"><a href="#">Moscow</a></div>
+							<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel
+							<br>
+							<a href="#" class="link1">LEARN MORE</a>
 						</div>
-						<div class="clear"></div>
-						<img src="images/page4_img2.jpg" alt="" class="img_inner">
-						<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh.
-						<br>
-						<a href="#" class="link1">LEARN MORE</a>
+					</div>
+					<div class="block2">
+						<img src="images/page3_img3.jpg" alt="" class="img_inner fleft">
+						<div class="extra_wrapper">
+							<div class="text1 col1"><a href="#">Thailand</a></div>
+							<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel
+							<br>
+							<a href="#" class="link1">LEARN MORE</a>
+						</div>
 					</div>
 				</div>
 				<div class="grid_3 prefix_1">
-					<h3 class="head1">CATEGORIES</h3>
+					<h5>CHOOse the country</h5>
 					<ul class="list">
-						<li><a href="#">Suspendisse massa mi </a></li>
-						<li><a href="#">Porttitor at velit id </a></li>
-						<li><a href="#">Congue adipiscing </a></li>
-						<li><a href="#">Vestibulum vitae porta </a></li>
-						<li><a href="#">Vivamus ac sodales </a></li>
-						<li><a href="#">Massa quis adipiscing </a></li>
-						<li><a href="#">Phasellus hendrerit </a></li>
-						<li><a href="#">Libero in sapien </a></li>
-						<li><a href="#">Dignissim vel imperdiet </a></li>
+						<li><a href="#">Albania</a></li>
+						<li><a href="#">American Samoa</a></li>
+						<li><a href="#">Antarctica</a></li>
+						<li><a href="#">Argentina</a></li>
+						<li><a href="#">Armenia</a></li>
+						<li><a href="#">Australia</a></li>
+						<li><a href="#">Austria</a></li>
+						<li><a href="#">Bahrain</a></li>
+						<li><a href="#">Barbados</a></li>
+						<li><a href="#">Belgium</a></li>
+						<li><a href="#">Belize</a></li>
+						<li><a href="#">Bermudas</a></li>
 					</ul>
-					<h3 class="head1">ARchives</h3>
-					<ul class="list">
-						<li><a href="#">November 2013</a></li>
-						<li><a href="#">October 2013</a></li>
-						<li><a href="#">September 2013</a></li>
-						<li><a href="#">August 2013</a></li>
-						<li><a href="#">July 2013</a></li>
-					</ul>
+					<a href="#" class="link1">VIEW A<span class="low">ll</span></a>
 				</div>
 			</div>
 		</div>
