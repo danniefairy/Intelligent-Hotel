@@ -38,8 +38,7 @@ if (isset($accessToken)) {
   }
   
 
-  $_SESSION['fb_id']=$_GET['fb_id'];
-  $_SESSION['db_id']=$_GET['db_id'];
+  $_SESSION['fb_id']=$profile['id'];
   //$_SESSION['name'] = $profile['name'];
   header('location: ../transfer.php?name='.$profile['name']."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
   exit;
