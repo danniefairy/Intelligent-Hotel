@@ -13,10 +13,12 @@
 			if($name==""||$number==""||$cvv==""||$month==""||$year=="")
 			{
 				header("location:index.php?wrong=1");
+				die();
 			}
 			$update="UPDATE `hotel` SET `card_name`=\"$name\",`card_no`=\"$number\",`card_cvv`=\"$cvv\",`card_exp`=\"$exp\" WHERE `id`=$id";
 			mysqli_query($connect,$update);
 			header("location:../Home/index.php?credit_card_binding=1");
+			die();
 		}
 		else{
 			echo "no session id";
