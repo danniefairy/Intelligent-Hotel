@@ -19,13 +19,13 @@
 
 
 	//從誰寄來的
-	$email_from="dannienctu@gmail.com";
-	$name_from="fairy";
+	$email_from=$_GET['email'];
+	$name_from=$_GET['name'];
 	//Typical mail data
 	$mail->AddAddress($email, $name);
 	$mail->SetFrom($email_from, $name_from);
-	$mail->Subject = "My Subject";
-	$mail->Body = "Mail contents";
+	$mail->Subject = $_GET['subject'];
+	$mail->Body = $_GET['message'];
 
 	try{
 	    $mail->Send();
@@ -33,6 +33,8 @@
 	} catch(Exception $e){
 	    //Something went bad
 	    echo "Fail - " . $mail->ErrorInfo;
+	    //also at class.phpmailer.php 1023
+	    header("location:../about.php?err=1");
 	}
 
 ?>

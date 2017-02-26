@@ -1,3 +1,12 @@
+<?php
+	if(isset($_GET['err']))
+	{
+		echo "<script type=\"text/javascript\">
+			alert(\"Wrong emaill address!\")
+			</script>";
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -109,30 +118,43 @@
 							<div class="success-message">Contact form submitted</div>
 						</div>
 						<label class="name">
-							<input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
+							<input id="nam" type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
 							<span class="empty-message">*This field is required.</span>
 							<span class="error-message">*This is not a valid name.</span>
 						</label>
 						<label class="email">
-							<input type="text" placeholder="Email:" data-constraints="@Required @Email" />
+							<input id="ema" type="text" placeholder="Email:" data-constraints="@Required @Email" />
 							<span class="empty-message">*This field is required.</span>
 							<span class="error-message">*This is not a valid email.</span>
 						</label>
 						<label class="country">
-							<input type="text" placeholder="Country:" data-constraints="@Required @JustLetters"/>
+							<input id="sub" type="text" placeholder="Subject:" data-constraints="@Required @JustLetters"/>
 							<span class="empty-message">*This field is required.</span>
-							<span class="error-message">*This is not a valid phone.</span>
+							<span class="error-message">*This is not a valid country.</span>
 						</label>
 						<label class="message">
-							<textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+							<textarea id="msg" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
 							<span class="empty-message">*This field is required.</span>
 							<span class="error-message">*The message is too short.</span>
 						</label>
+						<!--submit-->
+						<script type="text/javascript">
+							
+							function submit(){
+								var name=document.getElementById('nam').value;
+								var email=document.getElementById('ema').value;
+								var subject=document.getElementById('sub').value;
+								var message=document.getElementById('msg').value;
+								
+								window.location = "./send_email/email_test.php?name="+name+"&email="+email+"&subject="+subject+"&message="+message;
+							}
+						</script>
+
 						<div>
 							<div class="clear"></div>
 							<div class="btns">
 								<a href="#" data-type="reset" class="btn">Clear</a>
-								<a href="#" data-type="submit" class="btn">Submit</a>
+								<a href="#" data-type="submit" class="btn" onclick="submit()">Submit</a>
 							</div>
 						</div>
 					</form>

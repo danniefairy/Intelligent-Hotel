@@ -1020,6 +1020,8 @@ class PHPMailer
             $this->setError($error_message);
             $this->edebug($error_message);
             if ($this->exceptions) {
+                //我加的錯誤訊息
+                header("location:.././about.php?err=1");
                 throw new phpmailerException($error_message);
             }
             return false;
