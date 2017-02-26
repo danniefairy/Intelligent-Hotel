@@ -22,4 +22,8 @@
 			echo "no session id";
 		}
 	}
+	else{
+		echo "<a href=\"../Home/index.php\">Please enter with facebook!</a>";
+		die();
+	}
 ?>

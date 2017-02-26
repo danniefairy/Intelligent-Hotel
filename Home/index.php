@@ -16,6 +16,10 @@
 	}
 
 	session_start();
+	if(!isset($_SESSION['fb_id'])){
+		echo "<a href=\"../index.php\">Please enter with facebook!</a>";
+		die();
+	}
 	$_SESSION['fb_id']=$_GET['fb_id'];
 	$_SESSION['db_id']=$_GET['db_id'];
 ?>
@@ -98,7 +102,7 @@
 								<li><a href="index-1.html">HOT TOURS</a></li>
 								<li><a href="index-2.html">SPECIAL OFFERS</a></li>
 								<li><a href="index-3.html">BLOG</a></li>
-								<li><a href="index-4.html">Credit Card</a></li>
+								<li><a href="../credit_card/index.php">Credit Card</a></li>
 							</ul>
 						</nav>
 						<div class="clear"></div>
