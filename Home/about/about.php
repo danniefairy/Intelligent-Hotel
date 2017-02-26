@@ -2,7 +2,7 @@
 	if(isset($_GET['err']))
 	{
 		echo "<script type=\"text/javascript\">
-			alert(\"Wrong emaill address!\")
+			alert(\"Wrong email information!\")
 			</script>";
 	}
 ?>
