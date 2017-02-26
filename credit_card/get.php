@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	include 'connect_db.php';
 	if(isset($_SESSION['db_id'])){
 		if(isset($_GET['Name'])){
 			$id=$_SESSION['db_id'];
