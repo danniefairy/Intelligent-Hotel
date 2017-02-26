@@ -14,7 +14,7 @@
 				header("location:index.php?wrong=1");
 			}
 			$update="UPDATE `hotel` SET `card_name`=\"$name\",`card_no`=\"$number\",`cvv`=\"$cvv\",`card_exp`=\"$exp\" WHERE `id`=$id";
-			mysqli_query($connect,$update) or die(mysqli_error($connect));
+			mysqli_query($connect,$update) or trigger_error("Query Failed! SQL: $sql - Error: ".mysqli_error(), E_USER_ERROR);
 		}
 		else{
 			echo "no session id";
