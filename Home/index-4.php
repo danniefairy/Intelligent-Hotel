@@ -1,31 +1,22 @@
-<?php
-	if(isset($_GET['err']))
-	{
-		echo "<script type=\"text/javascript\">
-			alert(\"Wrong email information!\")
-			</script>";
-	}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>ABOUT</title>
+		<title>Contacts</title>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no" />
-		<link rel="icon" href="../images/favicon.ico">
-		<link rel="shortcut icon" href="../images/favicon.ico" />
-		<link rel="stylesheet" href="../css/form.css">
-		<link rel="stylesheet" href="../css/style.css">
-		<script src="../js/jquery.js"></script>
-		<script src="../js/jquery-migrate-1.2.1.js"></script>
-		<script src="../js/script.js"></script>
-		<script src="../js/TMForm.js"></script>
-		<script src="../js/superfish.js"></script>
-		<script src="../js/jquery.ui.totop.js"></script>
-		<script src="../js/jquery.equalheights.js"></script>
-		<script src="../js/jquery.mobilemenu.js"></script>
-		<script src="../js/jquery.easing.1.3.js"></script>
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.2.1.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/TMForm.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
 		<script>
 		$(document).ready(function(){
 			$().UItoTop({ easingType: 'easeOutQuart' });
@@ -42,21 +33,6 @@
 		<script src="js/html5shiv.js"></script>
 		<link rel="stylesheet" media="screen" href="css/ie.css">
 		<![endif]-->
-
-
-		<!--google map-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6h46-lqQIkEoHqwEiV1ub4vmhe8s92Ws&callback=initMap"
-        async defer></script>
-    <script>
-    var map;
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('google_map'), {
-        center: {lat: 25.0340, lng: 121.5645},
-        zoom: 15
-      });
-    }
-    </script>
-    <!--google map-->
 	</head>
 	<body>
 <!--==============================header=================================-->
@@ -66,11 +42,11 @@
 					<div class="menu_block">
 						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 							<ul class="sf-menu">
-								<li><a href="../index.php">Home</a></li>
-								<li><a href="../index-1.html">HOT TOURS</a></li>
-								<li><a href="../index-2.html">SPECIAL OFFERS</a></li>
-								<li><a href="../index-3.html">BLOG</a></li>
-								<li><a href="../index-4.html">Credit Card</a></li>
+								<li><a href="index.php">ABOUT</a></li>
+								<li><a href="index-1.html">HOT TOURS</a></li>
+								<li><a href="index-2.html">SPECIAL OFFERS</a></li>
+								<li><a href="index-3.html">BLOG</a></li>
+								<li class="current"><a href="index-4.html">Credit Card</a></li>
 							</ul>
 						</nav>
 						<div class="clear"></div>
@@ -79,7 +55,7 @@
 				<div class="grid_12">
 					<h1>
 						<a href="index.html">
-							<img src="../images/logo.png" alt="Your Happy Family">
+							<img src="images/logo.png" alt="Your Happy Family">
 						</a>
 					</h1>
 				</div>
@@ -91,21 +67,22 @@
 				<div class="grid_5">
 					<h3>CONTACT INFO</h3>
 					<div class="map">
-						<p>Our main purpose is to give every customer a easy way to schedule a better itinerary. We help you to customize your suitable tour. On one hand , our system can give you lots of information about local culture and useful recommendations based on big data analysis, on the other hand we also cooperate with banks so you can use mobile payment to schedule your vacation unstressfully.</p>
+						<p>TemplateMonster provides 24/7 support for all its <span class="col1"><a href="http://www.templatemonster.com/website-templates.php" rel="nofollow">premium products</a></span>. Freebies go without it.</p>
+						<p>If you have any questions regarding the customization of the chosen free theme, ask <span class="col1"><a href="http://www.templatetuning.com/" rel="nofollow">TemplateTuning</a></span> to help you on a paid basis.</p>
 						<div class="clear"></div>
-						<!--google map-->
-					<figure id="google_map" style="min-height:285px;"></figure>
-						<!--google map-->
+						<figure class="">
+							<iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+						</figure>
 						<address>
 							<dl>
-								<dt>IHS Inc. <br>
-									 No. 7, Section 5, Xinyi Rd,<br>
-									Xinyi District, Taipei City, 110
+								<dt>The Company Name Inc. <br>
+									8901 Marmora Road,<br>
+									Glasgow, D04 89GR.
 								</dt>
-								<dd><span>Freephone:</span>02 2900 0000</dd>
-								<dd><span>Telephone:</span>02 8890 0000</dd>
-								<dd><span>FAX:</span>02 8891 0000</dd>
-								<dd>E-mail:ihs@gmail.com</dd>
+								<dd><span>Freephone:</span>+1 800 559 6580</dd>
+								<dd><span>Telephone:</span>+1 800 603 6035</dd>
+								<dd><span>FAX:</span>+1 800 889 9898</dd>
+								<dd>E-mail: <a href="#" class="col1">mail@demolink.org</a></dd>
 							</dl>
 						</address>
 					</div>
@@ -117,43 +94,30 @@
 							<div class="success-message">Contact form submitted</div>
 						</div>
 						<label class="name">
-							<input id="nam" type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
+							<input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
 							<span class="empty-message">*This field is required.</span>
 							<span class="error-message">*This is not a valid name.</span>
 						</label>
 						<label class="email">
-							<input id="ema" type="text" placeholder="Email:" data-constraints="@Required @Email" />
+							<input type="text" placeholder="Email:" data-constraints="@Required @Email" />
 							<span class="empty-message">*This field is required.</span>
 							<span class="error-message">*This is not a valid email.</span>
 						</label>
 						<label class="country">
-							<input id="sub" type="text" placeholder="Subject:" data-constraints="@Required @JustLetters"/>
+							<input type="text" placeholder="Country:" data-constraints="@Required @JustLetters"/>
 							<span class="empty-message">*This field is required.</span>
-							<span class="error-message">*This is not a valid country.</span>
+							<span class="error-message">*This is not a valid phone.</span>
 						</label>
 						<label class="message">
-							<textarea id="msg" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+							<textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
 							<span class="empty-message">*This field is required.</span>
 							<span class="error-message">*The message is too short.</span>
 						</label>
-						<!--submit-->
-						<script type="text/javascript">
-							
-							function submit(){
-								var name=document.getElementById('nam').value;
-								var email=document.getElementById('ema').value;
-								var subject=document.getElementById('sub').value;
-								var message=document.getElementById('msg').value;
-								
-								window.location = "./send_email/email_test.php?name="+name+"&email="+email+"&subject="+subject+"&message="+message;
-							}
-						</script>
-
 						<div>
 							<div class="clear"></div>
 							<div class="btns">
 								<a href="#" data-type="reset" class="btn">Clear</a>
-								<a href="#" data-type="submit" class="btn" onclick="submit()">Submit</a>
+								<a href="#" data-type="submit" class="btn">Submit</a>
 							</div>
 						</div>
 					</form>
