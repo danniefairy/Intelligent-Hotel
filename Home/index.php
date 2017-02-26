@@ -1,3 +1,12 @@
+<?php
+	if(isset($_GET['send_email']))
+	{
+		echo "<script type=\"text/javascript\">
+			alert(\"Sending sucessfully!\")
+			</script>";
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -72,7 +81,7 @@
 					<div class="menu_block">
 						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 							<ul class="sf-menu">
-								<li class="current"><a href="index.html">ABOUT</a></li>
+								<li class="current"><a href="index.php">Home</a></li>
 								<li><a href="index-1.html">HOT TOURS</a></li>
 								<li><a href="index-2.html">SPECIAL OFFERS</a></li>
 								<li><a href="index-3.html">BLOG</a></li>

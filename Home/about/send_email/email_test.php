@@ -30,7 +30,7 @@
 	try{
 	    $mail->Send();
 	    echo "Success!";
-	    header("location:.././about.php?send_email=1");
+	    header("location:../../index.php?send_email=1");
 	} catch(Exception $e){
 	    //Something went bad
 	    echo "Fail - " . $mail->ErrorInfo;
