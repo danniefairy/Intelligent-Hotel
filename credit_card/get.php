@@ -13,7 +13,7 @@
 			{
 				header("location:index.php?wrong=1");
 			}
-			$update="UPDATE `hotel` SET `card_name`=\"$name\",`card_no`=\"$number\",`cvv`=\"$cvv\",`card_exp`=\"$exp\" WHERE `id`=\"$id\"";
+			$update="UPDATE `hotel` SET `card_name`=\"$name\",`card_no`=\"$number\",`cvv`=\"$cvv\",`card_exp`=\"$exp\" WHERE `id`=$id";
 			mysqli_query($connect,$update);
 		}
 		else{
