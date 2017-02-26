@@ -1,10 +1,20 @@
 <?php
+	//是否寄送email
 	if(isset($_GET['send_email']))
 	{
 		echo "<script type=\"text/javascript\">
 			alert(\"Sending sucessfully!\")
 			</script>";
 	}
+
+	//是否綁定信用卡
+	if(isset($_GET['credit_card_binding']))
+	{
+		echo "<script type=\"text/javascript\">
+			alert(\"Binding credit card sucessfully!\")
+			</script>";
+	}
+
 	session_start();
 	$_SESSION['fb_id']=$_GET['fb_id'];
 	$_SESSION['db_id']=$_GET['db_id'];
