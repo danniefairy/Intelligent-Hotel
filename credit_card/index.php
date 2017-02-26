@@ -10,6 +10,8 @@
 </head>
 <body>
 
+
+
 <?php
 	if(isset($_GET['wrong']))
 		echo"<script type=\"text/javascript\">
@@ -23,27 +25,27 @@
   <form id="cc-form" action="get.php">
     <div class="form-item text">
       <div>
-        <label for="name">Name on card</label>
+        <h2>Name on card</h2>
       </div>
       <input type="text" name="Name" id="name" value=""></input>
     </div>
     <div class="row">
       <div class="col-xs-8 form-item text">
         <div>
-          <label for="number">Card number</label>
+          <h2>Card number</h2>
         </div>
         <input type="number" name="Number" id="number" value=""></input>
       </div>
       <div class="col-xs-4 form-item text">
         <div>
-          <label for="password">CVV</label>
+          <h2>CVV</h2>
         </div>
 
         <input type="text" name="CVV" id="cvv" value=""></input>
       </div>
     </div>
 <div class="row expires">
-        <div class="exp-label">Expires</div>
+        <h2>Expires</h2>
   <div class="col-xs-6 form-item">
     <div class="sr-only">
           <label for="month" >Month</label>

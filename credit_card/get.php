@@ -10,5 +10,6 @@
 		{
 			header("location:index.php?wrong=1");
 		}
+		
 	}
 ?>
