@@ -106,6 +106,7 @@
 			</div>
 		</header>
 <!--==============================Content=================================-->
+	<!--之後可用大數據分析來推薦-->
 		<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
 			<div class="container_12">
 				<div class="banners">
@@ -115,7 +116,7 @@
 							<div class="label">
 								<div class="title">Phytoncid</div>
 								<div class="price">from<span>$ 2000</span></div>
-								<a href="#">LEARN MORE</a>
+								<a href="book.php?style=1">LEARN MORE</a>
 							</div>
 						</div>
 					</div>

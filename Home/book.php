@@ -318,17 +318,28 @@
 								<option>5</option>
 							</select>
 						</div>
+
+						<?php
+							if(isset($_GET['style']))
+							{
+								echo "<script type=\"text/javascript\">
+								document.getElementById(<?php echo $_GET['style']; ?>).selected = true;
+								</script>"
+							}
+						?>
+						
+
 						<div class="fl1 fl2">
 							<em>Style</em>
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-								<option>Phytoncid</option>
-								<option>Sunshine</option>
-								<option>Landmark</option>
-								<option>Advanture</option>
-								<option>Water Park</option>
-								<option>Culture</option>
-								<option>Religion</option>
-								<option>Islands</option>
+								<option id="1">Phytoncid</option>
+								<option id="2">Sunshine</option>
+								<option id="3">Landmark</option>
+								<option id="4">Advanture</option>
+								<option id="5">Water Park</option>
+								<option id="6">Culture</option>
+								<option id="7">Religion</option>
+								<option id="8">Islands</option>
 							</select>
 						</div>
 						<div class="clear"></div>
