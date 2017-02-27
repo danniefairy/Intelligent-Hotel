@@ -29,8 +29,7 @@
 		$id=$_SESSION['db_id'];
 		$sql="SELECT `card_name` FROM hotel Where `id`=\"$id\"";
 		$result=mysqli_query($connect,$sql);
-		if(mysqli_fetch_array($result)[0]!=""){
-			echo "1111111";
+		if(mysqli_fetch_array($result)[0]==""){
 			echo "<script type=\"text/javascript\">
 			alert(\"You can see the content after binding your credit card!\")
 			</script>";
