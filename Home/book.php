@@ -317,13 +317,7 @@
 								<option>4</option>
 								<option>5</option>
 							</select>
-							<div class="clear"></div>
-							
-							<script type="text/javascript">
-								var style="\""+"<?php if(isset($_GET['style'])) echo $_GET['style'];?>"+"\"";
-								document.getElementById(style).selected=true;
-							</script>
-														
+							<div class="clear"></div>								
 
 							<em>Style</em>
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
@@ -338,6 +332,12 @@
 							</select>
 						</div>		
 						
+						<!--要放後面-->
+						<script type="text/javascript">
+							var style="<?php if(isset($_GET['style'])) echo $_GET['style'];?>";
+							document.getElementById(style).selected="true";
+						</script>
+
 
 						<div class="clear"></div>
 						<div class="tmTextarea">
