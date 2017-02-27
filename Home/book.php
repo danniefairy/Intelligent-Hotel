@@ -305,6 +305,13 @@
 								<option>4</option>
 								<option>5</option>
 							</select>
+							<div class="clear"></div>
+							<em>Payment</em>
+							<select id="room" name="Rooms" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+								<option></option>
+								<option id="credit_card">Credit Card</option>
+								<option id="paypal">Paypal</option>
+							</select>
 						</div>
 						<div class="fl1 fl2">
 							<em>Children</em>
@@ -317,8 +324,7 @@
 								<option>4</option>
 								<option>5</option>
 							</select>
-							<div class="clear"></div>								
-
+							<div class="clear"></div>
 							<em>Style</em>
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option id="Phytoncid">Phytoncid</option>
@@ -330,17 +336,8 @@
 								<option id="eligion">Religion</option>
 								<option id="Islands">Islands</option>
 							</select>
-						</div>
-						<div class="fl1 fl2">
-							<em>Payment</em>
-							<select id="payment" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-								<option></option>
-								<option id="credit_card" onclick="pay(1)">Credit_Card</option>
-								<option id="paypal" onclick="pay(2)">Paypal</option>
-							</select>
-							<div class="clear"></div>								
-
-							<em>Style</em>
+							<div class="clear"></div>
+							<em>Breakfast</em>
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option id="Phytoncid">Phytoncid</option>
 								<option id="Sunshine">Sunshine</option>
@@ -352,6 +349,7 @@
 								<option id="Islands">Islands</option>
 							</select>
 						</div>
+					
 
 						
 						<script type="text/javascript">
