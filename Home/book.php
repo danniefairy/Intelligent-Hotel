@@ -340,14 +340,12 @@
 							<div class="clear"></div>
 							<em>Breakfast</em>
 							<select id="bf" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-								<option id="Phytoncid">Phytoncid</option>
-								<option id="Sunshine">Sunshine</option>
-								<option id="Landmark">Landmark</option>
-								<option id="Advanture">Advanture</option>
-								<option id="Water_Park">Water Park</option>
-								<option id="Culture">Culture</option>
-								<option id="eligion">Religion</option>
-								<option id="Islands">Islands</option>
+								<option id="bw">Bacon Waffles</option>
+								<option id="seb">Southern Eggs Benedict</option>
+								<option id="tb">Twisted Bacon</option>
+								<option id="lp">Lavender Pancakes</option>
+								<option id="ec">Easy Crepes</option>
+								<option id="bp">Blueberry Pancakes</option>
 							</select>
 						</div>
 					
