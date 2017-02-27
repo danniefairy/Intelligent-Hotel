@@ -320,12 +320,7 @@
 							<div class="clear"></div>
 							<br>
 
-							<?php
-								//if(isset($_GET['style']))
-								//{
-									echo "";
-								//}
-							?>
+
 							<script type="text/javascript">
 								document.getElementById("Sunshine").selected = "true";
 							</script>
