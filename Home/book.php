@@ -336,8 +336,8 @@
 						<?php
 							if(isset($_GET['style'])){
 								echo "<script type=\"text/javascript\">
-								var style=<?php echo $_GET['style']; ?>;
-								document.getElementById(style).selected = true;
+								var style=<?php Prinf($_GET['style']); ?>;
+								
 								</script>";
 							}
 							
