@@ -109,6 +109,11 @@
 		<script src="js/html5shiv.js"></script>
 		<link rel="stylesheet" media="screen" href="css/ie.css">
 		<![endif]-->
+
+
+		<script type="text/javascript">
+								document.getElementById("Sunshine").selected = "true";
+							</script>
 	</head>
 	<body class="page1" id="top">
 <!--==============================header=================================-->
@@ -321,9 +326,7 @@
 							<br>
 
 
-							<script type="text/javascript">
-								document.getElementById("Sunshine").selected = "true";
-							</script>
+							
 
 							<em>Style</em>
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
