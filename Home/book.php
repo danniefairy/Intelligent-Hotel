@@ -334,7 +334,11 @@
 							</select>
 						</div>		
 
-						
+						<?php
+							if(isset($_GET['style'])){
+								echo $_GET['style'];
+							}
+						?>
 
 						<div class="clear"></div>
 						<div class="tmTextarea">
