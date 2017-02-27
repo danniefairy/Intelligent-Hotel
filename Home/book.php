@@ -109,11 +109,6 @@
 		<script src="js/html5shiv.js"></script>
 		<link rel="stylesheet" media="screen" href="css/ie.css">
 		<![endif]-->
-
-
-		<script type="text/javascript">
-			document.getElementById("Sunshine").selected = true;
-		</script>
 	</head>
 	<body class="page1" id="top">
 <!--==============================header=================================-->
@@ -324,8 +319,6 @@
 							</select>
 							<div class="clear"></div>
 							<br>
-
-
 							
 
 							<em>Style</em>
@@ -339,7 +332,12 @@
 								<option id="7">Religion</option>
 								<option id="8">Islands</option>
 							</select>
-						</div>						
+						</div>		
+
+							<script type="text/javascript">
+								document.getElementById("Sunshine").selected = true;
+							</script>
+
 						
 						<div class="clear"></div>
 						<div class="tmTextarea">
