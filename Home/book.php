@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Lobby</title>
+		<title>Book Room</title>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="images/favicon.ico">
@@ -181,44 +181,44 @@
 					<form id="bookingForm">
 						<div class="fl1">
 							<div class="tmInput">
-								<input name="Name" placeHolder="Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+								<input id="name" name="Name" placeHolder="Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
 							</div>
 							<div class="tmInput">
-								<input name="Country" placeHolder="Country:" type="text" data-constraints="@NotEmpty @Required">
+								<input id="country" name="Country" placeHolder="Country:" type="text" data-constraints="@NotEmpty @Required">
 							</div>
 						</div>
 						<div class="fl1">
 							<div class="tmInput">
-								<input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
+								<input id="email" name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
 							</div>
 							<div class="tmInput mr0">
-								<input name="Hotel" placeHolder="Hotel:" type="text" data-constraints="@NotEmpty @Required">
+								<input id="phone" name="Phone" placeHolder="Phone:" type="text" data-constraints="@NotEmpty @Required">
 							</div>
 						</div>
 						<div class="clear"></div>
 						<strong>Check-in</strong>
 						<label class="tmDatepicker">
-							<input type="text" name="Check-in" placeHolder='10/05/2014' data-constraints="@NotEmpty @Required @Date">
+							<input id="in" type="text" name="Check-in" placeHolder='10/05/2014' data-constraints="@NotEmpty @Required @Date">
 						</label>
 						<div class="clear"></div>
 						<strong>Check-out</strong>
 						<label class="tmDatepicker">
-							<input type="text" name="Check-out" placeHolder='20/05/2014' data-constraints="@NotEmpty @Required @Date">
+							<input id="out" type="text" name="Check-out" placeHolder='20/05/2014' data-constraints="@NotEmpty @Required @Date">
 						</label>
 						<div class="clear"></div>
 						<div class="tmRadio">
 							<p>Comfort</p>
-							<input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>
+							<input name="Comfort" type="radio" id="Radio"  value="Cheap" />
 							<span>Cheap</span>
-							<input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-							<span>Standart</span>
-							<input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
+							<input name="Comfort" type="radio" id="Radio"  value="Standard"/>
+							<span>Standard</span>
+							<input name="Comfort" type="radio" id="Radio"  value="Lux" />
 							<span>Lux</span>
 						</div>
 						<div class="clear"></div>
 						<div class="fl1 fl2">
 							<em>Adults</em>
-							<select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+							<select id="adult" name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option>1</option>
 								<option>1</option>
 								<option>2</option>
@@ -228,7 +228,7 @@
 							</select>
 							<div class="clear"></div>
 							<em>Rooms</em>
-							<select name="Rooms" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+							<select id="room" name="Rooms" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option>1</option>
 								<option>1</option>
 								<option>2</option>
@@ -239,7 +239,7 @@
 						</div>
 						<div class="fl1 fl2">
 							<em>Children</em>
-							<select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+							<select id="child" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option>0</option>
 								<option>0</option>
 								<option>1</option>
@@ -251,9 +251,33 @@
 						</div>
 						<div class="clear"></div>
 						<div class="tmTextarea">
-							<textarea name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
+							<textarea id="message" name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
 						</div>
-						<a href="#" class="btn" data-type="submit">Submit</a>
+
+						<!--submit-->
+						<script type="text/javascript">
+							function submit(){
+
+								var name=document.getElementById('name').value;
+								var email=document.getElementById('email').value;
+								var country=document.getElementById('country').value;
+								var phone=document.getElementById('phone').value;
+								var country=document.getElementById('country').value;
+								var check_in=document.getElementById('in').value;
+								var check_out=document.getElementById('out').value;
+								var button=$('input[id="Radio"]:checked').val();;
+								var adult=document.getElementById('adult').value;
+								var room=document.getElementById('room').value;
+								var check_out=document.getElementById('out').value;
+								var message=document.getElementById('message').value;
+								
+								alert(button);
+								//window.location = "./send_email/email_test.php?name="+name+"&email="+email+"&subject="+subject+"&message="+message;
+
+							}
+						</script>
+
+						<a href="#" class="btn" data-type="submit" onclick="submit()">Submit</a>
 					</form>
 					</div>
 				</div>
