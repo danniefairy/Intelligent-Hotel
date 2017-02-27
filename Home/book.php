@@ -10,13 +10,13 @@
 			</script>";
 	}
 
-	//是否剛綁定成功信用卡
+	/*//是否剛綁定成功信用卡
 	if(isset($_GET['credit_card_binding']))
 	{
 		echo "<script type=\"text/javascript\">
 			alert(\"Binding credit card sucessfully!\")
 			</script>";
-	}
+	}*/
 
 	
 	if(!isset($_SESSION['fb_id'])){
@@ -25,14 +25,14 @@
 	}
 	else{
 		//確認是否有綁定信用卡
-		include 'connect_db.php';
+		/*include 'connect_db.php';
 		$id=$_SESSION['db_id'];
 		$sql="SELECT `card_name` FROM hotel Where `id`=\"$id\"";
 		$result=mysqli_query($connect,$sql);
 		if(mysqli_fetch_array($result)[0]==""){
 			header("location:index.php?no_bind=1");
 			die();
-		}
+		}*/
 
 
 	}
