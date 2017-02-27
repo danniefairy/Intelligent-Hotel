@@ -238,15 +238,7 @@
 						</div>
 					</blockquote>
 				</div>
-<script type="text/javascript">
-							function credit(){
-								alert(123);
-								window.location="../credit_card.index.php";
-							} 
-							function paypal(){
-								window.location="https://www.paypal.com/tw/webapps/mpp/home?locale.x=zh_TW";
-							}
-						</script>
+						
 				<!--right-->
 				<!--booking-->
 				<div class="grid_6" style="background:#E6E6FA;">
@@ -321,6 +313,15 @@
 								<option id="paypal" onclick="paypal()">Paypal</option>
 								<option>other</option>
 							</select>
+							<script type="text/javascript">
+							function credit(){
+								alert(123);
+								window.location="../credit_card.index.php";
+							} 
+							function paypal(){
+								window.location="https://www.paypal.com/tw/webapps/mpp/home?locale.x=zh_TW";
+							}
+						</script>
 						</div>
 						<div class="fl1 fl2">
 							<em>Children</em>
