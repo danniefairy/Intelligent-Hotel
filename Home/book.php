@@ -336,13 +336,12 @@
 						<?php
 							if(isset($_GET['style']))
 							{
-								echo $_GET['style'];
+								echo "<script type=\"text/javascript\">
+							document.getElementById($_GET['style']).selected = true;
+						</script>";
 							}
 						?>
-						<script type="text/javascript">
-							var style=<?php Print($_GET['style']);?>;
-							document.getElementById(style).selected = true;
-						</script>
+						
 
 						<div class="clear"></div>
 						<div class="tmTextarea">
