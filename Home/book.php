@@ -34,6 +34,7 @@
 			alert(\"You can see the content after binding your credit card!\")
 			</script>";
 		}
+		echo "123123132";
 	}
 
 	//確認已經訂房
