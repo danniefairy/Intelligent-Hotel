@@ -318,7 +318,7 @@
 								<option>5</option>
 							</select>
 							<div class="clear"></div>
-							<br>
+							
 							
 
 							<em>Style</em>
