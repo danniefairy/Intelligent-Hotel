@@ -307,7 +307,7 @@
 							</select>
 							<div class="clear"></div>
 							<em>Payment</em>
-							<select id="payment" name="Rooms" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+							<select id="payment" name="Rooms" data-constraints="">
 								<option>&nbsp &nbsp &nbsp &nbsp</option>
 								<option id="credit_card" onclick="credit()">Credit Card</option>
 								<option id="paypal" onclick="paypal()">Paypal</option>
