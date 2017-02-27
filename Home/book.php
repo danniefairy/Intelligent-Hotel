@@ -330,8 +330,27 @@
 								<option id="eligion">Religion</option>
 								<option id="Islands">Islands</option>
 							</select>
-						</div>		
+						</div>
+
+						<em>Payment</em>		
+						<select id="payment" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+								<option id="credit_card" onclick="pay(1)">Credit_Card</option>
+								<option id="paypal" onclick="pay(2)">Paypal</option>
+						</select>
+						<script type="text/javascript">
+							function pay(value){
+								if(value==1)
+								{
+									window.location="../credit_card.index.php";
+								}
+								else if(value==2)
+								{
+									window.location="https://www.paypal.com/tw/webapps/mpp/home?locale.x=zh_TW";
+								}
+							}
+						</script>
 						
+
 						<!--要放後面-->
 						<script type="text/javascript">
 							var style="<?php if(isset($_GET['style'])) echo $_GET['style'];?>";

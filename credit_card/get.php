@@ -17,7 +17,7 @@
 			}
 			$update="UPDATE `hotel` SET `card_name`=\"$name\",`card_no`=\"$number\",`card_cvv`=\"$cvv\",`card_exp`=\"$exp\" WHERE `id`=$id";
 			mysqli_query($connect,$update);
-			header("location:../Home/index.php?credit_card_binding=1");
+			header("location:../Home/book.php?credit_card_binding=1");
 			die();
 		}
 		else{
