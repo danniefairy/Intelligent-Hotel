@@ -1,4 +1,7 @@
 <?php
+	session_start();
+	echo $_SESSION['db_id'];
+
 	$name=$_GET['name'];
 	$email=$_GET['email'];
 	$country=$_GET['country'];
