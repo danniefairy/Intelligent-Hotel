@@ -25,7 +25,8 @@
 	else{
 		//確認是否有綁定信用卡
 		include 'connect_db.php';
-		$sql="SELECT `card_name` FROM hotel Where `id`=$_SESSION['fb_id']";
+		$id=$_SESSION['fb_id'];
+		$sql="SELECT `card_name` FROM hotel Where `id`=\"$id\"";
 		$result=mysqli_query($connect,$sql);
 		/*if(mysqli_fetch_array($result)!=""){
 			$_SESSION['card_bind']=1;
