@@ -120,7 +120,7 @@
     overflow: hidden;
     background-color: #fff;
 
-    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+    background: #fff url("") no-repeat 90% 50%;
 }
 
 .select-style select {
