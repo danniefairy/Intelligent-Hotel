@@ -22,18 +22,18 @@
 		echo "<a href=\"../index.php\">Please enter with facebook!</a>";
 		die();
 	}
-	/*else{
+	else{
 		//確認是否有綁定信用卡
 		include 'connect_db.php';
-		$sql="SELECT `card_name` FROM hotel Where `id`=$_SESSION['fb_id']";
+		/*$sql="SELECT `card_name` FROM hotel Where `id`=$_SESSION['fb_id']";
 		$result=mysqli_query($connect,$sql);
 		if(mysqli_fetch_array($result)!=""){
 			$_SESSION['card_bind']=1;
 			echo "<script type=\"text/javascript\">
 			alert(\"Binding credit!\")
 			</script>";
-		}
-	}*/
+		}*/
+	}
 ?>
 
 <!DOCTYPE html>
