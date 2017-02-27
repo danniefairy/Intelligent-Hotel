@@ -25,9 +25,9 @@
 	}
 	else{
 		//確認是否有綁定信用卡
-		if(isset($_SESSION['card_bind']))
+		if(!isset($_SESSION['card_bind']))
 			echo "<script type=\"text/javascript\">
-			alert(\"Bind yes sucessfully!\")
+			alert(\"Bind not sucessfully!\")
 			</script>";
 	}
 
