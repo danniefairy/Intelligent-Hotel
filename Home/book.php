@@ -114,7 +114,7 @@
     padding: 0;
     margin: 0;
     border: 1px solid #ccc;
-    width: 120px;
+    width: 100px;
     border-radius: 3px;
     overflow: hidden;
     background-color: #fff;
