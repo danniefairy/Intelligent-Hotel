@@ -342,6 +342,7 @@
 
 
 						<div class="clear"></div>
+						<br>
 						<div class="tmTextarea">
 							<textarea id="message" name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
 						</div>
