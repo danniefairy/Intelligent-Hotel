@@ -332,12 +332,20 @@
 							</select>
 						</div>
 						<div class="clear"></div>
+						<div class="fl1 fl2">
 						<em>Payment</em>		
 						<select id="payment" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option></option>
 								<option id="credit_card" onclick="pay(1)">Credit_Card</option>
 								<option id="paypal" onclick="pay(2)">Paypal</option>
 						</select>
+						<div class="clear"></div>
+						<select id="payment" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+								<option></option>
+								<option id="credit_card" onclick="pay(1)">Credit_Card</option>
+								<option id="paypal" onclick="pay(2)">Paypal</option>
+						</select>
+						</div>
 						<script type="text/javascript">
 							function pay(value){
 								if(value==1)
