@@ -39,6 +39,13 @@
 			alert(\"Book the room sucessfully!\")
 			</script>";
 	}
+
+	//沒綁定信用卡從book、room&tour來
+	if(isset($_GET['no_bind'])){
+		echo "<script type=\"text/javascript\">
+		alert(\"You can see the content after binding your credit card!\")
+		</script>";
+	}
 ?>
 
 <!DOCTYPE html>
