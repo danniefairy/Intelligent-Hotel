@@ -1,4 +1,6 @@
 <?php
+	session_start();
+
 	//是否寄送email
 	if(isset($_GET['send_email']))
 	{
@@ -7,7 +9,7 @@
 			</script>";
 	}
 
-	//是否綁定信用卡
+	//是否剛綁定成功信用卡
 	if(isset($_GET['credit_card_binding']))
 	{
 		echo "<script type=\"text/javascript\">
@@ -15,10 +17,22 @@
 			</script>";
 	}
 
-	session_start();
+	
 	if(!isset($_SESSION['fb_id'])){
 		echo "<a href=\"../index.php\">Please enter with facebook!</a>";
 		die();
+	}
+	else{
+		//確認是否有綁定信用卡
+		include 'connect_db.php';
+		$sql="SELECT `card_name` FROM hotel Where `id`=$_SESSION['fb_id']";
+		$result=mysqli_query($connect,$sql);
+		if(mysqli_fetch_array($result)!=""){
+			$_SESSION['card_bind']=1;
+			echo "<script type=\"text/javascript\">
+			alert(\"Binding credit!\")
+			</script>";
+		}
 	}
 ?>
 
