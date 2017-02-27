@@ -109,6 +109,35 @@
 		<script src="js/html5shiv.js"></script>
 		<link rel="stylesheet" media="screen" href="css/ie.css">
 		<![endif]-->
+		<style type="text/css">
+			.select-style {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+
+    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+		</style>
 	</head>
 	<body class="page1" id="top">
 <!--==============================header=================================-->
@@ -307,12 +336,14 @@
 							</select>
 							<div class="clear"></div>
 							<em>Payment</em>
-							<select id="payment" name="Rooms"  data-class="tmSelect tmSelect2" data-constraints="">
+							<div class="select-style">
+							<select id="payment">
 								<option>&nbsp &nbsp &nbsp &nbsp</option>
 								<option id="credit_card" onclick="credit()">Credit Card</option>
 								<option id="paypal" onclick="paypal()">Paypal</option>
 								<option>other</option>
 							</select>
+							</div>
 							<script type="text/javascript">
 							function credit(){
 								alert(123);
