@@ -326,7 +326,7 @@
 							//}
 						?>
 						<script type=\"text/javascript\">
-								document.getElementById(\"Sunshine\").selected = true;
+								document.getElementById("Sunshine").selected = true;
 								</script>
 
 						<div class="fl1 fl2">
