@@ -333,7 +333,12 @@
 								<option id="8">Islands</option>
 							</select>
 						</div>		
-
+						<?php
+							if(isset($_GET['style']))
+							{
+								echo $_GET['style'];
+							}
+						?>
 						
 						<div class="clear"></div>
 						<div class="tmTextarea">
