@@ -337,7 +337,7 @@
 							var style="<?php if(isset($_GET['style'])) echo $_GET['style'];?>";
 							var comfort="<?php if(isset($_GET['comfort'])) echo $_GET['comfort'];?>";
 							document.getElementById(style).selected="true";
-							document.getElementById(comfort).selected="true";
+							document.getElementById(comfort).checked="true";
 						</script>
 
 

@@ -126,7 +126,7 @@
 							<div class="label">
 								<div class="title">Sunshine</div>
 								<div class="price">from<span>$ 1800</span></div>
-								<a href="book.php?style=Sunshine">LEARN MORE</a>
+								<a href="book.php?style=Sunshine&comfort=Cheap">LEARN MORE</a>
 							</div>
 						</div>
 					</div>
