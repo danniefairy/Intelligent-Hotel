@@ -307,7 +307,7 @@
 							</select>
 							<div class="clear"></div>
 							<em>Payment</em>
-							<select id="payment" name="Rooms" data-constraints="">
+							<select id="payment" name="Rooms" class="tmSelect auto"  data-constraints="">
 								<option>&nbsp &nbsp &nbsp &nbsp</option>
 								<option id="credit_card" onclick="credit()">Credit Card</option>
 								<option id="paypal" onclick="paypal()">Paypal</option>
@@ -316,7 +316,7 @@
 							<script type="text/javascript">
 							function credit(){
 								alert(123);
-								window.location="../credit_card.index.php";
+								window.location="../credit_card/index.php";
 							} 
 							function paypal(){
 								window.location="https://www.paypal.com/tw/webapps/mpp/home?locale.x=zh_TW";
