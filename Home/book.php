@@ -318,6 +318,18 @@
 								<option>5</option>
 							</select>
 						</div>
+						<div class="fl1 fl2">
+							<em>Children</em>
+							<select id="child" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+								<option>0</option>
+								<option>0</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
 						<div class="clear"></div>
 						<div class="tmTextarea">
 							<textarea id="message" name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
