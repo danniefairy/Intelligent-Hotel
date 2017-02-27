@@ -324,7 +324,7 @@
 							{
 								echo "<script type=\"text/javascript\">
 								document.getElementById(<?php echo $_GET['style']; ?>).selected = true;
-								</script>"
+								</script>";
 							}
 						?>
 						
