@@ -333,10 +333,12 @@
 								<option id="8">Islands</option>
 							</select>
 						</div>		
-
-							<script type="text/javascript">
-								document.getElementById("Sunshine").selected = true;
-							</script>
+						<?php
+							echo "<script type=\"text/javascript\">
+								document.getElementById(\"Sunshine\").selected = true;
+							</script>";
+						?>
+							
 
 						
 						<div class="clear"></div>
