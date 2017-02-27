@@ -336,12 +336,14 @@
 						<?php
 							if(isset($_GET['style']))
 							{
-								echo 11111111111;
 								echo $_GET['style'];
 							}
-							echo 222222222222222222;
 						?>
-						
+						<script type="text/javascript">
+							var style=<?php echo $_GET['style'];?>;
+							document.getElementById(style).selected = true;
+						</script>
+
 						<div class="clear"></div>
 						<div class="tmTextarea">
 							<textarea id="message" name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
