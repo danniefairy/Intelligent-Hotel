@@ -22,7 +22,7 @@
 		echo "<a href=\"../index.php\">Please enter with facebook!</a>";
 		die();
 	}
-	else{
+	/*else{
 		//確認是否有綁定信用卡
 		include 'connect_db.php';
 		$sql="SELECT `card_name` FROM hotel Where `id`=$_SESSION['fb_id']";
@@ -32,7 +32,7 @@
 			echo "<script type=\"text/javascript\">
 			alert(\"Binding credit!\")
 			</script>";
-		}
+		}*/
 	}
 ?>
 
