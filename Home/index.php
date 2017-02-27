@@ -32,8 +32,8 @@
 			echo "<script type=\"text/javascript\">
 			alert(\"Binding credit!\")
 			</script>";
-		}*/
-	}
+		}
+	}*/
 ?>
 
 <!DOCTYPE html>
