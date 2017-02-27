@@ -279,9 +279,9 @@
 							<input id="Cheap" name="Comfort" type="radio" id="Radio"  value="Cheap" />
 							<span>Cheap</span>
 							<input id="Standard" name="Comfort" type="radio" id="Radio"  value="Standard"/>
-							<span>Standard</span>
+							<span>Standard(+500)</span>
 							<input id="Lux" name="Comfort" type="radio" id="Radio"  value="Lux" />
-							<span>Lux</span>
+							<span>Lux(+1000)</span>
 						</div>
 						<div class="clear"></div>
 						<br>
