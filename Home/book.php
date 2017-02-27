@@ -33,6 +33,8 @@
 			echo "<script type=\"text/javascript\">
 			alert(\"You can see the content after binding your credit card!\")
 			</script>";
+			header("location:index.php");
+			die();
 		}
 
 	}

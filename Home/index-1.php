@@ -1,8 +1,49 @@
+
 <?php
 	session_start();
+
+	//是否寄送email
+	if(isset($_GET['send_email']))
+	{
+		echo "<script type=\"text/javascript\">
+			alert(\"Sending sucessfully!\")
+			</script>";
+	}
+
+	//是否剛綁定成功信用卡
+	if(isset($_GET['credit_card_binding']))
+	{
+		echo "<script type=\"text/javascript\">
+			alert(\"Binding credit card sucessfully!\")
+			</script>";
+	}
+
+	
 	if(!isset($_SESSION['fb_id'])){
 		echo "<a href=\"../index.php\">Please enter with facebook!</a>";
 		die();
+	}
+	else{
+		//確認是否有綁定信用卡
+		include 'connect_db.php';
+		$id=$_SESSION['db_id'];
+		$sql="SELECT `card_name` FROM hotel Where `id`=\"$id\"";
+		$result=mysqli_query($connect,$sql);
+		if(mysqli_fetch_array($result)[0]==""){
+			echo "<script type=\"text/javascript\">
+			alert(\"You can see the content after binding your credit card!\")
+			</script>";
+			header("location:index.php");
+			die();
+		}
+
+	}
+
+	//確認已經訂房
+	if(isset($_GET['book'])){
+		echo "<script type=\"text/javascript\">
+			alert(\"Book the room sucessfully!\")
+			</script>";
 	}
 ?>
 <!DOCTYPE html>
