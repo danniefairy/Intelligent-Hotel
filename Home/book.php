@@ -113,8 +113,9 @@
 			.select-style {
     padding: 0;
     margin: 0;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    width: 100px;
+    width: 95px;
     border-radius: 3px;
     overflow: hidden;
     background-color: #fff;
