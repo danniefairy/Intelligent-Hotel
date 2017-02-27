@@ -223,8 +223,8 @@
 					<h3>Recommendation</h3>
 					<img src="images/hotel_room_1.jpg" style="width:300px;" alt="" >
 					<div class="extra_wrapper">
-						<p>This room is the most popular room in our hotel.</p> 
-						<p>It is suitable for a family with two adults and two child and its type is standard level so this room is affordable for every family.</p>
+						<p>Our rooms are clean, warm and comfortable.</p> 
+						<p>Those are suitable for any scale of family, whether you are big family with 10 people or nuclear family, we can provide the best experience of service make every guest feel at home.</p>
 					</div>
 					<h4>More Option</h4>
 					<blockquote class="bq1">
