@@ -319,15 +319,16 @@
 							</select>
 						</div>
 						<div class="fl1 fl2">
-							<em>Children</em>
-							<select id="child" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-								<option>0</option>
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
+							<em>Style</em>
+							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+								<option>Phytoncid</option>
+								<option>Sunshine</option>
+								<option>Landmark</option>
+								<option>Advanture</option>
+								<option>Water Park</option>
+								<option>Culture</option>
+								<option>Religion</option>
+								<option>Islands</option>
 							</select>
 						</div>
 						<div class="clear"></div>
@@ -349,10 +350,11 @@
 								var adult=document.getElementById('adult').value;
 								var child=document.getElementById('child').value;
 								var room=document.getElementById('room').value;
+								var style=document.getElementById('style').value;
 								var message=document.getElementById('message').value;
 								
 								//alert(button);
-								window.location = "./bnb/book_info.php?name="+name+"&email="+email+"&country="+country+"&phone="+phone+"&check_in="+check_in+"&check_out="+check_out+"&button="+button+"&person="+adult+"/"+child+"&room="+room+"&message="+message;
+								window.location = "./bnb/book_info.php?name="+name+"&email="+email+"&country="+country+"&phone="+phone+"&check_in="+check_in+"&check_out="+check_out+"&button="+button+"&person="+adult+"/"+child+"&room="+room+"&style="+style+"&message="+message;
 
 							}
 						</script>

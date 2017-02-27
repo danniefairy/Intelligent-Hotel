@@ -11,12 +11,13 @@
 	$button=$_GET['button'];
 	$person=$_GET['person'];
 	$room=$_GET['room'];
+	$style=$_GET['style'];
 	$message=$_GET['message'];
 
-	echo $name."<br>".$email."<br>".$country."<br>".$phone."<br>".$check_in."<br>".$check_out."<br>".$button."<br>".$person."<br>".$room."<br>".$message."<br>";
+	//echo $name."<br>".$email."<br>".$country."<br>".$phone."<br>".$check_in."<br>".$check_out."<br>".$button."<br>".$person."<br>".$room."<br>".$message."<br>";
 
 	include 'connect_db.php';
-	$insert="INSERT INTO `book` (`db_id`,`name`,`email`,`country`,`phone`,`check_in`,`check_out`,`comfort`,`person`,`room`,`message`) VALUES (\"$db_id\",\"$name\",\"$email\",\"$country\",\"$phone\",\"$check_in\",\"$check_out\",\"$button\",\"$person\",\"$room\",\"$message\")";
+	$insert="INSERT INTO `book` (`db_id`,`name`,`email`,`country`,`phone`,`check_in`,`check_out`,`comfort`,`person`,`room`,`style`,`message`) VALUES (\"$db_id\",\"$name\",\"$email\",\"$country\",\"$phone\",\"$check_in\",\"$check_out\",\"$button\",\"$person\",\"$room\",\"$style\",\"$message\")";
 	mysqli_query($connect,$insert);
 	echo "<br>".mysqli_error($connect);
 	header("location:../index.php?book=1");
