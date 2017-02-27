@@ -298,7 +298,7 @@
 								var message=document.getElementById('message').value;
 								
 								//alert(button);
-								window.location = "./bnb/book_info.php?name="+name+"&email="+email+"&country="+country+"&phone="+phone+"&check_in="+check_in+"&check_out="+check_out+"&button"+button+"&person="+adult+"/"+child+"&room="+room+"&message="+message;
+								window.location = "./bnb/book_info.php?name="+name+"&email="+email+"&country="+country+"&phone="+phone+"&check_in="+check_in+"&check_out="+check_out+"&button="+button+"&person="+adult+"/"+child+"&room="+room+"&message="+message;
 
 							}
 						</script>
