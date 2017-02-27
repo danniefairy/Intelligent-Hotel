@@ -319,7 +319,14 @@
 							</select>
 						</div>
 
-
+						<?php
+							//if(isset($_GET['style']))
+							//{
+								echo "<script type=\"text/javascript\">
+								document.getElementById(\"Phytoncid\").selected = true;
+								</script>";
+							//}
+						?>
 						
 
 						<div class="fl1 fl2">
