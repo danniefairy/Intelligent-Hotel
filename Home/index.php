@@ -32,7 +32,7 @@
 			$_SESSION['card_bind']=1;
 		}
 	}
-	
+
 	//確認已經訂房
 	if(isset($_GET['book'])){
 		echo "<script type=\"text/javascript\">
@@ -153,7 +153,7 @@
 							
 							<span></span>
 						</div>
-						<a href="#">LEARN MORE</a>
+						<a href="book.php">LEARN MORE</a>
 					</div>
 				</div>
 				<div data-src="images/slide2.jpg">
