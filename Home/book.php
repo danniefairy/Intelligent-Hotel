@@ -321,7 +321,7 @@
 							
 							<script type="text/javascript">
 								var style="<?php if(isset($_GET['style'])) echo $_GET['style'];?>";
-								alert(style);
+								document.getElementById(style).selected=true;
 							</script>
 														
 
