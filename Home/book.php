@@ -334,7 +334,7 @@
 								<option id="Advanture">Advanture</option>
 								<option id="Water_Park">Water Park</option>
 								<option id="Culture">Culture</option>
-								<option id="eligion">Religion</option>
+								<option id="Religion">Religion</option>
 								<option id="Islands">Islands</option>
 							</select>
 							<div class="clear"></div>
