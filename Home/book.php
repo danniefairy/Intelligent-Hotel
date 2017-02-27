@@ -178,20 +178,16 @@
 					<h3>Recommendation</h3>
 					<img src="images/hotel_room_1.jpg" style="width:300px;" alt="" >
 					<div class="extra_wrapper">
-						<p>Lorem ipsum dolor sit ere amet, consectetur ipiscin.</p>
-						In mollis erat mattis neque facilisis, sit ametiol
+						<p>This room is the most popular room in our hotel.</p> 
+						<p>It is suitable for a family with two adults and two child and its type is standard level so this room is affordable for every family.</p>
 					</div>
-					<div class="clear cl1"></div>
-					<p>Find the detailed description of this <span class="col1"><a href="http://blog.templatemonster.com/free-website-templates/" rel="dofollow">freebie</a></span> at TemplateMonster blog.</p>
-					<p><span class="col1"><a href="http://www.templatemonster.com/category/travel-website-templates/" rel="nofollow">Travel Website Templates</a></span> category offers you a variety of designs that are perfect for travel sphere of business.</p>
-					Proin pharetra luctus diam, a scelerisque eros convallis
-					<h4>Clients’ Quotes</h4>
+					<h4>More Option</h4>
 					<blockquote class="bq1">
 						<img src="images/page1_img2.jpg" alt="" class="img_inner noresize fleft">
 						<div class="extra_wrapper">
-							<p>Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh. </p>
+							<p>There are lots of room for various preference, please click "More" for further information! </p>
 							<div class="alright">
-								<div class="col1">Miranda Brown</div>
+								
 								<a href="index-1.php" class="btn">More</a>
 							</div>
 						</div>
