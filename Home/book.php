@@ -334,9 +334,12 @@
 							</select>
 						</div>		
 						<?php
-							echo "<script type=\"text/javascript\">
-								document.getElementById(\"Sunshine\").selected = true;
-							</script>";
+							if(isset($_GET['style'])){
+								echo "<script type=\"text/javascript\">
+								document.getElementById($_GET['style']).selected = true;
+								</script>";
+							}
+							
 						?>
 							
 
