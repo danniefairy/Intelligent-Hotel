@@ -323,7 +323,7 @@
 							//if(isset($_GET['style']))
 							//{
 								echo "<script type=\"text/javascript\">
-								document.getElementById(\"Phytoncid\").selected = true;
+								document.getElementById(\"Sunshine\").selected = true;
 								</script>";
 							//}
 						?>
@@ -333,7 +333,7 @@
 							<em>Style</em>
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option id="Phytoncid">Phytoncid</option>
-								<option id="2">Sunshine</option>
+								<option id="Sunshine">Sunshine</option>
 								<option id="3">Landmark</option>
 								<option id="4">Advanture</option>
 								<option id="5">Water Park</option>
