@@ -28,6 +28,7 @@
 		$id=$_SESSION['fb_id'];
 		$sql="SELECT `card_name` FROM hotel Where `id`=\"$id\"";
 		$result=mysqli_query($connect,$sql);
+		echo "enter here~~~~~~~~~~~~~~~~~~~~~~~~~";
 		/*if(mysqli_fetch_array($result)[0]!=""){
 			$_SESSION['card_bind']=1;
 			echo "<script type=\"text/javascript\">
