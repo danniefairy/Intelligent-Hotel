@@ -333,15 +333,6 @@
 								<option id="8">Islands</option>
 							</select>
 						</div>		
-
-						<?php
-							if(isset($_GET['style'])){
-								echo $_GET['style'];
-								echo "<script type=\"text/javascript\">
-							alert($_GET['style']);
-						</script>";
-							}
-						?>
 						
 
 						<div class="clear"></div>
