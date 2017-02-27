@@ -228,6 +228,7 @@
 						</label>
 						<div class="clear"></div>
 						<div class="tmRadio">
+							<br>
 							<p>&nbsp Comfort</p>
 							&nbsp&nbsp&nbsp
 							<input name="Comfort" type="radio" id="Radio"  value="Cheap" />
@@ -238,6 +239,7 @@
 							<span>Lux</span>
 						</div>
 						<div class="clear"></div>
+						<br>
 						<div class="fl1 fl2">
 							<em>Adults</em>
 							<select id="adult" name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
@@ -275,7 +277,7 @@
 						<div class="tmTextarea">
 							<textarea id="message" name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
 						</div>
-
+						<br>
 						<!--submit-->
 						<script type="text/javascript">
 							function submit(){
