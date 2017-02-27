@@ -113,8 +113,8 @@
 						<div class="banner">
 							<img src="images/page2_img1.jpg" alt="">
 							<div class="label">
-								<div class="title">NEW ZEALAND</div>
-								<div class="price">from<span>$ 1.200</span></div>
+								<div class="title">Phytoncid</div>
+								<div class="price">from<span>$ 2000</span></div>
 								<a href="#">LEARN MORE</a>
 							</div>
 						</div>
@@ -123,8 +123,8 @@
 						<div class="banner">
 							<img src="images/page2_img2.jpg" alt="">
 							<div class="label">
-								<div class="title">GOA</div>
-								<div class="price">from<span>$ 1.500</span></div>
+								<div class="title">Sunshine</div>
+								<div class="price">from<span>$ 1800</span></div>
 								<a href="#">LEARN MORE</a>
 							</div>
 						</div>
@@ -133,8 +133,8 @@
 						<div class="banner">
 							<img src="images/page2_img3.jpg" alt="">
 							<div class="label">
-								<div class="title">FRANCE</div>
-								<div class="price">from<span>$ 1.600</span></div>
+								<div class="title">Landmark</div>
+								<div class="price">from<span>$ 2500</span></div>
 								<a href="#">LEARN MORE</a>
 							</div>
 						</div>
