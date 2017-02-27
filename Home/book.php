@@ -276,11 +276,11 @@
 							<br>
 							<p>&nbsp Comfort</p>
 							&nbsp&nbsp&nbsp
-							<input name="Comfort" type="radio" id="Radio"  value="Cheap" />
+							<input id="Cheap" name="Comfort" type="radio" id="Radio"  value="Cheap" />
 							<span>Cheap</span>
-							<input name="Comfort" type="radio" id="Radio"  value="Standard"/>
+							<input id="Standard" name="Comfort" type="radio" id="Radio"  value="Standard"/>
 							<span>Standard</span>
-							<input name="Comfort" type="radio" id="Radio"  value="Lux" />
+							<input id="Lux" name="Comfort" type="radio" id="Radio"  value="Lux" />
 							<span>Lux</span>
 						</div>
 						<div class="clear"></div>
@@ -335,7 +335,9 @@
 						<!--要放後面-->
 						<script type="text/javascript">
 							var style="<?php if(isset($_GET['style'])) echo $_GET['style'];?>";
+							var comfort="<?php if(isset($_GET['comfort'])) echo $_GET['comfort'];?>";
 							document.getElementById(style).selected="true";
+							document.getElementById(comfort).selected="true";
 						</script>
 
 

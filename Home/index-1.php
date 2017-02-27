@@ -116,7 +116,7 @@
 							<div class="label">
 								<div class="title">Phytoncid</div>
 								<div class="price">from<span>$ 2000</span></div>
-								<a href="book.php?style=Phytoncid">LEARN MORE</a>
+								<a href="book.php?style=Phytoncid&comfort=Cheap">LEARN MORE</a>
 							</div>
 						</div>
 					</div>
