@@ -319,7 +319,11 @@
 							</select>
 							<div class="clear"></div>
 							
-							
+							<script type="text/javascript">
+								var style="<?php echo $_GET['style'];?>";
+								alert(x);
+							</script>
+														
 
 							<em>Style</em>
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
