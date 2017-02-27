@@ -335,7 +335,10 @@
 						</div>		
 						
 
-							
+						<script type=\"text/javascript\">
+								var style=<?php Prinf($_GET['style']); ?>;
+								document.getElementById(style).selected = true;
+								</script>
 
 						
 						<div class="clear"></div>
