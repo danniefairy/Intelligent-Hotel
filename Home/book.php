@@ -331,7 +331,8 @@
 								<option id="Islands">Islands</option>
 							</select>
 						</div>
-						<div class="clear"></div>
+						
+
 						<div class="fl1 fl2">
 						<em>Payment</em>		
 						<select id="payment" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
