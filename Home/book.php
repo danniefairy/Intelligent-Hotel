@@ -323,8 +323,8 @@
 
 							<em>Style</em>
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-								<option id="Phytoncid">Phytoncid</option>
-								<option id="Sunshine">Sunshine</option>
+								<option id="1">Phytoncid</option>
+								<option id="2">Sunshine</option>
 								<option id="3">Landmark</option>
 								<option id="4">Advanture</option>
 								<option id="5">Water Park</option>
