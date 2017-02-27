@@ -327,7 +327,7 @@
 								//}
 							?>
 							<script type="text/javascript">
-								document.getElementById(Sunshine).selected = true;
+								document.getElementById("Sunshine").selected = true;
 							</script>
 
 							<em>Style</em>
