@@ -116,7 +116,7 @@
 							<div class="label">
 								<div class="title">Phytoncid</div>
 								<div class="price">from<span>$ 2000</span></div>
-								<a href="book.php?style=Phytoncid&comfort=Cheap">LEARN MORE</a>
+								<a href="book.php?style=Phytoncid&comfort=Standard">LEARN MORE</a>
 							</div>
 						</div>
 					</div>
@@ -136,7 +136,7 @@
 							<div class="label">
 								<div class="title">Landmark</div>
 								<div class="price">from<span>$ 2500</span></div>
-								<a href="book.php?style=Landmark">LEARN MORE</a>
+								<a href="book.php?style=Landmark&comfort=Standard">LEARN MORE</a>
 							</div>
 						</div>
 					</div>
@@ -147,7 +147,7 @@
 							<div class="label">
 								<div class="title">Advanture</div>
 								<div class="price">from<span>$ 2000</span></div>
-								<a href="book.php?style=Advanture">LEARN MORE</a>
+								<a href="book.php?style=Advanture&comfort=Standard">LEARN MORE</a>
 							</div>
 						</div>
 					</div>
@@ -157,7 +157,7 @@
 							<div class="label">
 								<div class="title">Water Park</div>
 								<div class="price">from<span>$ 1800</span></div>
-								<a href="book.php?style=Water_Park">LEARN MORE</a>
+								<a href="book.php?style=Water_Park&comfort=Cheap">LEARN MORE</a>
 							</div>
 						</div>
 					</div>
@@ -167,7 +167,7 @@
 							<div class="label">
 								<div class="title">Culture</div>
 								<div class="price">from<span>$ 3000</span></div>
-								<a href="book.php?style=Culture">LEARN MORE</a>
+								<a href="book.php?style=Culture&comfort=Lux">LEARN MORE</a>
 							</div>
 						</div>
 					</div>
@@ -178,7 +178,7 @@
 							<div class="label">
 								<div class="title">Religion</div>
 								<div class="price">from<span>$ 2600</span></div>
-								<a href="book.php?style=Religion">LEARN MORE</a>
+								<a href="book.php?style=Religion&comfort=Lux">LEARN MORE</a>
 							</div>
 						</div>
 					</div>
@@ -188,7 +188,7 @@
 							<div class="label">
 								<div class="title">Islands</div>
 								<div class="price">from<span>$ 2800</span></div>
-								<a href="book.php?style=Islands">LEARN MORE</a>
+								<a href="book.php?style=Islands&comfort=Lux">LEARN MORE</a>
 							</div>
 						</div>
 					</div>
