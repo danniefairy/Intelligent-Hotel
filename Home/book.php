@@ -323,11 +323,12 @@
 							<?php
 								//if(isset($_GET['style']))
 								//{
-									echo "<script type=\"text/javascript\">
-									document.getElementById(\"Sunshine\").selected = true;
-									</script>";
+									echo "";
 								//}
 							?>
+							<script type="text/javascript">
+								document.getElementById(Sunshine).selected = true;
+							</script>
 
 							<em>Style</em>
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
