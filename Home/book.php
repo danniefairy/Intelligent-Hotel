@@ -309,8 +309,8 @@
 							<em>Payment</em>
 							<select id="payment" name="Rooms" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option>&nbsp &nbsp &nbsp &nbsp</option>
-								<option id="credit_card" onclick="pay(1)">Credit Card</option>
-								<option id="paypal" onclick="pay(2)">Paypal</option>
+								<option id="credit_card" onclick="credit()">Credit Card</option>
+								<option id="paypal" onclick="paypal()">Paypal</option>
 								<option>other</option>
 							</select>
 						</div>
@@ -354,15 +354,11 @@
 
 						
 						<script type="text/javascript">
-							function pay(value){
-								if(value==1)
-								{
-									window.location="../credit_card.index.php";
-								}
-								else if(value==2)
-								{
-									window.location="https://www.paypal.com/tw/webapps/mpp/home?locale.x=zh_TW";
-								}
+							function credit(){
+								window.location="../credit_card.index.php";
+							} 
+							function paypal(){
+								window.location="https://www.paypal.com/tw/webapps/mpp/home?locale.x=zh_TW";
 							}
 						</script>
 						
