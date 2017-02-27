@@ -333,13 +333,6 @@
 								<option id="8">Islands</option>
 							</select>
 						</div>		
-						
-
-						<script type="text/javascript">
-								var style="<?php Prinf($_GET['style']); ?>";
-								//document.getElementById(style).selected = true;
-								alert(style);
-								</script>
 
 						
 						<div class="clear"></div>
