@@ -337,6 +337,7 @@
 							<div class="clear"></div>
 							<em>Payment</em>
 							<div class="select-style">
+							&nbsp &nbsp
 							<select id="payment">
 								<option>&nbsp &nbsp &nbsp &nbsp</option>
 								<option id="credit_card" onclick="credit()">Credit Card</option>
@@ -404,7 +405,7 @@
 
 
 						<div class="clear"></div>
-						<br>
+
 						<div class="tmTextarea">
 							<textarea id="message" name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
 						</div>
