@@ -293,12 +293,12 @@
 								var check_out=document.getElementById('out').value;
 								var button=$('input[id="Radio"]:checked').val();;
 								var adult=document.getElementById('adult').value;
+								var child=document.getElementById('child').value;
 								var room=document.getElementById('room').value;
-								var check_out=document.getElementById('out').value;
 								var message=document.getElementById('message').value;
 								
-								alert(button);
-								//window.location = "./send_email/email_test.php?name="+name+"&email="+email+"&subject="+subject+"&message="+message;
+								//alert(button);
+								window.location = "./bnb/book_info.php?name="+name+"&email="+email+"&counrty="+country+"&phone="+phone+"&check_in="+check_in+"&check_out="+check_out+"&button"+button+"&person="+adult+"/"+child+"&room="+room+"&message="+message;
 
 							}
 						</script>
