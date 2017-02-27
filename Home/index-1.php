@@ -144,7 +144,7 @@
 						<div class="banner">
 							<img src="images/page2_img4.jpg" alt="">
 							<div class="label">
-								<div class="title">CANADA</div>
+								<div class="title">Advanture</div>
 								<div class="price">from<span>$ 2000</span></div>
 								<a href="#">LEARN MORE</a>
 							</div>
@@ -154,8 +154,8 @@
 						<div class="banner">
 							<img src="images/page2_img5.jpg" alt="">
 							<div class="label">
-								<div class="title">TURKEY</div>
-								<div class="price">from<span>$ 1.500</span></div>
+								<div class="title">Water Park</div>
+								<div class="price">from<span>$ 1800</span></div>
 								<a href="#">LEARN MORE</a>
 							</div>
 						</div>
@@ -164,8 +164,8 @@
 						<div class="banner">
 							<img src="images/page2_img6.jpg" alt="">
 							<div class="label">
-								<div class="title">EGYPT</div>
-								<div class="price">from<span>$ 1.500</span></div>
+								<div class="title">Culture</div>
+								<div class="price">from<span>$ 3000</span></div>
 								<a href="#">LEARN MORE</a>
 							</div>
 						</div>
@@ -175,8 +175,8 @@
 						<div class="banner">
 							<img src="images/page2_img7.jpg" alt="">
 							<div class="label">
-								<div class="title">JAPAN</div>
-								<div class="price">from<span>$ 1000</span></div>
+								<div class="title">Religion</div>
+								<div class="price">from<span>$ 2600</span></div>
 								<a href="#">LEARN MORE</a>
 							</div>
 						</div>
@@ -185,8 +185,8 @@
 						<div class="banner">
 							<img src="images/page2_img8.jpg" alt="">
 							<div class="label">
-								<div class="title">BRAZIL</div>
-								<div class="price">from<span>$ 1.700</span></div>
+								<div class="title">Islands</div>
+								<div class="price">from<span>$ 2800</span></div>
 								<a href="#">LEARN MORE</a>
 							</div>
 						</div>
