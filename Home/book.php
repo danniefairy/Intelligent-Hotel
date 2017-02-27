@@ -318,6 +318,7 @@
 								<option>5</option>
 							</select>
 							<div class="clear"></div>
+							<br>
 							<em>Style</em>
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option id="Phytoncid">Phytoncid</option>
