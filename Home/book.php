@@ -320,7 +320,7 @@
 							<div class="clear"></div>
 							
 							<script type="text/javascript">
-								var style="<?php if(isset($_GET['style'])) echo $_GET['style'];?>";
+								var style="\""+"<?php if(isset($_GET['style'])) echo $_GET['style'];?>"+"\"";
 								document.getElementById(style).selected=true;
 							</script>
 														
