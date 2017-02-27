@@ -173,7 +173,32 @@
 				<div class="clear"></div>
 				<!--safe place connect db-->
 				
+				<!--right-->
+				<div class="grid_5 prefix_1" style="background:	#E6E6FA;">
+					<h3>Recommendation</h3>
+					<img src="images/hotel_room_1.jpg" style="width:300px;" alt="" >
+					<div class="extra_wrapper">
+						<p>Lorem ipsum dolor sit ere amet, consectetur ipiscin.</p>
+						In mollis erat mattis neque facilisis, sit ametiol
+					</div>
+					<div class="clear cl1"></div>
+					<p>Find the detailed description of this <span class="col1"><a href="http://blog.templatemonster.com/free-website-templates/" rel="dofollow">freebie</a></span> at TemplateMonster blog.</p>
+					<p><span class="col1"><a href="http://www.templatemonster.com/category/travel-website-templates/" rel="nofollow">Travel Website Templates</a></span> category offers you a variety of designs that are perfect for travel sphere of business.</p>
+					Proin pharetra luctus diam, a scelerisque eros convallis
+					<h4>Clients’ Quotes</h4>
+					<blockquote class="bq1">
+						<img src="images/page1_img2.jpg" alt="" class="img_inner noresize fleft">
+						<div class="extra_wrapper">
+							<p>Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh. </p>
+							<div class="alright">
+								<div class="col1">Miranda Brown</div>
+								<a href="#" class="btn">More</a>
+							</div>
+						</div>
+					</blockquote>
+				</div>
 
+				<!--right-->
 				<!--booking-->
 				<div class="grid_6" style="background:#E6E6FA;">
 				<div style="padding:0px 0px; ">
@@ -196,18 +221,19 @@
 							</div>
 						</div>
 						<div class="clear"></div>
-						<strong>Check-in</strong>
+						<strong>&nbsp Check-in</strong>
 						<label class="tmDatepicker">
 							<input id="in" type="text" name="Check-in" placeHolder='10/05/2014' data-constraints="@NotEmpty @Required @Date">
 						</label>
 						<div class="clear"></div>
-						<strong>Check-out</strong>
+						<strong>&nbsp Check-out</strong>
 						<label class="tmDatepicker">
 							<input id="out" type="text" name="Check-out" placeHolder='20/05/2014' data-constraints="@NotEmpty @Required @Date">
 						</label>
 						<div class="clear"></div>
 						<div class="tmRadio">
-							<p>Comfort</p>
+							<p>&nbsp Comfort</p>
+							&nbsp&nbsp&nbsp
 							<input name="Comfort" type="radio" id="Radio"  value="Cheap" />
 							<span>Cheap</span>
 							<input name="Comfort" type="radio" id="Radio"  value="Standard"/>
@@ -277,37 +303,12 @@
 							}
 						</script>
 
-						<a href="#" class="btn" data-type="submit" onclick="submit()">Submit</a>
+						<a href="#" class="btn" data-type="submit" style="position:absolute;" onclick="submit()">Submit</a>
 					</form>
 					</div>
 				</div>
 				<!--booking-->
-				<!--right-->
-				<div class="grid_5 prefix_1" style="background:	#E6E6FA;">
-					<h3>Recommendation</h3>
-					<img src="images/page1_img1.jpg" alt="" class="img_inner fleft">
-					<div class="extra_wrapper">
-						<p>Lorem ipsum dolor sit ere amet, consectetur ipiscin.</p>
-						In mollis erat mattis neque facilisis, sit ametiol
-					</div>
-					<div class="clear cl1"></div>
-					<p>Find the detailed description of this <span class="col1"><a href="http://blog.templatemonster.com/free-website-templates/" rel="dofollow">freebie</a></span> at TemplateMonster blog.</p>
-					<p><span class="col1"><a href="http://www.templatemonster.com/category/travel-website-templates/" rel="nofollow">Travel Website Templates</a></span> category offers you a variety of designs that are perfect for travel sphere of business.</p>
-					Proin pharetra luctus diam, a scelerisque eros convallis
-					<h4>Clients’ Quotes</h4>
-					<blockquote class="bq1">
-						<img src="images/page1_img2.jpg" alt="" class="img_inner noresize fleft">
-						<div class="extra_wrapper">
-							<p>Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh. </p>
-							<div class="alright">
-								<div class="col1">Miranda Brown</div>
-								<a href="#" class="btn">More</a>
-							</div>
-						</div>
-					</blockquote>
-				</div>
-
-				<!--right-->
+				
 				
 			</div>
 		</div>
