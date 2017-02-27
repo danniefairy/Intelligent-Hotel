@@ -192,7 +192,7 @@
 							<p>Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh. </p>
 							<div class="alright">
 								<div class="col1">Miranda Brown</div>
-								<a href="#" class="btn">More</a>
+								<a href="index-1.php" class="btn">More</a>
 							</div>
 						</div>
 					</blockquote>

@@ -32,6 +32,13 @@
 			$_SESSION['card_bind']=1;
 		}
 	}
+	
+	//確認已經訂房
+	if(isset($_GET['book'])){
+		echo "<script type=\"text/javascript\">
+			alert(\"Book the room sucessfully!\")
+			</script>";
+	}
 ?>
 
 <!DOCTYPE html>

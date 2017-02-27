@@ -19,4 +19,5 @@
 	$insert="INSERT INTO `book` (`db_id`,`name`,`email`,`country`,`phone`,`check_in`,`check_out`,`comfort`,`person`,`room`,`message`) VALUES (\"$db_id\",\"$name\",\"$email\",\"$country\",\"$phone\",\"$check_in\",\"$check_out\",\"$button\",\"$person\",\"$room\",\"$message\")";
 	mysqli_query($connect,$insert);
 	echo "<br>".mysqli_error($connect);
+	header("location:../index.php?book=1");
 ?>
