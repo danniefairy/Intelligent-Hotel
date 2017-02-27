@@ -320,8 +320,8 @@
 							<div class="clear"></div>
 							
 							<script type="text/javascript">
-								var style="<?php echo $_GET['style'];?>";
-								alert(x);
+								var style="<?php if(isset($_GET['style'])) echo $_GET['style'];?>";
+								alert(style);
 							</script>
 														
 
