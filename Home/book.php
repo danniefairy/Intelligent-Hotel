@@ -339,7 +339,7 @@
 							</select>
 							<div class="clear"></div>
 							<em>Breakfast</em>
-							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+							<select id="bf" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option id="Phytoncid">Phytoncid</option>
 								<option id="Sunshine">Sunshine</option>
 								<option id="Landmark">Landmark</option>
@@ -355,6 +355,7 @@
 						
 						<script type="text/javascript">
 							function credit(){
+								alert(123);
 								window.location="../credit_card.index.php";
 							} 
 							function paypal(){
