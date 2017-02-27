@@ -323,12 +323,12 @@
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option id="Phytoncid">Phytoncid</option>
 								<option id="Sunshine">Sunshine</option>
-								<option id="3">Landmark</option>
-								<option id="4">Advanture</option>
-								<option id="5">Water Park</option>
-								<option id="6">Culture</option>
-								<option id="7">Religion</option>
-								<option id="8">Islands</option>
+								<option id="Landmark">Landmark</option>
+								<option id="Advanture">Advanture</option>
+								<option id="Water_Park">Water Park</option>
+								<option id="Culture">Culture</option>
+								<option id="eligion">Religion</option>
+								<option id="Islands">Islands</option>
 							</select>
 						</div>		
 						
