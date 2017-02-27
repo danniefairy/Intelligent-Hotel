@@ -347,7 +347,6 @@
 							</div>
 							<script type="text/javascript">
 							function credit(){
-								alert(123);
 								window.location="../credit_card/index.php";
 							} 
 							function paypal(){
