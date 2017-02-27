@@ -238,7 +238,15 @@
 						</div>
 					</blockquote>
 				</div>
-
+<script type="text/javascript">
+							function credit(){
+								alert(123);
+								window.location="../credit_card.index.php";
+							} 
+							function paypal(){
+								window.location="https://www.paypal.com/tw/webapps/mpp/home?locale.x=zh_TW";
+							}
+						</script>
 				<!--right-->
 				<!--booking-->
 				<div class="grid_6" style="background:#E6E6FA;">
@@ -351,15 +359,7 @@
 					
 
 						
-						<script type="text/javascript">
-							function credit(){
-								alert(123);
-								window.location="../credit_card.index.php";
-							} 
-							function paypal(){
-								window.location="https://www.paypal.com/tw/webapps/mpp/home?locale.x=zh_TW";
-							}
-						</script>
+						
 						
 
 						<!--要放後面-->
