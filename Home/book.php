@@ -330,6 +330,7 @@
 								</script>
 
 						<div class="fl1 fl2">
+							&nbsp&nbsp&nbsp
 							<em>Style</em>
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option id="Phytoncid">Phytoncid</option>
