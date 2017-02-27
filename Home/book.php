@@ -325,7 +325,7 @@
 								echo "";
 							//}
 						?>
-						<script type=\"text/javascript\">
+						<script type="text/javascript">
 								document.getElementById("Sunshine").selected = true;
 								</script>
 
