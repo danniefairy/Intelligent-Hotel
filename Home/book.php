@@ -317,20 +317,7 @@
 								<option>4</option>
 								<option>5</option>
 							</select>
-						</div>
 
-						<?php
-							//if(isset($_GET['style']))
-							//{
-								echo "";
-							//}
-						?>
-						<script type="text/javascript">
-								document.getElementById("Sunshine").selected = true;
-								</script>
-
-						<div class="fl1 fl2">
-							&nbsp&nbsp&nbsp
 							<em>Style</em>
 							<select id="style" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option id="Phytoncid">Phytoncid</option>
@@ -343,6 +330,19 @@
 								<option id="8">Islands</option>
 							</select>
 						</div>
+
+						<?php
+							//if(isset($_GET['style']))
+							//{
+								echo "";
+							//}
+						?>
+						<script type="text/javascript">
+								document.getElementById("Sunshine").selected = true;
+								</script>
+
+							
+						
 						<div class="clear"></div>
 						<div class="tmTextarea">
 							<textarea id="message" name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
