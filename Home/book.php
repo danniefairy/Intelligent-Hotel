@@ -25,10 +25,15 @@
 	}
 	else{
 		//確認是否有綁定信用卡
-		if(isset($_SESSION['card_bind']))
+		include 'connect_db.php';
+		$id=$_SESSION['db_id'];
+		$sql="SELECT `card_name` FROM hotel Where `id`=\"$id\"";
+		$result=mysqli_query($connect,$sql);
+		if(mysqli_fetch_array($result)[0]!=""){
 			echo "<script type=\"text/javascript\">
-			alert(\"Bind not sucessfully!\")
+			alert(\"You can see the content after binding your credit card!\")
 			</script>";
+		}
 	}
 
 	//確認已經訂房
