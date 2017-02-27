@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	echo $_SESSION['db_id'];
-
+	$db_id=$_SESSION['db_id'];
 	$name=$_GET['name'];
 	$email=$_GET['email'];
 	$country=$_GET['country'];
@@ -14,4 +14,9 @@
 	$message=$_GET['message'];
 
 	echo $name."<br>".$email."<br>".$country."<br>".$phone."<br>".$check_in."<br>".$check_out."<br>".$button."<br>".$person."<br>".$room."<br>".$message."<br>";
+
+	include '../db_connect.php';
+	$insert="INSERT INTO `book` (`db_id`,`name`,`email`,`country`,`phone`,`check_in`,`check_out`,`comfort`,`person`,`room`,`message`) VALUES (\"$db_id\",\"$name\",\"$email\",\"$country\",\"$phone\",\"$check_in\",\"$check_out\",\"$comfort\",\"$person\",\"$room\",\"$message\")";
+	mysqli_query($connect,$insert);
+	echo "<br>".mysqli_error($connect);
 ?>
