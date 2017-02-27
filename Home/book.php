@@ -30,11 +30,12 @@
 		$sql="SELECT `card_name` FROM hotel Where `id`=\"$id\"";
 		$result=mysqli_query($connect,$sql);
 		if(mysqli_fetch_array($result)[0]!=""){
+			echo "123123132";
 			echo "<script type=\"text/javascript\">
 			alert(\"You can see the content after binding your credit card!\")
 			</script>";
 		}
-		echo "123123132";
+
 	}
 
 	//確認已經訂房
