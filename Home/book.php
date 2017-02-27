@@ -112,8 +112,8 @@
 
 
 		<script type="text/javascript">
-								document.getElementById("Sunshine").selected = "true";
-							</script>
+			document.getElementById("Sunshine").selected = true;
+		</script>
 	</head>
 	<body class="page1" id="top">
 <!--==============================header=================================-->
