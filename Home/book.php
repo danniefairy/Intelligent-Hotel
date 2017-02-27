@@ -320,12 +320,12 @@
 						</div>
 
 						<?php
-							if(isset($_GET['style']))
-							{
+							//if(isset($_GET['style']))
+							//{
 								echo "<script type=\"text/javascript\">
-								document.getElementById(<?php echo $_GET['style']; ?>).selected = true;
+								document.getElementById(\"Phytoncid\").selected = true;
 								</script>";
-							}
+							//}
 						?>
 						
 
