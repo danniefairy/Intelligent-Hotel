@@ -10,13 +10,13 @@
 			</script>";
 	}
 
-	//是否剛綁定成功信用卡
+	/*//是否剛綁定成功信用卡
 	if(isset($_GET['credit_card_binding']))
 	{
 		echo "<script type=\"text/javascript\">
 			alert(\"Binding credit card sucessfully!\")
 			</script>";
-	}
+	}*/
 
 	
 	if(!isset($_SESSION['fb_id'])){
@@ -37,11 +37,11 @@
 
 	}
 
-	//確認已經訂房
+	/*//確認已經訂房
 	if(isset($_GET['book'])){
 		echo "<script type=\"text/javascript\">
 			alert(\"Book the room sucessfully!\")
-			</script>";
+			</script>";*/
 	}
 ?>
 <!DOCTYPE html>
