@@ -1,6 +1,8 @@
 <?php
+	session_start();
+	$db_id=$_SESSION['db_id'];
+	
 	include 'connect_db.php';
-
 	$search="SELECT * FROM shop WHERE `db_id`=$db_id";
 	$result=mysqli_query($connect,$search);
 	if(mysqli_fetch_array($result))
