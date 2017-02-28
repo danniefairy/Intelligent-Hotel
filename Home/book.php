@@ -41,8 +41,8 @@
 	if(isset($_GET['book'])){
 		echo "<script type=\"text/javascript\">
 			alert(\"Book the room sucessfully!\")
-			</script>";*/
-	}
+			</script>";
+	}*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
