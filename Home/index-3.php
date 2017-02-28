@@ -4,6 +4,12 @@
 		echo "<a href=\"../index.php\">Please enter with facebook!</a>";
 		die();
 	}
+	else{
+		if(!isset($_GET['manager'])){
+			echo "<a href=\"index.php\">Please register your store first!</a>";
+			die();
+		}
+	}
 ?>
 
 <!DOCTYPE html>
