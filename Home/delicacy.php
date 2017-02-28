@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	//是否寄送email
+	/*//是否寄送email
 	if(isset($_GET['send_email']))
 	{
 		echo "<script type=\"text/javascript\">
@@ -15,7 +15,7 @@
 		echo "<script type=\"text/javascript\">
 			alert(\"Binding credit card sucessfully!\")
 			</script>";
-	}
+	}*/
 
 	
 	if(!isset($_SESSION['fb_id'])){
@@ -23,17 +23,17 @@
 		die();
 	}
 	else{
-		//確認是否有綁定信用卡
+		/*//確認是否有綁定信用卡
 		include 'connect_db.php';
 		$id=$_SESSION['db_id'];
 		$sql="SELECT `card_name` FROM hotel Where `id`=\"$id\"";
 		$result=mysqli_query($connect,$sql);
 		if(mysqli_fetch_array($result)[0]!=""){
 			$_SESSION['card_bind']=1;
-		}
+		}*/
 	}
 
-	//確認已經訂房
+	/*//確認已經訂房
 	if(isset($_GET['book'])){
 		echo "<script type=\"text/javascript\">
 			alert(\"Book the room sucessfully!\")
@@ -45,7 +45,7 @@
 		echo "<script type=\"text/javascript\">
 		alert(\"You can see the content after binding your credit card!\")
 		</script>";
-	}
+	}*/
 ?>
 
 <!DOCTYPE html>
@@ -170,7 +170,7 @@
 							
 							<span></span>
 						</div>
-						<a href="delicacy.php">LEARN MORE</a>
+						<a href="#">LEARN MORE</a>
 					</div>
 				</div>
 				<!--add here-->
@@ -221,36 +221,7 @@
 				</div>
 				<div class="clear"></div>
 				<!--safe place connect db-->
-				<div class="grid_12">
-					<h3 class="head1">Latest News</h3>
-				</div>
-				<div class="grid_4">
-					<div class="block1">
-						<time datetime="2014-01-01">10<span>Jan</span></time>
-						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">Aliquam nibh</a></div>
-							Proin pharetra luctus diam, any scelerisque eros convallisumsan. Maecenas vehicula egestas
-						</div>
-					</div>
-				</div>
-				<div class="grid_4">
-					<div class="block1">
-						<time datetime="2014-01-01">21<span>Jan</span></time>
-						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">Etiam dui eros</a></div>
-							Any scelerisque eros vallisumsan. Maecenas vehicula egestas natis. Duis massa elit, auctor non
-						</div>
-					</div>
-				</div>
-				<div class="grid_4">
-					<div class="block1">
-						<time datetime="2014-01-01">15<span>Feb</span></time>
-						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">uamnibh Edeto</a></div>
-							Ros convallisumsan. Maecenas vehicula egestas venenatis. Duis massa elit, auctor non
-						</div>
-					</div>
-				</div>
+			
 			</div>
 		</div>
 <!--==============================footer=================================-->

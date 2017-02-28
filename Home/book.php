@@ -196,7 +196,7 @@
 							
 							<span></span>
 						</div>
-						<a href="#">LEARN MORE</a>
+						<a href="delicacy.php">LEARN MORE</a>
 					</div>
 				</div>
 				<!--add here-->
