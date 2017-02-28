@@ -336,8 +336,8 @@
 								<option>5</option>
 							</select>
 							<div class="clear"></div>
-							<a href="tw.yahoo.com" class="btn" data-type="submit" style="position:absolute;"">Submit</a>
-							<a href="#" class="btn" data-type="submit" style="position:absolute;" onclick="submit()">Submit</a>
+							<a href="tw.yahoo.com" class="btn" data-type="submit" style="position:absolute;"">1111</a>
+							<a href="#" class="btn" data-type="submit" style="position:absolute;">2222</a>
 						</script>
 						</div>
 						<div class="fl1 fl2">
