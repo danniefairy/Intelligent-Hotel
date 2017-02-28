@@ -8,6 +8,7 @@
 	if(mysqli_fetch_array($result))
 	{
 			echo "yes";
+			header("location:../index-3.php");
 			die();
 	}
 ?>
