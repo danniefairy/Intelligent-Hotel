@@ -336,7 +336,8 @@
 								<option>5</option>
 							</select>
 							<div class="clear"></div>
-							
+							<a href="tw.yahoo.com" class="btn" data-type="submit" style="position:absolute;"">Submit</a>
+							<a href="#" class="btn" data-type="submit" style="position:absolute;" onclick="submit()">Submit</a>
 						</script>
 						</div>
 						<div class="fl1 fl2">
@@ -373,7 +374,7 @@
 								<option id="bp">Blueberry Pancakes</option>
 							</select>
 						</div>
-						
+
 						<!--要放後面-->
 						<script type="text/javascript">
 							var style="<?php if(isset($_GET['style'])) echo $_GET['style'];?>";
