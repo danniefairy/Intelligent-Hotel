@@ -10,8 +10,8 @@
     <form method="post" action="register.php">
         <input type="text" name="name" placeholder="Company Name" required="required" />
         <input type="text" name="ein" placeholder="Employer Identification Number" required="required" />
-        <input type="text" name="long" placeholder="Longtitude" required="required" />
         <input type="text" name="lat" placeholder="Latitude" required="required" />
+        <input type="text" name="long" placeholder="Longitude" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Register</button>
     </form>
 </div>
