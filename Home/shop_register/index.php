@@ -7,11 +7,11 @@
 <body>
 <div class="login">
     <h1>Shop Register</h1>
-    <form method="post">
-        <input type="text" name="u" placeholder="Company Name" required="required" />
-        <input type="text" name="p" placeholder="Employer Identification Number" required="required" />
-        <input type="text" name="p" placeholder="Longtitude" required="required" />
-        <input type="text" name="p" placeholder="Latitude" required="required" />
+    <form method="post" action="register.php">
+        <input type="text" name="name" placeholder="Company Name" required="required" />
+        <input type="text" name="ein" placeholder="Employer Identification Number" required="required" />
+        <input type="text" name="long" placeholder="Longtitude" required="required" />
+        <input type="text" name="lat" placeholder="Latitude" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Register</button>
     </form>
 </div>
