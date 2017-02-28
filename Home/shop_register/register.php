@@ -12,6 +12,6 @@
 		$insert="INSERT INTO `shop` (`db_id`,`company_name`,`ein`,`latitude`,`longitude`) VALUES (\"$db_id\",\"$name\",\"$ein\",\"$lat\",\"$long\")";
 		mysqli_query($connect,$insert);
 
-		echo "success";
+		echo $db_id."<br>".$name."<br>".$ein."<br>".$lat."<br>".$lat."<br>".$long.$insert;
 	}
 ?>
