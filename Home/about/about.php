@@ -59,6 +59,13 @@
         center: {lat: 25.0340, lng: 121.5645},
         zoom: 15
       });
+
+      var company_position = {lat: 25.0340, lng: 121.5645};
+      var marker = new google.maps.Marker({
+          map: map,
+          position: company_position,
+          title: 'Headquarters'
+        });
     }
     </script>
     <!--google map-->
