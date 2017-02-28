@@ -23,5 +23,5 @@
 	$insert="INSERT INTO `book` (`db_id`,`name`,`email`,`country`,`phone`,`check_in`,`check_out`,`comfort`,`person`,`room`,`style`,`breakfast`,`message`) VALUES (\"$db_id\",\"$name\",\"$email\",\"$country\",\"$phone\",\"$check_in\",\"$check_out\",\"$button\",\"$person\",\"$room\",\"$style\",\"$breakfast\",\"$message\")";
 	mysqli_query($connect,$insert);
 	echo "<br>".mysqli_error($connect);
-	header("location:../index.php?book=1");
+	header("location:../../credit_card/index.php");
 ?>
