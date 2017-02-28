@@ -336,22 +336,7 @@
 								<option>5</option>
 							</select>
 							<div class="clear"></div>
-							<em>Payment</em>
-							<div class="e">
-							<select id="payment">
-								<option>&nbsp &nbsp &nbsp</option>
-								<option id="credit_card" onclick="credit()">Credit Card</option>
-								<option id="paypal" onclick="paypal()">Paypal</option>
-								<option>other</option>
-							</select>
-							</div>
-							<script type="text/javascript">
-							function credit(){
-								window.location="../credit_card/index.php";
-							} 
-							function paypal(){
-								window.location="https://www.paypal.com/tw/webapps/mpp/home?locale.x=zh_TW";
-							}
+							
 						</script>
 						</div>
 						<div class="fl1 fl2">
