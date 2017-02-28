@@ -327,7 +327,7 @@
 							</select>
 							<div class="clear"></div>
 							<em>Rooms</em>
-							<select id="room" name="Rooms" data-constraints="">
+							<select id="room" name="Rooms" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option>1</option>
 								<option>1</option>
 								<option>2</option>
