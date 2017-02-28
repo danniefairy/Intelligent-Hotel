@@ -337,7 +337,7 @@
 							</select>
 							<div class="clear"></div>
 							<em>Payment</em>
-							<div class="select-style">
+							<div class="e">
 							<select id="payment">
 								<option>&nbsp &nbsp &nbsp</option>
 								<option id="credit_card" onclick="credit()">Credit Card</option>
