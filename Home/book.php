@@ -373,7 +373,7 @@
 								<option id="bp">Blueberry Pancakes</option>
 							</select>
 						</div>
-
+						
 						<!--要放後面-->
 						<script type="text/javascript">
 							var style="<?php if(isset($_GET['style'])) echo $_GET['style'];?>";
@@ -381,28 +381,6 @@
 							document.getElementById(style).selected="true";
 							document.getElementById(comfort).checked=true;
 						</script>
-
-
-
-							<div class="clear"></div>
-							<em>Payment</em>
-							
-							<select>
-								<option>&nbsp &nbsp &nbsp</option>
-								<option id="credit_card"  onclick="credit()">Credit Card</option>
-								<option id="paypal" onclick="paypal()">Paypal</option>
-								<option>other</option>
-							</select>
-							</div>
-							<script type="text/javascript">
-							function credit(){
-								window.location="../credit_card/index.php";
-							} 
-							function paypal(){
-								window.location="https://www.paypal.com/tw/webapps/mpp/home?locale.x=zh_TW";
-							}
-						</script>
-						
 
 
 						<div class="clear"></div>
