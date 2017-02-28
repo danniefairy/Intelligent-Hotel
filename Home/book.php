@@ -314,7 +314,7 @@
 							<span>Lux(+1000)</span>
 						</div>
 						<div class="clear"></div>
-						<br>
+
 						<div class="fl1 fl2">
 							<em>Adults</em>
 							<select id="adult" name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
