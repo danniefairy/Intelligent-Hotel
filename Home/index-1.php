@@ -186,7 +186,7 @@
 							
 							<span></span>
 						</div>
-						<a href="#">LEARN MORE</a>
+						<a href="index-1.php">LEARN MORE</a>
 					</div>
 				</div>
 				<div data-src="images/slide2.jpg">
