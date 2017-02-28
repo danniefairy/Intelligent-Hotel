@@ -336,8 +336,13 @@
 								<option>5</option>
 							</select>
 							<div class="clear"></div>
-							<a href="tw.yahoo.com" class="btn" data-type="submit" style="position:absolute;"">1111</a>
-							<a href="#" class="btn" data-type="submit" style="position:absolute;">2222</a>
+							<em>Payment</em>
+							<select id="payment" name="Rooms" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+								<option disabled="" selected="">choose type</option>
+								<option>credit card</option>
+								<option>paypal</option>
+								<option>other</option>
+							</select>
 						</script>
 						</div>
 						<div class="fl1 fl2">
@@ -365,7 +370,7 @@
 							</select>
 							<div class="clear"></div>
 							<em>Breakfast</em>
-							<select id="bf" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+							<select id="breakfast" name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option id="bw">Bacon Waffles</option>
 								<option id="seb">Southern Eggs Benedict</option>
 								<option id="tb">Twisted Bacon</option>
@@ -406,9 +411,11 @@
 								var room=document.getElementById('room').value;
 								var style=document.getElementById('style').value;
 								var message=document.getElementById('message').value;
-								
+
+								var payment=document.getElementById('payment').value;
+								var breakfast=document.getElementById('breakfast').value;
 								//alert(button);
-								window.location = "./bnb/book_info.php?name="+name+"&email="+email+"&country="+country+"&phone="+phone+"&check_in="+check_in+"&check_out="+check_out+"&button="+button+"&person="+adult+"/"+child+"&room="+room+"&style="+style+"&message="+message;
+								window.location = "./bnb/book_info.php?name="+name+"&email="+email+"&country="+country+"&phone="+phone+"&check_in="+check_in+"&check_out="+check_out+"&button="+button+"&person="+adult+"/"+child+"&room="+room+"&style="+style+"&message="+message+"&payment="+payment+"&breakfast="+breakfast;
 
 							}
 						</script>
