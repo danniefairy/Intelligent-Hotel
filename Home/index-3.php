@@ -106,7 +106,7 @@
 						/*
 						*讀取資料夾目錄
 						*/
-						$dirlist=scandir('./upload/');
+						$dirlist=scandir('./shop_register/upload/');
 						$i=count($dirlist);
 
 						echo "<table>";
