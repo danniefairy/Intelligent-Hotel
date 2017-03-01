@@ -88,14 +88,14 @@
 
 			<!--左邊-->
 				<div class="grid_7">
-					<h3 class="head1"><?php echo $_GET['name']; ?></h3>
+					<h3 class="head1">Gallery</h3>
 				</div>
 			<!--左邊-->
 
 			<!--右邊-->
 				<div class="grid_3 prefix_1">
 					
-					<h3>Manage Commodity</h3>
+					<h3>Management</h3>
 					<form action="upload_get.php" method="post" enctype="multipart/form-data">
 							Commodity:<br/>
 							<input type="text" name="file_name" placeholder="Name"><br/><br/>

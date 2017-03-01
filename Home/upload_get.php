@@ -25,7 +25,15 @@
 			//echo explode(".",$_FILES['file']['name'])[1];
 			rename("./upload/".$_FILES['file']['name'], "./upload/".$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1]);
 
-			
+
+			session_start();
+			$db_id=$_SESSION['db_id'];
+			$name=$_POST['file_name'];
+			$path="./upload/".$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1];
+			$description=$_POST['description'];s
+			include "connect_db.php";
+			$insert="INSERT INTO `commodity` (`db_id`,`db_id_name`,`db_id_picture`,`db_id_description`) VALUES (\"$db_id\",\"$name\",\"$path\",\"$description\")";
+			mysqli_query($connect,$insert);
 		}
 		else{
 			echo "上傳失敗";
