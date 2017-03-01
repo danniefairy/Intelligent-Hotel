@@ -128,11 +128,13 @@
 						include "connect_db.php";
 						$search="SELECT * FROM `commodity` WHERE `db_id`=$db_id";
 						$result=mysqli_query($connect,$search);
+						$db_count=0;
 						while($row=mysqli_fetch_array($result))
 						{
-							echo $row[2];
+							$db_array[$db_count]=$row[2];
+							$db_count=$db_count+1;
 						}
-
+						echo $db_array[0];
 
 						echo "<table>";
 						//因為前兩個為.、..所以真正檔名從矩陣2開始
