@@ -104,7 +104,7 @@
 
 			<!--左邊-->
 				<div class="grid_7">
-					<h3>Recent Posts</h3>
+					<h3>Manage Commodity</h3>
 					<p><a href="#/">Main</a></p>
 					<a href="#red">Red</a>
 					<div ng-view></div>
