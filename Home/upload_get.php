@@ -41,7 +41,7 @@
 
 	?>
 	<form>
-		<input type ="button" onclick="location.href='upload.php'" value="回到上一頁"></input>
+		<input type ="button" onclick="location.href='index-3.php'" value="回到上一頁"></input>
 	</form>
 	
 </body>
