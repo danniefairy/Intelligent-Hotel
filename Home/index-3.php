@@ -127,11 +127,10 @@
 						$db_id=$_SESSION['db_id'];
 						include "connect_db.php";
 						$search="SELECT * FROM `commodity` WHERE `db_id`=$db_id";
-						while($row=mysqli_fetch_array($result))
+						while($row=mysqli_fetch_array($search))
 						{
 							echo $row[2];
 						}
-						echo $db_id;
 
 
 						echo "<table>";
