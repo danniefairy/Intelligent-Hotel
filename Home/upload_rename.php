@@ -16,7 +16,7 @@
 		var name = document.getElementById("new_name").value;
 		var oldname = document.getElementById("old").value;
 		//alert("./index-3.php?manager=1&new="+name);
-		window.location.replace("./index-3.php?manager=1&new="+name+"&old="+oldname);
+		window.location="./index-3.php?manager=1&new="+name+"&old="+oldname;
 	}
 </script>
 	
