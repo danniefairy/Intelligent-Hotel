@@ -150,7 +150,7 @@
 								echo "</td>";
 							//更新名稱
 								echo "<td>";
-									echo "&nbsp&nbsp<a href=\"upload_rename.php?rename=./upload/$name\">rename</a>";
+									echo "&nbsp&nbsp<a href=\"upload_rename.php?rename=./shop_register/upload/$name\">rename</a>";
 								echo "</td>";
 							echo "</tr>";
 						
