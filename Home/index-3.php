@@ -34,18 +34,26 @@
 			$().UItoTop({ easingType: 'easeOutQuart' });
 			});
 		</script>
+		<!--table-->
+		<style type="text/css">
+			<style>
+				table {
+				    font-family: arial, sans-serif;
+				    border-collapse: collapse;
+				    width: 100%;
+				}
 
-		<!--[if lt IE 8]>
-		<div style=' clear: both; text-align:center; position: relative;'>
-			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-			</a>
-		</div>
-		<![endif]-->
-		<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-		<link rel="stylesheet" media="screen" href="css/ie.css">
-		<![endif]-->
+				td, th {
+				    border: 1px solid #000000;
+				    text-align: left;
+				    padding: 8px;
+				}
+
+				tr:nth-child(even) {
+				    background-color: #dddddd;
+				}
+			</style>
+		</style>
 	</head>
 	<body>
 <!--==============================header=================================-->
