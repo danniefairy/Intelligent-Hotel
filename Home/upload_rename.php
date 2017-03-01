@@ -14,6 +14,7 @@
 <script type="text/javascript">
 	function rename(){
 		var name = document.getElementById("new_name").value;
+		alert("./index-3.php?manager=1&new="+name);
 		window.location.replace("./index-3.php?manager=1&new="+name);
 	}
 </script>
