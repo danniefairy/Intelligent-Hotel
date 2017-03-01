@@ -44,7 +44,7 @@
 			app.config(function($routeProvider) {
 			    $routeProvider
 			    .when("/", {
-			        templateUrl : "/shop_register/upload.php"
+			        templateUrl : "./shop_register/upload.php"
 			    })
 			    .when("/red", {
 			        templateUrl : "/index.php"
