@@ -146,7 +146,7 @@
 								echo "</td>";
 							//使用get來改變id
 								echo "<td>";
-									echo "&nbsp&nbsp<a href=\"?delete=$name\">delete</a>";
+									echo "&nbsp&nbsp<a href=\"?manager=1&delete=$name\">delete</a>";
 								echo "</td>";
 							//更新名稱
 								echo "<td>";
