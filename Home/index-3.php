@@ -131,7 +131,7 @@
 						{
 							echo $row[2];
 						}
-						echo 123;
+						echo $db_id;
 
 
 						echo "<table>";
