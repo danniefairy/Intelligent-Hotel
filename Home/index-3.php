@@ -34,6 +34,31 @@
 			$().UItoTop({ easingType: 'easeOutQuart' });
 			});
 		</script>
+
+
+		<!--ANGULAR-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+		<script>
+			var app = angular.module("myApp", ["ngRoute"]);
+			app.config(function($routeProvider) {
+			    $routeProvider
+			    .when("/", {
+			        templateUrl : "/shop_register/upload.php"
+			    })
+			    .when("/red", {
+			        templateUrl : "/index.php"
+			    })
+			    .when("/green", {
+			        templateUrl : "green.htm"
+			    })
+			    .when("/blue", {
+			        templateUrl : "blue.htm"
+			    });
+			});
+			</script>
+
+
 		<!--[if lt IE 8]>
 		<div style=' clear: both; text-align:center; position: relative;'>
 			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -80,7 +105,9 @@
 			<!--左邊-->
 				<div class="grid_7">
 					<h3>Recent Posts</h3>
-					
+					<p><a href="#/">Main</a></p>
+
+					<a href="#red">Red</a>
 				</div>
 			<!--左邊-->
 
