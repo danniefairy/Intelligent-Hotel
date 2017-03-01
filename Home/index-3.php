@@ -88,7 +88,7 @@
 
 			<!--左邊-->
 				<div class="grid_7">
-					<h3 class="head1">CATEGORIES</h3>
+					<h3 class="head1"><?php echo $_GET['name']; ?></h3>
 				</div>
 			<!--左邊-->
 

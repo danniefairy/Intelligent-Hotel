@@ -13,7 +13,7 @@
 		$insert="INSERT INTO `shop` (`db_id`,`company_name`,`ein`,`latitude`,`longitude`) VALUES (\"$db_id\",\"$name\",\"$ein\",\"$lat\",\"$long\")";
 		mysqli_query($connect,$insert);
 		
-		header("location:../index-3.php?manager=1");
+		header("location:../index-3.php?manager=1&name=".$name);
 		die();
 
 		
