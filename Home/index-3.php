@@ -88,6 +88,13 @@
 
 			<!--左邊-->
 				<div class="grid_7">
+					<h3 class="head1">CATEGORIES</h3>
+				</div>
+			<!--左邊-->
+
+			<!--右邊-->
+				<div class="grid_3 prefix_1">
+					
 					<h3>Manage Commodity</h3>
 					<form action="upload_get.php" method="post" enctype="multipart/form-data">
 							Commodity:<br/>
@@ -139,13 +146,6 @@
 						echo "</table>";
 
 						?>
-				</div>
-			<!--左邊-->
-
-			<!--右邊-->
-				<div class="grid_3 prefix_1">
-					<h3 class="head1">CATEGORIES</h3>
-					
 				</div>
 			<!--右邊-->
 
