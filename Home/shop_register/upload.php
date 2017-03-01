@@ -22,7 +22,7 @@
 </head>
 <body>
 
-	<form action="./shop_register/upload_get.php" method="post" enctype="multipart/form-data">
+	<form action="upload_get.php" method="post" enctype="multipart/form-data">
 		Commodity:<br/>
 		<input type="text" name="file_name" placeholder="Name"><br/><br/>
 		Picture:<br/>
@@ -60,11 +60,11 @@
 			echo "</td>";
 		//使用get來改變id
 			echo "<td>";
-				echo "&nbsp&nbsp<a href=\"./shop_register/upload.php?delete=$name\">delete</a>";
+				echo "&nbsp&nbsp<a href=\"?delete=$name\">delete</a>";
 			echo "</td>";
 		//更新名稱
 			echo "<td>";
-				echo "&nbsp&nbsp<a href=\"./shop_register/upload_rename.php?rename=$name./upload/$name\">rename</a>";
+				echo "&nbsp&nbsp<a href=\"upload_rename.php?rename=$name./upload/$name\">rename</a>";
 			echo "</td>";
 		echo "</tr>";
 	
