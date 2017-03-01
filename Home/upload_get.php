@@ -14,7 +14,7 @@
 		*/
 
 		//要傳到目前位置所建新的資料夾要用"./資料夾名稱/""
-		$upload_dir='./upload/';
+		$upload_dir='./shop_register/upload/';
 		if($_FILES['file']['error']==UPLOAD_ERR_OK){
 			move_uploaded_file($_FILES['file']['tmp_name'], $upload_dir.$_FILES['file']['name']);
 			echo '上傳成功<br>';
@@ -23,13 +23,13 @@
 			echo "檔案大小: ".$_FILES['file']['size']." <br>";
 			echo "暫存檔名: ".$_FILES['file']['tmp_name']." <br>";
 			//echo explode(".",$_FILES['file']['name'])[1];
-			rename("./upload/".$_FILES['file']['name'], "./upload/".$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1]);
+			rename($upload_dir.$_FILES['file']['name'], $upload_dir.$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1]);
 
 
 			session_start();
 			$db_id=$_SESSION['db_id'];
 			$name=$_POST['file_name'];
-			$path="./upload/".$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1];
+			$path=$upload_dir.$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1];
 			$description=$_POST['description'];
 			include "connect_db.php";
 			$insert="INSERT INTO `commodity` (`db_id`,`db_id_name`,`db_id_picture`,`db_id_description`) VALUES (\"$db_id\",\"$name\",\"$path\",\"$description\")";
@@ -38,7 +38,7 @@
 		else{
 			echo "上傳失敗";
 		}
-		header("location:index-3.php");
+		header("location:index-3.php?manager=1");
 
 	?>
 	
