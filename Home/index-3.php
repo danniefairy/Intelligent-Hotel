@@ -124,6 +124,16 @@
 						$dirlist=scandir('./shop_register/upload/');
 						$i=count($dirlist);
 
+						$db_id=$_SESSION['db_id'];
+						include "connect_db.php";
+						$search="SELECT * FROM `commodity` WHERE `db_id`=$db_id";
+						while($row=mysqli_fetch_array($result))
+						{
+							echo $row[2];
+						}
+
+
+
 						echo "<table>";
 						//因為前兩個為.、..所以真正檔名從矩陣2開始
 						for($k=2;$k<$i;$k++){
