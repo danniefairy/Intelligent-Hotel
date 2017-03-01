@@ -64,7 +64,7 @@
 			echo "</td>";
 		//更新名稱
 			echo "<td>";
-				echo "&nbsp&nbsp<a href=\"upload_rename.php?rename=$name./upload/$name\">rename</a>";
+				echo "&nbsp&nbsp<a href=\"upload_rename.php?rename=./upload/$name\">rename</a>";
 			echo "</td>";
 		echo "</tr>";
 	
