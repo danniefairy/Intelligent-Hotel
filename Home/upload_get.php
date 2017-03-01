@@ -38,11 +38,9 @@
 		else{
 			echo "上傳失敗";
 		}
+		header("location:index-3.php");
 
 	?>
-	<form>
-		<input type ="button" onclick="location.href='index-3.php'" value="回到上一頁"></input>
-	</form>
 	
 </body>
 </html>
