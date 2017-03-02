@@ -30,7 +30,7 @@ input[type=submit] {
 	<form method="POST" action="index-3.php?manager=1">
 		Replenishment:<br>
 		<input type="number" name="replenishment"><br>
-		<input type="text" name="r_name" value="<?php echo $_GET['name']; ?>">
+		<input type="text" name="r_name" value="<?php echo $_GET['name']; ?>" hidden>
 		<input type="submit" value="Submit"">
 	</form>
 	</div>
