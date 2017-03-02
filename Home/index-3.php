@@ -108,20 +108,20 @@
 						}
 						
 
-						echo "<table cellspacing=10>";
+						echo "<table>";
 						//因為前兩個為.、..所以真正檔名從矩陣2開始
 						for($k=0;$k<$num;$k++){
 							$name=$db_array[$k];
 							echo "<tr>";
-								echo "<td>";
+								echo "<td width=\"30%\">";
 									echo "<a href=./shop_register/upload/$name>$name</a>";
 								echo "</td>";
 							//使用get來改變id
-								echo "<td>";
+								echo "<td width=\"30%\">";
 									echo "&nbsp&nbsp<a href=\"?manager=1&delete=$name\">delete</a>";
 								echo "</td>";
 							//更新名稱
-								echo "<td>";
+								echo "<td width=\"30%\">";
 									echo "&nbsp&nbsp<a href=\"upload_rename.php?rename=./shop_register/upload/$name\">rename</a>";
 								echo "</td>";
 							echo "</tr>";
