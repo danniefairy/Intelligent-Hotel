@@ -34,7 +34,7 @@
 			$quantity=$_POST['quantity'];
 			$description=$_POST['description'];
 			include "connect_db.php";
-			$insert="INSERT INTO `commodity` (`db_id`,`db_id_name`,`db_id_picture`,`db_id_description`,`quantity`) VALUES (\"$db_id\",\"$name\",\"$path\",\"$description\",\"quantity\")";
+			$insert="INSERT INTO `commodity` (`db_id`,`db_id_name`,`db_id_picture`,`db_id_description`,`quantity`) VALUES (\"$db_id\",\"$name\",\"$path\",\"$description\",\"$quantity\")";
 			mysqli_query($connect,$insert);
 		}
 		else{
