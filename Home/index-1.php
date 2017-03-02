@@ -263,7 +263,7 @@
 							<p>There are lots of room for various preference, please click "More" for further information! </p>
 							<div class="alright">
 								
-								<a href="index-1.php" class="btn">More</a>
+								<a href="book.php" class="btn">More</a>
 							</div>
 						</div>
 					</blockquote>
