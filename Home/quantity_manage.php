@@ -13,7 +13,7 @@ input[type=number], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-input[type=button] {
+input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
     color: white;
