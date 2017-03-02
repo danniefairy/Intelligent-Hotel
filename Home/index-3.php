@@ -118,11 +118,11 @@
 								echo "</td>";
 							//使用get來改變id
 								echo "<td";
-									echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href=\"?manager=1&delete=$name\">delete</a>";
+									echo "&nbsp&nbsp&nbsp&nbsp<a href=\"?manager=1&delete=$name\">delete</a>";
 								echo "</td>";
 							//更新名稱
 								echo "<td>";
-									echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href=\"upload_rename.php?rename=./shop_register/upload/$name\">rename</a>";
+									echo "&nbsp&nbsp&nbsp&nbsp<a href=\"upload_rename.php?rename=./shop_register/upload/$name\">rename</a>";
 								echo "</td>";
 							echo "</tr>";
 						
