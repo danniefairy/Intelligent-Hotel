@@ -14,7 +14,8 @@
 
 <?php
 					//刪除以及改名	
-
+					include "connect_db.php";
+					$db_id=$_SESSION['db_id'];
 						//利用GET刪除檔案
 						if(isset($_GET['delete'])){
 							unlink("./shop_register/upload/".$_GET['delete']);
@@ -153,8 +154,7 @@
 		<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
 			<div class="container_12">
 			<?php
-				include "connect_db.php";
-				$db_id=$_SESSION['db_id'];
+				
 				$title="SELECT `company_name` FROM shop WHERE `db_id`=\"$db_id\"";
 				$title_db=mysqli_query($connect,$title);
 				$store_title=mysqli_fetch_array($title_db)[0];
