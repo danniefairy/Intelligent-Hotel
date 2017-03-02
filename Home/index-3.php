@@ -88,7 +88,7 @@
 			<?php
 				include "connect_db.php";
 				$db_id=$_SESSION['db_id'];
-				$title="SELECT `company_name` FROM `hotel` WHERE `db_id`=\"$db_id\"";
+				$title="SELECT `company_name` FROM hotel WHERE `db_id`=\"$db_id\"";
 				$title_db=mysqli_query($connect,$title);
 				$store_title=mysqli_fetch_array($title_db)[0];
 			?>
