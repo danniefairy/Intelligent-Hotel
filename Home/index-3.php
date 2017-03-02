@@ -177,6 +177,12 @@
 						
 
 						echo "<table>";
+						echo "<tr>";
+							echo "<th>Image</th>";
+							echo "<th>Delete</th>";
+							echo "<th>Rename</th>";
+							echo "<th>Quantity</th>";
+						echo "</tr>";
 						//因為前兩個為.、..所以真正檔名從矩陣2開始
 						for($k=0;$k<$num;$k++){
 							$name=$db_array[$k];
