@@ -12,6 +12,34 @@
 	}
 ?>
 
+<?php
+					//刪除以及改名	
+
+						//利用GET刪除檔案
+						if(isset($_GET['delete'])){
+							unlink("./shop_register/upload/".$_GET['delete']);
+							$commodity=$_GET['delete'];
+							$delete="DELETE FROM `commodity` WHERE `db_id_name`=\"$commodity\"";
+							mysqli_query($connect,$delete);
+						}
+
+						//利用GET重新命名
+						if(isset($_GET['new'])){
+							rename($_GET['old'], $_GET['new']);
+							$new=explode("/",$_GET['new'])[3];
+							$old=explode("/",$_GET['old'])[3];
+							$update="UPDATE `commodity` SET `db_id_name`=\"$new\" WHERE `db_id_name`=\"$old\"";
+							mysqli_query($connect,$update);
+						}
+						
+						/*
+						*讀取資料夾目錄
+						*/
+						//$dirlist=scandir('./shop_register/upload/');
+						//$i=count($dirlist);
+
+						?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -195,38 +223,7 @@
 								
 						</form>
 
-						<?php
 						
-
-						//利用GET刪除檔案
-						if(isset($_GET['delete'])){
-							unlink("./shop_register/upload/".$_GET['delete']);
-							$commodity=$_GET['delete'];
-							$delete="DELETE FROM `commodity` WHERE `db_id_name`=\"$commodity\"";
-							mysqli_query($connect,$delete);
-						}
-
-						//利用GET重新命名
-						if(isset($_GET['new'])){
-							rename($_GET['old'], $_GET['new']);
-							$new=explode("/",$_GET['new'])[3];
-							$old=explode("/",$_GET['old'])[3];
-							$update="UPDATE `commodity` SET `db_id_name`=\"$new\" WHERE `db_id_name`=\"$old\"";
-							mysqli_query($connect,$update);
-						}
-						
-
-						/*
-						*讀取資料夾目錄
-						*/
-						//$dirlist=scandir('./shop_register/upload/');
-						//$i=count($dirlist);
-
-						
-						
-						
-
-						?>
 				</div>
 			<!--右邊-->
 
