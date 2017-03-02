@@ -35,7 +35,7 @@
 
 						if(isset($_POST['replenishment'])){
 							$r_q=$_POST['replenishment'];
-							$r_name=$_GET['r_name'];
+							$r_name=$_POST['r_name'];
 							$update="UPDATE `commodity` SET `quantity`=\"$r_q\" WHERE `db_id`=\"$r_name\"";
 							mysqli_query($connect,$update);
 						}
