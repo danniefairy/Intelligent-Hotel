@@ -22,7 +22,7 @@
 			echo "檔案類型: ".$_FILES['file']['type']." <br>";
 			echo "檔案大小: ".$_FILES['file']['size']." <br>";
 			echo "暫存檔名: ".$_FILES['file']['tmp_name']." <br>";
-			//echo explode(".",$_FILES['file']['name'])[1];
+			echo $upload_dir.$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1];
 			rename($upload_dir.$_FILES['file']['name'], $upload_dir.$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1]);
 
 
@@ -39,7 +39,7 @@
 		else{
 			echo "上傳失敗";
 		}
-		header("location:index-3.php?manager=1");
+		//header("location:index-3.php?manager=1");
 
 	?>
 	
