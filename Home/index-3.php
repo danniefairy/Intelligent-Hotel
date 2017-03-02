@@ -85,10 +85,16 @@
 <!--==============================Content=================================-->
 		<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
 			<div class="container_12">
-
+			<?php
+				include "connect_db.php";
+				$db_id=$_SESSION['db_id'];
+				$title="SELECT `company_name` FROM `hotel` WHERE `db_id`=\"$db_id\"";
+				mysqli_query($connect,$title);
+				$store_title=mysqli_fetch_array($result)[0];
+			?>
 			<!--左邊-->
 				<div class="grid_7">
-					<h3 class="head1">Gallery</h3>
+					<h3 class="head1"><?php echo $store_title; ?></h3>
 				</div>
 			<!--左邊-->
 
@@ -109,7 +115,7 @@
 						</form>
 
 						<?php
-						include "connect_db.php";
+						
 
 						//利用GET刪除檔案
 						if(isset($_GET['delete'])){
@@ -135,7 +141,7 @@
 						//$dirlist=scandir('./shop_register/upload/');
 						//$i=count($dirlist);
 
-						$db_id=$_SESSION['db_id'];
+						
 						
 						$search="SELECT * FROM `commodity` WHERE `db_id`=$db_id";
 						$result=mysqli_query($connect,$search);
