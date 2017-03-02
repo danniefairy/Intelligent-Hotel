@@ -32,6 +32,12 @@
 							$update="UPDATE `commodity` SET `db_id_name`=\"$new\" WHERE `db_id_name`=\"$old\"";
 							mysqli_query($connect,$update);
 						}
+
+						if(isset($_POST['replenishment'])){
+							$r_q=$_POST['replenishment']);
+							$update="UPDATE `commodity` SET `quantity`=\"$r_q\" WHERE `db_id`=\"$db_id\"";
+							mysqli_query($connect,$update);
+						}
 						
 						/*
 						*讀取資料夾目錄
