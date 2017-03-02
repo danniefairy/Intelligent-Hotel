@@ -178,10 +178,10 @@
 
 						echo "<table>";
 						echo "<tr>";
-							echo "<th>Image</th>";
-							echo "<th>Delete</th>";
-							echo "<th>Rename</th>";
-							echo "<th>Quantity</th>";
+							echo "<td>Image</td>";
+							echo "<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDelete</td>";
+							echo "<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRename</td>";
+							echo "<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspQuantity</td>";
 						echo "</tr>";
 						//因為前兩個為.、..所以真正檔名從矩陣2開始
 						for($k=0;$k<$num;$k++){
