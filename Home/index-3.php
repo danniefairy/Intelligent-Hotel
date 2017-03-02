@@ -112,8 +112,11 @@
 						include "connect_db.php";
 
 						//利用GET刪除檔案
-						if(isset($_GET['delete']))
+						if(isset($_GET['delete'])){
 							unlink("./shop_register/upload/".$_GET['delete']);
+							$commodity=$_GET['delete'];
+							$delete="DELETE FROM `commodity` WHERE `db_id_name`=\"$commodity\"";
+						}
 
 						//利用GET重新命名
 						if(isset($_GET['new'])){
@@ -128,8 +131,8 @@
 						/*
 						*讀取資料夾目錄
 						*/
-						$dirlist=scandir('./shop_register/upload/');
-						$i=count($dirlist);
+						//$dirlist=scandir('./shop_register/upload/');
+						//$i=count($dirlist);
 
 						$db_id=$_SESSION['db_id'];
 						

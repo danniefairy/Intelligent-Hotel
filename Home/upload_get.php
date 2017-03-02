@@ -39,7 +39,7 @@
 		else{
 			echo "上傳失敗";
 		}
-		//header("location:index-3.php?manager=1");
+		header("location:index-3.php?manager=1");
 
 	?>
 	
