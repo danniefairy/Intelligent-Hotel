@@ -111,7 +111,7 @@
 						<?php
 						//利用GET刪除檔案
 						if(isset($_GET['delete']))
-							unlink("./upload/".$_GET['delete']);
+							unlink("./shop_register/upload/".$_GET['delete']);
 
 						//利用GET重新命名
 						if(isset($_GET['new']))
