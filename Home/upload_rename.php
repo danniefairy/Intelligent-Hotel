@@ -7,6 +7,7 @@
 	<form>
 		舊檔案名稱:
 		<input type="text" id="old" maxlength="50" value="<?php echo $_GET['rename'];?>">
+		<br>
 		請輸入新檔案名稱:
 		<input id="new_name" type="text" maxlength="50" >
 		<input type="button" value="Submit"  onclick="newname()">
