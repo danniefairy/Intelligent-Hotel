@@ -30,7 +30,7 @@ input[type=button] {
 	<form method="POST" action="index-3.php">
 		Replenishment:<br>
 		<input type="number" name="replenishment"><br>
-		<input type="button" value="Submit"  onclick="newname()">
+		<input type="submit" value="Submit"">
 	</form>
 	</div>
 
