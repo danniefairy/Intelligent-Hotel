@@ -95,6 +95,7 @@
 			<!--左邊-->
 				<div class="grid_7">
 					<h3 class="head1"><?php echo $store_title; ?></h3>
+					<hr>
 					<?php
 					$search="SELECT * FROM `commodity` WHERE `db_id`=$db_id";
 						$result=mysqli_query($connect,$search);
@@ -146,7 +147,7 @@
 							<textarea name="description" placeholder="Description of your commodity!"></textarea><br><br>
 							<input type="submit" value="送出">	
 							<br><br>
-							<hr>	
+								
 						</form>
 
 						<?php
