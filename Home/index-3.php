@@ -35,7 +35,8 @@
 
 						if(isset($_POST['replenishment'])){
 							$r_q=$_POST['replenishment'];
-							$update="UPDATE `commodity` SET `quantity`=\"$r_q\" WHERE `db_id`=\"$db_id\"";
+							$r_name=$_GET['r_name'];
+							$update="UPDATE `commodity` SET `quantity`=\"$r_q\" WHERE `db_id`=\"$r_name\"";
 							mysqli_query($connect,$update);
 						}
 						
@@ -207,7 +208,7 @@
 								echo "</td>";
 							//數量
 								echo "<td>";
-									echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href=\"quantity_manage.php\">$q</a>";
+									echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href=\"quantity_manage.php?name=$name\">$q</a>";
 								echo "</td>";
 							echo "</tr>";
 						
