@@ -52,7 +52,7 @@
 				    background-color: #dddddd;
 				}
 
-				input[type=text], select {
+				input[type=text,number], select {
 			    width: 100%;
 			    padding: 12px 20px;
 			    margin: 8px 0;
