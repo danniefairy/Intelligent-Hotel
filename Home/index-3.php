@@ -207,7 +207,7 @@
 								echo "</td>";
 							//數量
 								echo "<td>";
-									echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp".$q;
+									echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href=\"quantity_manage.php\">$q</a>";
 								echo "</td>";
 							echo "</tr>";
 						
