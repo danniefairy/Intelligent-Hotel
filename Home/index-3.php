@@ -129,20 +129,18 @@
 						$search="SELECT * FROM `commodity` WHERE `db_id`=$db_id";
 						$result=mysqli_query($connect,$search);
 						$db_count=0;
+						$num=mysqli_num_rows($result);
 						while($row=mysqli_fetch_array($result))
 						{
 							$db_array[$db_count]=$row[2];
 							$db_count=$db_count+1;
 						}
-						foreach ($db_array as $key => $value) {
-							echo $value;
-						}
 						
 
 						echo "<table>";
 						//因為前兩個為.、..所以真正檔名從矩陣2開始
-						for($k=2;$k<$i;$k++){
-							$name=$dirlist[$k];
+						for($k=0;$k<$num;$k++){
+							$name=$db_array[$k];
 							echo "<tr>";
 								echo "<td>";
 									echo "<a href=./shop_register/upload/$name>$name</a>";
