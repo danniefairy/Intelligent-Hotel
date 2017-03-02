@@ -134,7 +134,10 @@
 							$db_array[$db_count]=$row[2];
 							$db_count=$db_count+1;
 						}
-						echo $db_array[0];
+						foreach ($db_array as $key => $value) {
+							echo $value;
+						}
+						
 
 						echo "<table>";
 						//因為前兩個為.、..所以真正檔名從矩陣2開始
