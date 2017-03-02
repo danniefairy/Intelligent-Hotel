@@ -116,6 +116,7 @@
 							unlink("./shop_register/upload/".$_GET['delete']);
 							$commodity=$_GET['delete'];
 							$delete="DELETE FROM `commodity` WHERE `db_id_name`=\"$commodity\"";
+							mysqli_query($connect,$delete);
 						}
 
 						//利用GET重新命名
