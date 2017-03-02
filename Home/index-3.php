@@ -107,6 +107,8 @@
 							<input type="text" name="file_name" placeholder="Name"><br/><br/>
 							Picture:<br/>
 							<input type="file" name="file"><br/><br/>
+							Quantity:<br/>
+							<input type="number" name="quantity"><br/><br/>
 							Description:<br>
 							<textarea name="description" placeholder="Description of your commodity!"></textarea><br><br>
 							<input type="submit" value="送出">	
