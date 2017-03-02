@@ -31,10 +31,11 @@
 			//還要加上型態
 			$name=$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1];
 			$path=$upload_dir.$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1];
+			$type=$_POST['type'];
 			$quantity=$_POST['quantity'];
 			$description=$_POST['description'];
 			include "connect_db.php";
-			$insert="INSERT INTO `commodity` (`db_id`,`db_id_name`,`db_id_picture`,`db_id_description`,`quantity`) VALUES (\"$db_id\",\"$name\",\"$path\",\"$description\",\"$quantity\")";
+			$insert="INSERT INTO `commodity` (`db_id`,`db_id_name`,`db_id_picture`,`db_id_description`,`quantity`,`commodity_type`) VALUES (\"$db_id\",\"$name\",\"$path\",\"$description\",\"$quantity\",\"$type\")";
 			mysqli_query($connect,$insert);
 		}
 		else{

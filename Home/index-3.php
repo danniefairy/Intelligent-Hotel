@@ -227,6 +227,13 @@
 							<input type="text" name="file_name" placeholder="Name"><br/><br/>
 							Picture:<br/>
 							<input type="file" name="file"><br/><br/>
+							Type:<br>
+							<select name="type">
+								<option value="food"></option>
+								<option value="laundry"></option>
+								<option value="transportation"></option>
+								<option value="Viewpoint"></option>
+							</select><br/><br/>
 							Quantity:<br/>
 							<input type="number" name="quantity"><br/><br/>
 							Description:<br>
