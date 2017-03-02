@@ -109,13 +109,20 @@
 						</form>
 
 						<?php
+						include "connect_db.php";
+
 						//利用GET刪除檔案
 						if(isset($_GET['delete']))
 							unlink("./shop_register/upload/".$_GET['delete']);
 
 						//利用GET重新命名
-						if(isset($_GET['new']))
+						if(isset($_GET['new'])){
 							rename($_GET['old'], $_GET['new']);
+							$new=explode("/",$_GET['new'])[3];
+							$old=explode("/",$_GET['old'])[3];
+							$update="UPDATE `commodity` SET `db_id_name`=\"$new\" WHERE `db_id_name`=\"$old\"";
+							mysqli_query($connect,$update);
+						}
 						
 
 						/*
@@ -125,7 +132,7 @@
 						$i=count($dirlist);
 
 						$db_id=$_SESSION['db_id'];
-						include "connect_db.php";
+						
 						$search="SELECT * FROM `commodity` WHERE `db_id`=$db_id";
 						$result=mysqli_query($connect,$search);
 						$db_count=0;
