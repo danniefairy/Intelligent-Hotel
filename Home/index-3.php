@@ -104,6 +104,7 @@
 						while($row=mysqli_fetch_array($result))
 						{
 							$db_array[$db_count]=$row[2];
+							$db_quantity[$db_count]=$row[5];
 							$db_count=$db_count+1;
 						}
 						
@@ -112,6 +113,7 @@
 						//因為前兩個為.、..所以真正檔名從矩陣2開始
 						for($k=0;$k<$num;$k++){
 							$name=$db_array[$k];
+							$q=$db_quantity[$k];
 							echo "<tr>";
 								echo "<td>";
 									echo "<a href=./shop_register/upload/$name>$name</a>";
@@ -123,6 +125,10 @@
 							//更新名稱
 								echo "<td>";
 									echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href=\"upload_rename.php?rename=./shop_register/upload/$name\">rename</a>";
+								echo "</td>";
+							//數量
+								echo "<td>";
+									echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp".$q;
 								echo "</td>";
 							echo "</tr>";
 						
