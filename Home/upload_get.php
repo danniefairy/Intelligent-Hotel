@@ -29,7 +29,7 @@
 			session_start();
 			$db_id=$_SESSION['db_id'];
 			//還要加上型態
-			$name=$_POST['file_name'].explode(".",$_FILES['file']['name'])[1];
+			$name=$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1];
 			$path=$upload_dir.$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1];
 			$description=$_POST['description'];
 			include "connect_db.php";
