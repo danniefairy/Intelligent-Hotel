@@ -142,7 +142,7 @@
 							$name=$dirlist[$k];
 							echo "<tr>";
 								echo "<td>";
-									echo "<a href=./upload/$name>$name</a>";
+									echo "<a href=./shop_register/upload/$name>$name</a>";
 								echo "</td>";
 							//使用get來改變id
 								echo "<td>";
