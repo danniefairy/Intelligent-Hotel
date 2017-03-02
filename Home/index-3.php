@@ -95,6 +95,39 @@
 			<!--左邊-->
 				<div class="grid_7">
 					<h3 class="head1"><?php echo $store_title; ?></h3>
+					<?php
+					$search="SELECT * FROM `commodity` WHERE `db_id`=$db_id";
+						$result=mysqli_query($connect,$search);
+						$db_count=0;
+						$num=mysqli_num_rows($result);
+						while($row=mysqli_fetch_array($result))
+						{
+							$db_array[$db_count]=$row[2];
+							$db_count=$db_count+1;
+						}
+						
+
+						echo "<table>";
+						//因為前兩個為.、..所以真正檔名從矩陣2開始
+						for($k=0;$k<$num;$k++){
+							$name=$db_array[$k];
+							echo "<tr>";
+								echo "<td>";
+									echo "<a href=./shop_register/upload/$name>$name</a>";
+								echo "</td>";
+							//使用get來改變id
+								echo "<td>";
+									echo "&nbsp&nbsp<a href=\"?manager=1&delete=$name\">delete</a>";
+								echo "</td>";
+							//更新名稱
+								echo "<td>";
+									echo "&nbsp&nbsp<a href=\"upload_rename.php?rename=./shop_register/upload/$name\">rename</a>";
+								echo "</td>";
+							echo "</tr>";
+						
+						}
+						echo "</table>";
+					?>
 				</div>
 			<!--左邊-->
 
@@ -145,37 +178,7 @@
 
 						
 						
-						$search="SELECT * FROM `commodity` WHERE `db_id`=$db_id";
-						$result=mysqli_query($connect,$search);
-						$db_count=0;
-						$num=mysqli_num_rows($result);
-						while($row=mysqli_fetch_array($result))
-						{
-							$db_array[$db_count]=$row[2];
-							$db_count=$db_count+1;
-						}
 						
-
-						echo "<table>";
-						//因為前兩個為.、..所以真正檔名從矩陣2開始
-						for($k=0;$k<$num;$k++){
-							$name=$db_array[$k];
-							echo "<tr>";
-								echo "<td>";
-									echo "<a href=./shop_register/upload/$name>$name</a>";
-								echo "</td>";
-							//使用get來改變id
-								echo "<td>";
-									echo "&nbsp&nbsp<a href=\"?manager=1&delete=$name\">delete</a>";
-								echo "</td>";
-							//更新名稱
-								echo "<td>";
-									echo "&nbsp&nbsp<a href=\"upload_rename.php?rename=./shop_register/upload/$name\">rename</a>";
-								echo "</td>";
-							echo "</tr>";
-						
-						}
-						echo "</table>";
 
 						?>
 				</div>
