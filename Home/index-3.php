@@ -108,7 +108,7 @@
 						}
 						
 
-						echo "<table>";
+						echo "<table cellspacing=10>";
 						//因為前兩個為.、..所以真正檔名從矩陣2開始
 						for($k=0;$k<$num;$k++){
 							$name=$db_array[$k];
