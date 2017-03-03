@@ -20,7 +20,7 @@
 ?>
 
 <!--credit card-->
-<div class="cc-form" style="margin-top: 50%; margin-bottom:100%;">
+<div class="cc-form" style="margin-top: 25%; margin-bottom:50%;">
   <h1><span class="glyphicon glyphicon-credit-card"></span>Credit Card</h1>
   <form id="cc-form" action="get.php">
     <div class="form-item text">
