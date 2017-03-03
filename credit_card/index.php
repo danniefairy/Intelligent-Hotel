@@ -20,7 +20,7 @@
 ?>
 
 <!--credit card-->
-<div class="cc-form">
+<div class="cc-form" style="margin-top: 50%; margin-bottom:100%;">
   <h1><span class="glyphicon glyphicon-credit-card"></span>Credit Card</h1>
   <form id="cc-form" action="get.php">
     <div class="form-item text">
@@ -83,6 +83,7 @@
           </select>
   </div>
 </div>
+    <br>
     <div class="form-item">
       <input type='submit' value="Submit"></input>
     </div>
