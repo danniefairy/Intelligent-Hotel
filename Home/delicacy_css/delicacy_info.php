@@ -133,17 +133,17 @@
 <h1 style="font-size:27px;"><?php echo $shop; ?></h1>
 <hr>
 
-<div class="grid_5">
-123123
+<div class="grid_7">
+<img class="info" src=".<?php echo $picture_url; ?>" alt="sample87"/>
+<br><br>
+<p style="font-size:20px;"><?php echo explode(".", $commodity_name)[0]; ?></p>
 </div>
 
 
 
 
-<div class="grid_5">
-<img class="info" src=".<?php echo $picture_url; ?>" alt="sample87"/>
-<br>
-<p style="font-size:20px;"><?php echo explode(".", $commodity_name)[0]; ?></p>
+<div class="grid_3">
+
 </div>
 
 
