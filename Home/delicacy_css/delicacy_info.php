@@ -136,7 +136,21 @@
 <div class="grid_7">
 <img class="info" src=".<?php echo $picture_url; ?>" alt="sample87"/>
 <br><br>
-<p style="font-size:20px;"><?php echo explode(".", $commodity_name)[0]; ?></p>
+<table>
+	<tr>
+		<td>Name:</td>
+		<td><?php echo explode(".", $commodity_name)[0]; ?></td>
+	</tr>
+	<tr>
+		<td>Quantity:</td>
+		<td><?php echo $quantity; ?></td>
+	</tr>
+	<tr>
+		<td>Description:</td>
+		<td><?php echo $description; ?></td>
+	</tr>
+</table>
+
 </div>
 
 
