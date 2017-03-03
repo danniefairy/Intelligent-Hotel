@@ -142,7 +142,7 @@
 
 <div class="grid_5">
 <img class="info" src=".<?php echo $picture_url; ?>" alt="sample87"/>
-<h3><?php echo explode(".", $commodity_name)[0]; ?></h3>
+<p style="font-size:20px;"><?php echo explode(".", $commodity_name)[0]; ?></p>
 </div>
 
 
