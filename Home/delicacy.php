@@ -123,7 +123,7 @@
 	}
 ?>
 
-
+<?php echo $picture_url[0]; ?>
 <figure class="snip1584"><img src="<?php echo $picture_url[0]; ?>" alt="sample87"/>
   <figcaption>
     <h3><?php echo $commodity_name[0]; ?></h3>
