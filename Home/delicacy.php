@@ -122,7 +122,8 @@
 			break;
 	}
 ?>
-
+<h1>Latest Delicacy</h1>
+<hr>
 <!--第一排-->
 <figure class="snip1584"><img src="<?php echo $picture_url[0]; ?>" alt="sample87"/>
   <figcaption>
