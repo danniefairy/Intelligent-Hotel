@@ -114,7 +114,7 @@
 		$commodity_id=$_GET['commodity_id'];
 	}
 
-	include "connect_db.php";
+	include "../connect_db.php";
 	$search="SELECT * FROM `commodity` WHERE `id`=\"$commodity_id\"";
 	$result=mysqli_query($connect,$search);
 	$row=mysqli_fetch_array($result);
