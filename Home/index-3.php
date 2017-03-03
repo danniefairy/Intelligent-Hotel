@@ -29,7 +29,7 @@
 							rename($_GET['old'], $_GET['new']);
 							$new=explode("/",$_GET['new'])[3];
 							$old=explode("/",$_GET['old'])[3];
-							$update="UPDATE `commodity` SET `db_id_name`=\"$new\" WHERE `db_id_name`=\"$old\"";
+							$update="UPDATE `commodity` SET `db_id_name`=\"$new\",`db_id_picture`=\"./shop_register/upload/$new\" WHERE `db_id_name`=\"$old\"";
 							mysqli_query($connect,$update);
 						}
 
