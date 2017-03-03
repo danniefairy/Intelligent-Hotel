@@ -123,7 +123,7 @@
 	}
 ?>
 
-
+<!--第一排-->
 <figure class="snip1584"><img src="<?php echo $picture_url[0]; ?>" alt="sample87"/>
   <figcaption>
     <h3><?php echo explode(".", $commodity_name[0])[0]; ?></h3>
@@ -145,7 +145,27 @@
   </figcaption><a href="#"></a>
 </figure>
 
+<!--第二排-->
+<figure class="snip1584"><img src="<?php echo $picture_url[3]; ?>" alt="sample87"/>
+  <figcaption>
+    <h3><?php echo explode(".", $commodity_name[3])[0]; ?></h3>
+    <h5>More</h5>
+  </figcaption><a href="#"></a>
+</figure>
 
+<figure class="snip1584"><img src="<?php echo $picture_url[4]; ?>" alt="sample87"/>
+  <figcaption>
+    <h3><?php echo explode(".", $commodity_name[4])[0]; ?></h3>
+    <h5>More</h5>
+  </figcaption><a href="#"></a>
+</figure>
+
+<figure class="snip1584"><img src="<?php echo $picture_url[5]; ?>" alt="sample87"/>
+  <figcaption>
+    <h3><?php echo explode(".", $commodity_name[5])[0]; ?></h3>
+    <h5>More</h5>
+  </figcaption><a href="#"></a>
+</figure>
 
 
 
