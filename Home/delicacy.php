@@ -109,7 +109,7 @@
 <!--=====================commodity=====================-->
 <?php
 	include "connect_db.php";
-	$search="SELECT * FROM `commodity` WHERE `commodity_type`=\"Food\" DESC";
+	$search="SELECT * FROM `commodity` WHERE `commodity_type`=\"Food\" ORDER BY `id` DESC";
 	$result=mysqli_query($connect,$search);
 	$count=0;
 	while($row=mysqli_fetch_array($result))
