@@ -134,7 +134,7 @@
 <hr>
 
 <div class="grid_5">
-
+123123
 </div>
 
 
@@ -142,6 +142,7 @@
 
 <div class="grid_5">
 <img class="info" src=".<?php echo $picture_url; ?>" alt="sample87"/>
+<br>
 <p style="font-size:20px;"><?php echo explode(".", $commodity_name)[0]; ?></p>
 </div>
 
