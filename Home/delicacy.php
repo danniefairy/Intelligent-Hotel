@@ -122,7 +122,7 @@
 			break;
 	}
 ?>
-<h1 style="font-size:40px;">Latest Delicacy</h1>
+<h1 style="font-size:20px;">Latest Delicacy</h1>
 <hr>
 <!--第一排-->
 <figure class="snip1584"><img src="<?php echo $picture_url[0]; ?>" alt="sample87"/>
