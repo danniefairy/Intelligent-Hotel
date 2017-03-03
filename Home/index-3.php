@@ -24,7 +24,7 @@
 							mysqli_query($connect,$delete);
 						}
 
-						//利用GET重新命名
+						//利用GET重新命名，資料庫照片路徑也要改
 						if(isset($_GET['new'])){
 							rename($_GET['old'], $_GET['new']);
 							$new=explode("/",$_GET['new'])[3];
