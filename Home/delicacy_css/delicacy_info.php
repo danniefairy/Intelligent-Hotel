@@ -53,25 +53,25 @@
 		<title>Hot Tours</title>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no" />
-		<link rel="icon" href="images/favicon.ico">
-		<link rel="shortcut icon" href="images/favicon.ico" />
-		<link rel="stylesheet" href="css/style.css">
-		<script src="js/jquery.js"></script>
-		<script src="js/jquery-migrate-1.2.1.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/superfish.js"></script>
-		<script src="js/jquery.ui.totop.js"></script>
-		<script src="js/jquery.equalheights.js"></script>
-		<script src="js/jquery.mobilemenu.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
+		<link rel="icon" href="../images/favicon.ico">
+		<link rel="shortcut icon" href="../images/favicon.ico" />
+		<link rel="stylesheet" href="../css/style.css">
+		<script src="../js/jquery.js"></script>
+		<script src="../js/jquery-migrate-1.2.1.js"></script>
+		<script src="../js/script.js"></script>
+		<script src="../js/superfish.js"></script>
+		<script src="../js/jquery.ui.totop.js"></script>
+		<script src="../js/jquery.equalheights.js"></script>
+		<script src="../js/jquery.mobilemenu.js"></script>
+		<script src="../js/jquery.easing.1.3.js"></script>
 		<script>
 		$(document).ready(function(){
 			$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 		</script>
 		
-		<link rel="stylesheet" type="text/css" href="./delicacy_css/hover.css">
-		<script type="text/javascript" src="./delicacy_css/hover.js"></script>
+		<link rel="stylesheet" type="text/css" href="hover.css">
+		<script type="text/javascript" src="hover.js"></script>
 
 	</head>
 	<body>
