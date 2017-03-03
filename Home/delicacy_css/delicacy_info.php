@@ -72,7 +72,19 @@
 		
 		<link rel="stylesheet" type="text/css" href="hover.css">
 		<script type="text/javascript" src="hover.js"></script>
+		<style>
+		table {
+		    border-collapse: collapse;
+		    width: 100%;
+		}
 
+		th, td {
+		    text-align: left;
+		    padding: 8px;
+		}
+
+		tr:nth-child(even){background-color: #f2f2f2}
+		</style>
 	</head>
 	<body>
 <!--==============================header=================================-->
