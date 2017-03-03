@@ -129,7 +129,7 @@
   <figcaption>
     <h3><?php echo explode(".", $commodity_name[0])[0]; ?></h3>
     <h5>More</h5>
-  </figcaption><a href="#"></a>
+  </figcaption><a href="./delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[0]; ?>"></a>
 </figure>
 
 <figure class="snip1584"><img src="<?php echo $picture_url[1]; ?>" alt="sample87"/>
