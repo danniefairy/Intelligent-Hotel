@@ -111,21 +111,23 @@
 	include "connect_db.php";
 	$search="SELECT * FROM `commodity` WHERE `commodity_type`=\"Food\"";
 	$result=mysqli_query($connect,$search);
+	$count=0;
 	while($row=mysqli_fetch_array($result))
-					{
-						echo '<tr>';
-							echo '<td>'.$row[0].'</td>';
-							echo '<td>'.$row[1].'</td>';
-							echo '<td>'.$row[2].'</td>';
-						echo '</tr>';
-					}
+	{
+		$commodity_id[$count]=$row[0];
+		$commodity_name[$count]=$row[2];
+		$picture_url[$count]=$row[3];
+		$count=$count+1;
+		if($count>8)
+			break;
+	}
 ?>
 
 
-<figure class="snip1584"><img src="./images/hotel_room_1.jpg" alt="sample87"/>
+<figure class="snip1584"><img src="<?php echo $picture_url[0]; ?>" alt="sample87"/>
   <figcaption>
-    <h3>Burgundy Flemming</h3>
-    <h5>Advertising</h5>
+    <h3><?php echo $commodity_name[0]; ?></h3>
+    <h5>More</h5>
   </figcaption><a href="#"></a>
 </figure>
 
