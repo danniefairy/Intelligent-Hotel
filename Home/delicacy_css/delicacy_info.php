@@ -136,6 +136,7 @@
 	$picture_url=$row[3];
 	$description=$row[4];
 	$quantity=$row[5];
+	$price=$row[7];
 
 	$search_name="SELECT * FROM `shop` WHERE `db_id`=\"$db_id\"";
 	$result_name=mysqli_query($connect,$search_name);
@@ -156,6 +157,10 @@
 	<tr>
 		<td>Quantity:</td>
 		<td><?php echo $quantity; ?></td>
+	</tr>
+	<tr>
+		<td>Price:</td>
+		<td><?php echo $price."$"; ?></td>
 	</tr>
 	<tr>
 		<td>Description:</td>
