@@ -117,7 +117,6 @@
 		$commodity_id[$count]=$row[0];
 		$commodity_name[$count]=$row[2];
 		$picture_url[$count]=$row[3];
-		echo $picture_url[$count];
 		$count=$count+1;
 		if($count>8)
 			break;
@@ -125,7 +124,7 @@
 ?>
 
 
-<figure class="snip1584"><img src="<?php echo $picture_url[0]; ?>" alt="sample87"/>
+<figure class="snip1584"><img src="./shop_register/upload/key4.png?>" alt="sample87"/>
   <figcaption>
     <h3><?php echo $commodity_name[0]; ?></h3>
     <h5>More</h5>
