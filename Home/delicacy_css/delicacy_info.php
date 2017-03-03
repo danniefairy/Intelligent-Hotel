@@ -141,8 +141,7 @@
 
 
 <div class="grid_5">
-<figure class="snip1584"><img src=".<?php echo $picture_url; ?>" alt="sample87"/>
-</figure>
+<img class="info"> src=".<?php echo $picture_url; ?>" alt="sample87"/>
 <h3><?php echo explode(".", $commodity_name)[0]; ?></h3>
 </div>
 
