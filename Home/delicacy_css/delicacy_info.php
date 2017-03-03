@@ -82,11 +82,11 @@
 					<div class="menu_block">
 						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 							<ul class="sf-menu">
-								<li class="current"><a href="index.php">Home</a></li>
-								<li><a href="index-1.php">Room & Tour</a></li>
-								<li><a href="index-2.php">SPECIAL OFFERS</a></li>
-								<li><a href="shop_register/index.php">Store Management</a></li>
-								<li><a href="../credit_card/index.php">Credit Card</a></li>
+								<li class="current"><a href="../index.php">Home</a></li>
+								<li><a href="../index-1.php">Room & Tour</a></li>
+								<li><a href="../index-2.php">SPECIAL OFFERS</a></li>
+								<li><a href="../shop_register/index.php">Store Management</a></li>
+								<li><a href="../../credit_card/index.php">Credit Card</a></li>
 							</ul>
 						</nav>
 						<div class="clear"></div>
@@ -133,6 +133,24 @@
 <h1 style="font-size:27px;"><?php echo $shop; ?></h1>
 <hr>
 
+<div class="grid_5">
+<figure class="snip1584"><img src="<?php echo $picture_url; ?>" alt="sample87"/>
+  <figcaption>
+    <h3><?php echo explode(".", $commodity_name)[0]; ?></h3>
+  </figcaption>
+</figure>
+</div>
+
+
+
+
+<div class="grid_5">
+<figure class="snip1584"><img src="<?php echo $picture_url; ?>" alt="sample87"/>
+  <figcaption>
+    <h3><?php echo explode(".", $commodity_name)[0]; ?></h3>
+  </figcaption>
+</figure>
+</div>
 
 
 
