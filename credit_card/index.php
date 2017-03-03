@@ -20,23 +20,23 @@
 ?>
 
 <!--credit card-->
-<div class="form"">
+<div class="form">
   <h1 style="text-align:center; font-size:40px;">Credit Card</h1>
   <hr>
 
   <form id="form" action="get.php">
 
 
-      <h1>Name on card</h1>
+      <h2>Name on card</h2>
       <input type="text" name="Name" id="name" value=""></input>
 
-      <h1>Card number</h1>
+      <h2>Card number</h2>
       <input type="number" name="Number" id="number" value=""></input>
       
-      <h1>CVV</h1>
+      <h2>CVV</h2>
       <input type="text" name="CVV" id="cvv" value=""></input>
       
-      <h1>Expires</h1>
+      <h2>Expires</h2>
         <label for="month" >Month</label>
         <br>
           <select id='month' name="month">
@@ -69,7 +69,7 @@
           <option value='2021'>2021</option>
           </select>
 
-      <br><br>
+      <br>
       <input type='submit' value="Submit"></input>
   </form>
 
