@@ -131,19 +131,21 @@
   </figcaption><a href="#"></a>
 </figure>
 
-<figure class="snip1584"><img src="./images/credit.jpg" alt="sample119"/>
+<figure class="snip1584"><img src="<?php echo $picture_url[1]; ?>" alt="sample87"/>
   <figcaption>
-    <h3>Nigel Nigel</h3>
-    <h5>Vision</h5>
+    <h3><?php echo explode(".", $commodity_name[1])[0]; ?></h3>
+    <h5>More</h5>
   </figcaption><a href="#"></a>
 </figure>
 
-<figure class="snip1584"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample120.jpg" alt="sample120"/>
+<figure class="snip1584"><img src="<?php echo $picture_url[2]; ?>" alt="sample87"/>
   <figcaption>
-    <h3>Caspian Bellevedere</h3>
-    <h5>Accounting</h5>
+    <h3><?php echo explode(".", $commodity_name[2])[0]; ?></h3>
+    <h5>More</h5>
   </figcaption><a href="#"></a>
 </figure>
+
+
 
 
 
