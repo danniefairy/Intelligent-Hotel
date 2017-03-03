@@ -236,6 +236,8 @@
 							</select><br/><br/>
 							Quantity:<br/>
 							<input type="number" name="quantity"><br/><br/>
+							Price:<br/>
+							<input type="number" name="price"><br/><br/>
 							Description:<br>
 							<textarea name="description" placeholder="Description of your commodity!"></textarea><br><br>
 							<input type="submit" value="送出">	
