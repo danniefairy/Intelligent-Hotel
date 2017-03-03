@@ -106,7 +106,20 @@
 		<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
 			<div class="container_12">
 				<div class="banners">
-					<!--commodity-->
+<!--=====================commodity=====================-->
+<?php
+	include "connect_db.php";
+	$search="SELECT * FROM `commodity` WHERE `commodity_type`=\"Food\"";
+	$result=mysqli_query($connect,$search);
+	while($row=mysqli_fetch_array($result))
+					{
+						echo '<tr>';
+							echo '<td>'.$row[0].'</td>';
+							echo '<td>'.$row[1].'</td>';
+							echo '<td>'.$row[2].'</td>';
+						echo '</tr>';
+					}
+?>
 
 
 <figure class="snip1584"><img src="./images/hotel_room_1.jpg" alt="sample87"/>
@@ -135,7 +148,7 @@
 
 
 
-					<!--commodity-->
+<!--=====================commodity=====================-->
 				</div>
 			</div>
 		</div>
