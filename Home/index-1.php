@@ -405,7 +405,7 @@
 								var country=document.getElementById('country').value;
 								var check_in=document.getElementById('in').value;
 								var check_out=document.getElementById('out').value;
-								var button=$('input[id="Radio"]:checked').val();;
+								var button=$('input[id="Radio"]:checked').val();
 								var adult=document.getElementById('adult').value;
 								var child=document.getElementById('child').value;
 								var room=document.getElementById('room').value;
