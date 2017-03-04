@@ -123,6 +123,7 @@
 				    cursor: pointer;
 				}
 		</style>
+				
 	</head>
 	<body>
 <!--==============================header=================================-->
@@ -184,12 +185,10 @@
 	//google map
 	$lat=$return[4];
 	$long=$return[5];
-	
 ?>
 <h1 style="font-size:27px;"><?php echo $shop; ?></h1>
 <hr>
 
-<!--============================左邊============================-->
 <div class="grid_7">
 
 <img class="info" src=".<?php echo $picture_url; ?>" alt="sample87"/>
@@ -239,9 +238,9 @@
 
 
 </div>
-<!--============================左邊============================-->
 
-<!--============================右邊============================-->
+
+
 
 <div class="grid_3">
 <!--google map-->
@@ -261,9 +260,7 @@
           position: company_position,
           title: "<?php echo $shop; ?>"
         });
-
-
-      //-------current location-------
+//-------current location-------
 
       if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -289,9 +286,9 @@ var image = '../images/icon_marker.png';
 <!--google map-->
 <figure id="google_map" style="min-width:400px;  min-height:285px;"></figure>
 <!--google map-->
+
 </div>
 
-<!--============================右邊============================-->
 
 
 
