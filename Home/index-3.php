@@ -162,13 +162,15 @@
 			<div class="container_12">
 			<?php
 				
-				$title="SELECT `company_name` FROM shop WHERE `db_id`=\"$db_id\"";
+				$title="SELECT `company_name`,`revenue` FROM shop WHERE `db_id`=\"$db_id\"";
 				$title_db=mysqli_query($connect,$title);
 				$store_title=mysqli_fetch_array($title_db)[0];
+				$revenue_store=mysqli_fetch_array($title_db)[1];
 			?>
 			<!--左邊-->
 				<div class="grid_7">
 					<h3 class="head1"><?php echo $store_title; ?></h3>
+					<span style="font-size:20px;">revenue:<?php echo $revenue_store; ?></span>
 					<hr>
 					<?php
 					$search="SELECT * FROM `commodity` WHERE `db_id`=$db_id";
