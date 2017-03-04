@@ -133,6 +133,9 @@
 
 <h1 style="font-size:27px;">Latest Delicacy</h1>
 <hr>
+
+<!--===============使用google map查看自己的位置時要用https===============-->
+<!--===============Azure剛好只要輸入多個s就可以轉換所以直接打絕對網址路徑===============-->
 <!--第一排-->
 <figure class="snip1584"><img src="<?php echo $picture_url[0]; ?>" alt="sample87"/>
   <figcaption>
