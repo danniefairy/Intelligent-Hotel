@@ -271,6 +271,9 @@
 	    	lat: position.coords.latitude,
 	        lng: position.coords.longitude
 	    };
+	    var my_infoWindow = new google.maps.InfoWindow({map: map});
+		my_infoWindow.setPosition(pos);
+        my_infoWindow.setContent("You are here");
 		var marker = new google.maps.Marker({
           map: map,
           position: pos,
@@ -279,9 +282,7 @@
 	    }, function() {
 	      handleLocationError(true, infoWindow, map.getCenter());
 	    });
-	    var my_infoWindow = new google.maps.InfoWindow({map: map});
-		my_infoWindow.setPosition(pos);
-        my_infoWindow.setContent("You are here");
+	    
 
 	} 
   //-------current location-------
