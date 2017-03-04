@@ -178,13 +178,20 @@
 
 	$search_name="SELECT * FROM `shop` WHERE `db_id`=\"$db_id\"";
 	$result_name=mysqli_query($connect,$search_name);
-	$shop=mysqli_fetch_array($result_name)[2];
+	$return=mysqli_fetch_array($result_name);
+	$shop=$return[2];
+
+	//google map
+	$lat=$return[4];
+	$long=$return[5];
 	
 ?>
 <h1 style="font-size:27px;"><?php echo $shop; ?></h1>
 <hr>
 
+<!--============================左邊============================-->
 <div class="grid_7">
+
 <img class="info" src=".<?php echo $picture_url; ?>" alt="sample87"/>
 <br><br>
 <table>
@@ -232,14 +239,37 @@
 
 
 </div>
+<!--============================左邊============================-->
 
-
-
+<!--============================右邊============================-->
 
 <div class="grid_3">
+<!--google map-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6h46-lqQIkEoHqwEiV1ub4vmhe8s92Ws&callback=initMap"
+        async defer></script>
+    <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('google_map'), {
+        center: {lat: <?php echo $lat; ?>, lng: <?php echo $long; ?>},
+        zoom: 15
+      });
 
+      var company_position = {lat: <?php echo $lat; ?>, lng: <?php echo $long; ?>};
+      var marker = new google.maps.Marker({
+          map: map,
+          position: company_position,
+          title: "<?php echo $shop; ?>"
+        });
+    }
+    </script>
+    <!--google map-->
+<!--google map-->
+<figure id="google_map" style="min-width:400px;  min-height:285px;"></figure>
+<!--google map-->
 </div>
 
+<!--============================右邊============================-->
 
 
 
