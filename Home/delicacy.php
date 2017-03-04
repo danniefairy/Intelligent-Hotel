@@ -83,7 +83,7 @@
 		<!--table-->
 		<link rel="stylesheet" type="text/css" href="./delicacy_css/shop_table.css">
 		<script type="text/javascript" src="./delicacy_css/shop_table.js"></script>
-		
+
 	</head>
 	<body>
 <!--==============================header=================================-->
@@ -191,12 +191,11 @@
 <h1 style="font-size:27px;">Store</h1>
 <hr>
 <!--table-->
-<h1 style="font-size:27px;">Store</h1>
-<hr>
+
 <table id="head">           
 <tr>
-                <th style="font-size:25px;">Ranking</th>
-               </tr>        
+    <th style="font-size:25px;">Ranking</th>
+</tr>        
 </table>
 <?php
 	$store_list="SELECT * FROM `shop` ORDER BY `revenue` DESC";
