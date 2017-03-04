@@ -275,6 +275,7 @@
 		my_infoWindow.setPosition(pos);
         my_infoWindow.setContent("You are here");
         alert(pos['lat']);
+
 		var marker = new google.maps.Marker({
           map: map,
           position: pos,
@@ -286,6 +287,10 @@
 	    
 
 	} 
+	 else {
+    // Browser doesn't support Geolocation
+    handleLocationError(false, infoWindow, map.getCenter());
+  }
   //-------current location-------
     }
     </script>
