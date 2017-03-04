@@ -260,6 +260,9 @@
           position: company_position,
           title: "<?php echo $shop; ?>"
         });
+      var infoWindow = new google.maps.InfoWindow({map: map});
+		infoWindow.setPosition(company_position);
+        infoWindow.setContent("<?php echo $shop; ?>");
 //-------current location-------
 
     if (navigator.geolocation) {
@@ -268,16 +271,17 @@
 	    	lat: position.coords.latitude,
 	        lng: position.coords.longitude
 	    };
-		var image = '../images/icon_marker.png';
-	  	var beachMarker = new google.maps.Marker({
-	    position: pos,
-	    map: map,
-	    icon: image,
-	    title:"You are here"
-	  	});
+		var marker = new google.maps.Marker({
+          map: map,
+          position: pos,
+          title: "You are here"
+        });
 	    }, function() {
 	      handleLocationError(true, infoWindow, map.getCenter());
 	    });
+	    var my_infoWindow = new google.maps.InfoWindow({map: map});
+		my_infoWindow.setPosition(pos);
+        my_infoWindow.setContent("You are here");
 
 	} 
   //-------current location-------
