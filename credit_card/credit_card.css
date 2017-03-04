@@ -41,8 +41,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8c6df', end
           position: fixed;
           top: 40%;
           left: 50%;
-          margin: -250px 0 0 -250px;
-        width:500px;
+          margin: -250px 0 0 -40%;
+        width:80%;
 
         height:700px;
 
