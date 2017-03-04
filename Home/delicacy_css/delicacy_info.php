@@ -295,7 +295,7 @@
 <!--google map-->
 <figure id="google_map" style="min-width:400px;  min-height:285px;"></figure>
 <!--google map-->
-<img src="../images/icon_marker.png"><span style="font-size:20px;"><strong>Your current location!</strong></span>
+<img src="../images/icon_marker.png"><span style="font-size:23px;"><strong>Current location</strong></span>
 
 </div>
 
