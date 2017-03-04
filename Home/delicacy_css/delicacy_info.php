@@ -31,6 +31,7 @@
 		if(mysqli_fetch_array($result)[0]==""){
 			echo "<a href=\"../index.php\">The service is for people who have already booked the room!</a>";
 			die();
+		}
 	}
 
 	/*//確認已經訂房
