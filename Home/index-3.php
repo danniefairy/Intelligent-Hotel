@@ -171,7 +171,7 @@
 			<!--左邊-->
 				<div class="grid_7">
 					<h3 class="head1"><?php echo $store_title; ?></h3>
-					<span style="font-size:20px;">revenue:<?php echo $revenue_store; ?></span>
+					<span style="font-size:20px;">revenue:<?php echo $revenue_store."$"; ?></span>
 					<hr>
 					<?php
 					$search="SELECT * FROM `commodity` WHERE `db_id`=$db_id";
