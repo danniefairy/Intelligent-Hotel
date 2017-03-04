@@ -122,6 +122,9 @@
 			break;
 	}
 ?>
+
+<div class="grid_8">
+
 <h1 style="font-size:27px;">Latest Delicacy</h1>
 <hr>
 <!--第一排-->
@@ -168,7 +171,12 @@
   </figcaption><a href="./delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[5]; ?>"></a>
 </figure>
 
+</div>
 
+<div class="grid_2">
+<h1 style="font-size:27px;">Store</h1>
+<hr>
+</div>
 
 
 
