@@ -91,15 +91,6 @@
 
 
 		/*新增的*/
-		input[type=text], select {
-			    width: 50%;
-			    padding: 12px 20px;
-			    margin: 8px 0;
-			    display: inline-block;
-			    border: 1px solid #ccc;
-			    border-radius: 4px;
-			    box-sizing: border-box;
-				}
 
 				input[type=number], select {
 			    width: 50%;
@@ -217,9 +208,12 @@
 
 <!--新增的-->
 <div ng-app="myApp" ng-controller="formCtrl">
-<form>
+<!--新增的-->
+<div ng-app="myApp" ng-controller="formCtrl">
+<form action="buy.php" method="post">
 	Quantity:<br>
 	<input type="number" name="quantity" ng-model="quantity">
+	<input type="text" name="price" value="<?php echo $price; ?>" hidden>
 	<h4>Total cost: {{quantity*<?php echo $price; ?>}}</h3>
 	<script>
 	var app = angular.module('myApp', []);
