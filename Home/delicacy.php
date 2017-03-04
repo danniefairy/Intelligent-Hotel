@@ -46,6 +46,12 @@
 		alert(\"You can see the content after binding your credit card!\")
 		</script>";
 	}*/
+
+	if(isset($_GET['buy'])){
+		echo "<script type=\"text/javascript\">
+		alert(\"Successfule transaction !\")
+		</script>";
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">

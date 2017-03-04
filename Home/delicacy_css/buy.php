@@ -22,6 +22,8 @@
 		mysqli_query($connect,$update);
 		$update="UPDATE `shop` SET `revenue`=\"$new_revenue\" WHERE `company_name`=\"$shop\"";
 		mysqli_query($connect,$update);
+
+		header("location:../delicacy.php?buy=1");
 	}
 
 
