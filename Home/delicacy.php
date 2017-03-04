@@ -79,6 +79,11 @@
 		<link rel="stylesheet" type="text/css" href="./delicacy_css/hover.css">
 		<script type="text/javascript" src="./delicacy_css/hover.js"></script>
 
+
+		<!--table-->
+		<link rel="stylesheet" type="text/css" href="./delicacy_css/shop_table.css">
+		<script type="text/javascript" src="./delicacy_css/shop_table.js"></script>
+		
 	</head>
 	<body>
 <!--==============================header=================================-->
@@ -185,6 +190,32 @@
 <div class="grid_4">
 <h1 style="font-size:27px;">Store</h1>
 <hr>
+<!--table-->
+<h1 style="font-size:27px;">Store</h1>
+<hr>
+<table id="head">           
+<tr>
+                <th style="font-size:25px;">Ranking</th>
+               </tr>        
+</table>
+<?php
+	$store_list="SELECT * FROM `shop` ORDER BY `revenue` DESC";
+	$result=mysqli_query($connect,$store_list);
+
+	echo "<table id=\"table\">";
+
+	while($row=mysqli_fetch_array($result)){
+		echo "<tr>";
+			echo "<td>";
+				echo "&nbsp&nbsp&nbsp<a href=\"$row[2]\">$row[2]</a>";
+			echo "</td>";
+		echo "</tr>";
+	}
+
+    echo "</table>";
+?>
+<!--table-->
+
 </div>
 
 

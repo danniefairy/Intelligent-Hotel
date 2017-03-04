@@ -1,0 +1,41 @@
+#table{
+
+  width:100%;
+  background-color:#acacac;
+  max-height:500px;
+  min-height:auto;
+  overflow-y:scroll;
+  display:block;
+
+}
+td{
+  background-color: #ececec;
+  width:50%;
+  height:30px;
+}
+
+tr:hover > td{
+  background-color: wheat;
+}
+
+tr.inprogress{
+    background:crimson;
+}
+
+#head{
+
+  width:100%;
+  background-color:#acacac;
+  max-height:500px;
+  min-height:auto;
+  display:block;
+  
+}
+th{
+    background-color: #a0a0a0;
+  color:#e0e0e0;
+  font-family:segoe ui;
+  width:1%;
+  height:30px;
+  
+}
