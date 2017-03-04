@@ -268,7 +268,7 @@
 	    	lat: position.coords.latitude,
 	        lng: position.coords.longitude
 	    };
-		/*var image = '../images/icon_marker.png';
+		var image = '../images/icon_marker.png';
 	  	var beachMarker = new google.maps.Marker({
 	    position: pos,
 	    map: map,
@@ -277,16 +277,8 @@
 	  	});
 	    }, function() {
 	      handleLocationError(true, infoWindow, map.getCenter());
-	    });*/
-	    var marker = new google.maps.Marker({
-          map: map,
-          position: pos,
-          title: "hello"
-        });
-    }, function() {
-      handleLocationError(true, infoWindow, map.getCenter());
-    });
-	    
+	    });
+
 	} 
   //-------current location-------
     }
