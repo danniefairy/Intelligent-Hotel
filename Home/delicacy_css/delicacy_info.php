@@ -297,7 +297,7 @@
 <!--google map-->
 <br>
 <img src="../images/icon_marker.png">
-<span style="font-size:40px; vertical-align:middle;"><strong>Current location</strong></span>
+<span style="font-size:27px; vertical-align:middle;"><strong>Current location</strong></span>
 
 </div>
 
