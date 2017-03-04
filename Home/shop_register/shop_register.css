@@ -37,7 +37,7 @@ body {
         height:500px;
     }
     /* 響應式*/
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1800px){
     .login { 
         position: absolute;
         top: 50%;
