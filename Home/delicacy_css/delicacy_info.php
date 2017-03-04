@@ -92,6 +92,7 @@
 
 		/*新增的*/
 
+
 				input[type=number], select {
 			    width: 50%;
 			    padding: 12px 20px;
@@ -208,12 +209,12 @@
 
 <!--新增的-->
 <div ng-app="myApp" ng-controller="formCtrl">
-<!--新增的-->
-<div ng-app="myApp" ng-controller="formCtrl">
 <form action="buy.php" method="post">
 	Quantity:<br>
-	<input type="number" name="quantity" ng-model="quantity">
+	<input type="number" name="quantity" ng-model="quantity" min="1" max="<?php echo $quantity; ?>">
 	<input type="text" name="price" value="<?php echo $price; ?>" hidden>
+	<input type="text" name="shop" value="<?php echo $shop; ?>" hidden>
+	<input type="text" name="commodity_id" value="<?php echo $commodity_id; ?>" hidden>
 	<h4>Total cost: {{quantity*<?php echo $price; ?>}}</h3>
 	<script>
 	var app = angular.module('myApp', []);
@@ -221,7 +222,7 @@
 	    $scope.quantity = 0;
 	});
 	</script>
-	<input type="submit" name="">
+	<input type="submit" name="Buy" value="Buy">
 </form>
 
 
