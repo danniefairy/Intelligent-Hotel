@@ -291,6 +291,13 @@
     // Browser doesn't support Geolocation
     alert("no");
   }
+
+  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+  infoWindow.setPosition(pos);
+  infoWindow.setContent(browserHasGeolocation ?
+                        'Error: The Geolocation service failed.' :
+                        'Error: Your browser doesn\'t support geolocation.');
+}
   //-------current location-------
     }
     </script>
