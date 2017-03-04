@@ -138,21 +138,21 @@
   <figcaption>
     <h3><?php echo explode(".", $commodity_name[0])[0]; ?></h3>
     <h5>More</h5>
-  </figcaption><a href="./delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[0]; ?>"></a>
+  </figcaption><a href="https://danniehotel.azurewebsites.net/Home/delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[0]; ?>"></a>
 </figure>
 
 <figure class="snip1584"><img src="<?php echo $picture_url[1]; ?>" alt="sample87"/>
   <figcaption>
     <h3><?php echo explode(".", $commodity_name[1])[0]; ?></h3>
     <h5>More</h5>
-  </figcaption><a href="./delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[1]; ?>"></a>
+  </figcaption><a href="https://danniehotel.azurewebsites.net/Home/delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[1]; ?>"></a>
 </figure>
 
 <figure class="snip1584"><img src="<?php echo $picture_url[2]; ?>" alt="sample87"/>
   <figcaption>
     <h3><?php echo explode(".", $commodity_name[2])[0]; ?></h3>
     <h5>More</h5>
-  </figcaption><a href="./delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[2]; ?>"></a>
+  </figcaption><a href="https://danniehotel.azurewebsites.net/Home/delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[2]; ?>"></a>
 </figure>
 
 <!--第二排-->
@@ -160,21 +160,21 @@
   <figcaption>
     <h3><?php echo explode(".", $commodity_name[3])[0]; ?></h3>
     <h5>More</h5>
-  </figcaption><a href="./delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[3]; ?>"></a>
+  </figcaption><a href="https://danniehotel.azurewebsites.net/Home/delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[3]; ?>"></a>
 </figure>
 
 <figure class="snip1584"><img src="<?php echo $picture_url[4]; ?>" alt="sample87"/>
   <figcaption>
     <h3><?php echo explode(".", $commodity_name[4])[0]; ?></h3>
     <h5>More</h5>
-  </figcaption><a href="./delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[4]; ?>"></a>
+  </figcaption><a href="https://danniehotel.azurewebsites.net/Home/delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[4]; ?>"></a>
 </figure>
 
 <figure class="snip1584"><img src="<?php echo $picture_url[5]; ?>" alt="sample87"/>
   <figcaption>
     <h3><?php echo explode(".", $commodity_name[5])[0]; ?></h3>
     <h5>More</h5>
-  </figcaption><a href="./delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[5]; ?>"></a>
+  </figcaption><a href="https://danniehotel.azurewebsites.net/Home/delicacy_css/delicacy_info.php?commodity_id=<?php echo $commodity_id[5]; ?>"></a>
 </figure>
 
 </div>
