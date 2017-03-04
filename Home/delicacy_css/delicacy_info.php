@@ -264,7 +264,7 @@
 		infoWindow.setPosition(company_position);
         infoWindow.setContent("<?php echo $shop; ?>");
 //-------current location-------
-
+/*
     if (navigator.geolocation) {
 	    navigator.geolocation.getCurrentPosition(function(position) {
 	    var pos = {
@@ -287,17 +287,7 @@
 	    alert(pos);
 
 	} 
-	 else {
-    // Browser doesn't support Geolocation
-    alert("no");
-  }
-
-  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-  infoWindow.setPosition(pos);
-  infoWindow.setContent(browserHasGeolocation ?
-                        'Error: The Geolocation service failed.' :
-                        'Error: Your browser doesn\'t support geolocation.');
-}
+*/
   //-------current location-------
     }
     </script>
