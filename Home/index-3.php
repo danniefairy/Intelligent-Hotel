@@ -164,8 +164,9 @@
 				
 				$title="SELECT `company_name`,`revenue` FROM shop WHERE `db_id`=\"$db_id\"";
 				$title_db=mysqli_query($connect,$title);
-				$store_title=mysqli_fetch_array($title_db)[0];
-				$revenue_store=mysqli_fetch_array($title_db)[1];
+				$get=mysqli_fetch_array($title_db);
+				$store_title=$get[0];
+				$revenue_store=$get[1];
 			?>
 			<!--左邊-->
 				<div class="grid_7">
