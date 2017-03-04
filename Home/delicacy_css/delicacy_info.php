@@ -262,23 +262,32 @@
         });
 //-------current location-------
 
-      if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
-var image = '../images/icon_marker.png';
-  var beachMarker = new google.maps.Marker({
-    position: pos,
-    map: map,
-    icon: image,
-    title:"You are here"
-  });
+    if (navigator.geolocation) {
+	    navigator.geolocation.getCurrentPosition(function(position) {
+	    var pos = {
+	    	lat: position.coords.latitude,
+	        lng: position.coords.longitude
+	    };
+		/*var image = '../images/icon_marker.png';
+	  	var beachMarker = new google.maps.Marker({
+	    position: pos,
+	    map: map,
+	    icon: image,
+	    title:"You are here"
+	  	});
+	    }, function() {
+	      handleLocationError(true, infoWindow, map.getCenter());
+	    });*/
+	    var marker = new google.maps.Marker({
+          map: map,
+          position: pos,
+          title: "hello"
+        });
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());
     });
-  } 
+	    
+	} 
   //-------current location-------
     }
     </script>
