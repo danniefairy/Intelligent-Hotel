@@ -194,7 +194,7 @@
 
 <table id="head">           
 <tr>
-    <th style="font-size:25px;">Ranking</th>
+    <th style="font-size:22px;">Ranking</th>
 </tr>        
 </table>
 <?php
