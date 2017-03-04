@@ -26,7 +26,7 @@
 		//確認是否有綁定信用卡
 		include 'connect_db.php';
 		$id=$_SESSION['db_id'];
-		$sql="SELECT `card_name` FROM hotel Where `id`=\"$id\"";
+		$sql="SELECT `card_name` FROM `hotel` Where `id`=\"$id\"";
 		$result=mysqli_query($connect,$sql);
 		if(mysqli_fetch_array($result)[0]==""){
 			echo "<a href=\"../index.php\">The service is for people who have already booked the room!</a>";
