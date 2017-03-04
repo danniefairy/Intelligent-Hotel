@@ -182,7 +182,7 @@
 
 </div>
 
-<div class="grid_2">
+<div class="grid_4">
 <h1 style="font-size:27px;">Store</h1>
 <hr>
 </div>
