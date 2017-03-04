@@ -86,7 +86,7 @@
 					<div class="menu_block">
 						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 							<ul class="sf-menu">
-								<li class="current"><a href="index.php">Home</a></li>
+								<li><a href="index.php">Home</a></li>
 								<li><a href="index-1.php">Room & Tour</a></li>
 								<li><a href="index-2.php">SPECIAL OFFERS</a></li>
 								<li><a href="shop_register/index.php">Store Management</a></li>
