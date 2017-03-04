@@ -264,7 +264,7 @@
 		infoWindow.setPosition(company_position);
         infoWindow.setContent("<?php echo $shop; ?>");
 //-------current location-------
-
+/*
     if (navigator.geolocation) {
 	    navigator.geolocation.getCurrentPosition(function(position) {
 	    var pos = {
@@ -290,7 +290,7 @@
 	 else {
     // Browser doesn't support Geolocation
     alert("no");
-  }
+  }*/
   //-------current location-------
     }
     </script>
