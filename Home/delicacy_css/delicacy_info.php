@@ -70,6 +70,9 @@
 		});
 		</script>
 		
+		<!--新增的-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
 		<link rel="stylesheet" type="text/css" href="hover.css">
 		<script type="text/javascript" src="hover.js"></script>
 		<style>
@@ -84,6 +87,48 @@
 		}
 
 		tr:nth-child(even){background-color: #f2f2f2}
+
+
+		/*新增的*/
+		input[type=text], select {
+			    width: 50%;
+			    padding: 12px 20px;
+			    margin: 8px 0;
+			    display: inline-block;
+			    border: 1px solid #ccc;
+			    border-radius: 4px;
+			    box-sizing: border-box;
+				}
+
+				input[type=number], select {
+			    width: 50%;
+			    padding: 12px 20px;
+			    margin: 8px 0;
+			    display: inline-block;
+			    border: 1px solid #ccc;
+			    border-radius: 4px;
+			    box-sizing: border-box;
+				}
+				textarea{
+					width: 50%;
+				    padding: 30px 20px;
+				    margin: 8px 0;
+				    display: inline-block;
+				    border: 1px solid #ccc;
+				    border-radius: 4px;
+				    box-sizing: border-box;
+				}
+
+				input[type=submit] {
+				    width: 50%;
+				    background-color: #4CAF50;
+				    color: white;
+				    padding: 14px 20px;
+				    margin: 8px 0;
+				    border: none;
+				    border-radius: 4px;
+				    cursor: pointer;
+				}
 		</style>
 	</head>
 	<body>
@@ -167,6 +212,28 @@
 		<td><?php echo $description; ?></td>
 	</tr>
 </table>
+<br>
+
+<!--新增的-->
+<div ng-app="myApp" ng-controller="formCtrl">
+<form>
+	Quantity:<br>
+	<input type="number" name="quantity" ng-model="quantity">
+	<h4>Total cost: {{quantity*<?php echo $price; ?>}}</h3>
+	<script>
+	var app = angular.module('myApp', []);
+	app.controller('formCtrl', function($scope) {
+	    $scope.quantity = 0;
+	});
+	</script>
+	<input type="submit" name="">
+</form>
+
+
+</div>
+
+
+
 
 </div>
 
