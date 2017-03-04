@@ -271,11 +271,12 @@
 	    	lat: position.coords.latitude,
 	        lng: position.coords.longitude
 	    };
-		var marker = new google.maps.Marker({
-          map: map,
-          position: pos,
-          title: "You are here"
-        });
+		  var image = '../images/icon_marker.png';
+		  var beachMarker = new google.maps.Marker({
+		    position: {lat: -33.890, lng: 151.274},
+		    map: map,
+		    icon: image
+		  });
 	    }, function() {
 	      //handleLocationError(true, infoWindow, map.getCenter());
 	    });
