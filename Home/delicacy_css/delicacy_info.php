@@ -282,7 +282,7 @@
           title: "You are here"
         });
 	    }, function() {
-	      handleLocationError(true, infoWindow, map.getCenter());
+	      //handleLocationError(true, infoWindow, map.getCenter());
 	    });
 	    //alert(pos);
 
