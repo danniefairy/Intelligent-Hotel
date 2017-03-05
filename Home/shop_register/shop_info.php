@@ -134,7 +134,8 @@
 <br>
 <br>
 <h1 style="font-size:25px;"><strong>Introduction</strong></h1>
-<h1>&nbsp&nbsp<?php echo $information[8]; ?></h1>
+<br>
+<h1>&nbsp&nbsp&nbsp&nbsp<?php echo $information[8]; ?></h1>
 </div>
 
 <div class="grid_4">
