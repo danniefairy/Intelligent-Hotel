@@ -175,9 +175,9 @@
 					<hr>
 					<!--商家簡介-->
 					<form action="store_profile.php"  method="post" enctype="multipart/form-data">
-						<input type="text" name="store_name" value="<?php echo $store_title; ?>" hidden>
+						<input type="hidden" name="store_name" value="<?php echo $store_title; ?>">
 						Picture:<br/>
-						<input type="text" name="picture" placeholder="Picture">
+						<input type="file" name="file" placeholder="Picture">
 						<br><br>
 						Description:<br>
 						<textarea name="store_description" placeholder="description of your store"></textarea>
