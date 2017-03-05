@@ -162,8 +162,9 @@
 
 
 	  	while($row=mysqli_fetch_array($result)){
+	  	$name=explode(".",$row[2])[0];
 	  	echo "{";
-	    echo "name: \"explode(".",\"$row[2]\")[0]\"".",";
+	    echo "name: \"$name\"".",";
 	    echo "id: \"$row[0]\"";
 	  	echo "},";
   		}
