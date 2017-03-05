@@ -38,7 +38,7 @@
 			include "connect_db.php";
 			$update="UPDATE `shop` SET `picture`=\"$path\",`description`= \"$description\" WHERE `company_name`=\"$title\"";
 			mysqli_query($connect,$update);
-			//header("location:index-3.php?manager=1");
+			header("location:index-3.php?manager=1");
 		}
 		else{
 			echo "上傳失敗";
