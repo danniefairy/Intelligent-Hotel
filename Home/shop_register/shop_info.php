@@ -141,7 +141,7 @@
   		$store=$_GET['store'];
 	  	$info="SELECT * FROM `shop` WHERE `company_name`=\"$store\" ";
 	  	$info_list=mysqli_query($connect,$info);
-	  	echo $info_list[8];
+	  	echo $info_list[7];
 ?>
 </div>
 
@@ -187,7 +187,7 @@
 	    <input type="text" ng-model="searchfrom" placeholder="Search" />
 	    <table>
       		<tr ng-repeat="actor in avengers.cast | orderBy:'name' | filter:searchfrom">
-        		<td ><a href="https://danniehotel.azurewebsites.net/Home/delicacy_css/delicacy_info.php?commodity_id={{actor.id}}">{{actor.name}}</a></td>
+        		<td><a href="https://danniehotel.azurewebsites.net/Home/delicacy_css/delicacy_info.php?commodity_id={{actor.id}}">{{actor.name}}</a></td>
       		</tr>
     	</table>
   	</div>
