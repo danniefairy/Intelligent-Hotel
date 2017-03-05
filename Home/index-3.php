@@ -180,7 +180,8 @@
 						<input type="file" name="file" placeholder="Picture">
 						<br><br>
 						Description:<br>
-						<textarea name="store_description" placeholder="description of your store"></textarea>
+						<textarea name="store_description" placeholder="description of your store"></textarea><br><br>
+						<input type="submit" value="送出">
 					</form>
 
 					<br><br>	
