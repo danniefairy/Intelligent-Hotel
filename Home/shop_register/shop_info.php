@@ -133,14 +133,13 @@
 <img src="./store_profile/<?php echo $picture;?>">
 <br>
 <br>
+<div>
 <h1 style="font-size:25px;"><strong>Introduction</strong></h1>
 <br>
 <h1>&nbsp&nbsp&nbsp&nbsp<?php echo $information[8]; ?></h1>
 </div>
+</div>
 
-<br>
-<br>
-<br>
 
 <div class="grid_4">
 <h1 style="font-size:27px;">Commodity</h1>
