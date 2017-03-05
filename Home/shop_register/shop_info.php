@@ -135,7 +135,7 @@
 <h1>&nbsp&nbsp&nbsp&nbsp<?php echo $information[8]; ?></h1>
 </div>
 <br>
-<img src="./store_profile/<?php echo $picture;?>">
+<img src="./store_profile/<?php echo $picture;?>" alt="No image uploaded">
 
 <br><br><br>
 
