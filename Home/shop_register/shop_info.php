@@ -131,6 +131,10 @@
 	  	//echo $information[8];
 ?>
 <img src="./store_profile/<?php echo $picture;?>">
+<br>
+<div style="background-color:#DCDCDC;">
+<h1><?php echo $information[8]; ?></h1>
+</div>
 </div>
 
 <div class="grid_4">
