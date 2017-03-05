@@ -200,6 +200,7 @@
   
   	Avengers.cast = [
   	<?php
+  		$id=$_SESSION['db_id'];
 	  	$store_list="SELECT * FROM `shop` ORDER BY `revenue` DESC";
 		$result=mysqli_query($connect,$store_list);
 
@@ -224,7 +225,7 @@
 	    <input type="text" ng-model="searchfrom" placeholder="Search" />
 	    <table>
       		<tr ng-repeat="actor in avengers.cast | orderBy:'name' | filter:searchfrom">
-        		<td ><a href="https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store={{actor.name}}">{{actor.name}}</a></td>
+        		<td ><a href="https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store={{actor.name}}&db_id=$id">{{actor.name}}</a></td>
       		</tr>
     	</table>
   	</div>
