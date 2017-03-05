@@ -126,7 +126,8 @@
   		$store=$_GET['store'];
 	  	$info="SELECT * FROM `shop` WHERE `company_name`=\"$store\" ";
 	  	$info_list=mysqli_query($connect,$info);
-	  	//echo $info_list[8];
+	  	$information=mysqli_fetch_array($result)
+	  	echo $infomation[8];
 ?>
 </div>
 
