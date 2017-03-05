@@ -155,8 +155,8 @@
   
   	Avengers.cast = [
   	<?php
-	  	$store_list="SELECT * FROM `shop` ORDER BY `revenue` DESC";
-		$result=mysqli_query($connect,$store_list);
+	  	$commodity_list="SELECT * FROM `commodity` ORDER BY `id` DESC";
+		$result=mysqli_query($connect,$commodity_list);
 
 
 	  	while($row=mysqli_fetch_array($result)){
