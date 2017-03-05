@@ -137,7 +137,12 @@
 
 <h1 style="font-size:27px;"><?php echo $_GET['store']; ?></h1>
 <hr>
-
+<?php
+  		$store=$_GET['store'];
+	  	$info="SELECT * FROM `shop` WHERE `company_name`=\"$store\" ";
+	  	$info_list=mysqli_query($connect,$info);
+	  	echo $info_list[8];
+?>
 </div>
 
 <div class="grid_4">
