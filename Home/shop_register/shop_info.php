@@ -163,7 +163,7 @@
 
 	  	while($row=mysqli_fetch_array($result)){
 	  	echo "{";
-	    echo "name: \"$row[2]\"".",";
+	    echo "name: \"explode(".", $row[2])[0]\"".",";
 	    echo "id: \"$row[0]\"";
 	  	echo "},";
   		}
