@@ -131,8 +131,8 @@
 	  	//echo $information[8];
 ?>
 <div>
-<p style="font-size:25px;"><strong>Introduction</strong></p>
-<hr>
+<p style="font-size:25px;"><strong>Introduction:</strong></p>
+
 <h1>&nbsp&nbsp&nbsp&nbsp<?php echo $information[8]; ?></h1>
 </div>
 <img src="./store_profile/<?php echo $picture;?>">
