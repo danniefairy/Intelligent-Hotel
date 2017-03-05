@@ -22,7 +22,7 @@
 			echo "檔案類型: ".$_FILES['file']['type']." <br>";
 			echo "檔案大小: ".$_FILES['file']['size']." <br>";
 			echo "暫存檔名: ".$_FILES['file']['tmp_name']." <br>";
-			echo $upload_dir.$_POST['file_name'].".".explode(".",$_FILES['file']['name'])[1];
+			echo $upload_dir.$_POST['store_name'].".".explode(".",$_FILES['file']['name'])[1];
 			rename($upload_dir.$_FILES['file']['name'], $upload_dir.$_POST['store_name'].".".explode(".",$_FILES['file']['name'])[1]);
 
 
@@ -33,7 +33,7 @@
 			$path=$upload_dir.$_POST['store_name'].".".explode(".",$_FILES['file']['name'])[1];
 			$description=$_POST['store_description'];
 
-			echo $title."<br>".$path."<br>".$description;
+			echo "<br>".$title."<br>".$path."<br>".$description;
 
 			include "connect_db.php";
 			$update="UPDATE `shop` SET `picture`=\"$path\",`description`= \"$description\" WHERE `company_name`=\"$title\"";
