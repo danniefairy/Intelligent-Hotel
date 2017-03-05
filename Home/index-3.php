@@ -171,6 +171,20 @@
 			<!--左邊-->
 				<div class="grid_7">
 					<h3 class="head1"><?php echo $store_title; ?></h3>
+					<span style="font-size:20px;">Profile</span>
+					<hr>
+					<!--商家簡介-->
+					<form action="store_profile.php"  method="post" enctype="multipart/form-data">
+						<input type="text" name="store_name" value="<?php echo $store_title; ?>" hidden>
+						Picture:<br/>
+						<input type="text" name="picture" placeholder="Picture">
+						<br><br>
+						Description:<br>
+						<textarea name="store_description" placeholder="description of your store"></textarea>
+					</form>
+
+					<br><br>	
+
 					<span style="font-size:20px;">revenue:<?php echo $revenue_store."$"; ?></span>
 					<hr>
 					<?php
