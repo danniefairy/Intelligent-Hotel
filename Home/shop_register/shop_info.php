@@ -132,9 +132,9 @@
 ?>
 <div>
 <p style="font-size:25px;"><strong>Introduction:</strong></p>
-
 <h1>&nbsp&nbsp&nbsp&nbsp<?php echo $information[8]; ?></h1>
 </div>
+<br>
 <img src="./store_profile/<?php echo $picture;?>">
 
 
