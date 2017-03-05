@@ -1,41 +1,14 @@
-#table{
-
-  width:100%;
-  background-color:#acacac;
-  max-height:500px;
-  min-height:auto;
-  overflow-y:scroll;
-  display:block;
-
-}
-td{
-  background-color: #B0C4DE;
-  width:50%;
-  height:30px;
+input[type=text],input[type=number], select {
+          width: 100%;
+          padding: 10px 20px;
+          margin: 0px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
 }
 
-tr:hover > td{
-  background-color: wheat;
-}
-
-tr.inprogress{
-    background:crimson;
-}
-
-#head{
-
-  width:100%;
-  background-color:#acacac;
-  max-height:500px;
-  min-height:auto;
-  display:block;
-  
-}
-th{
-    background-color: #8FBC8F;
-  color:  #2E8B57;
-  font-family:segoe ui;
-  width:1%;
-  height:30px;
-  
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
 }

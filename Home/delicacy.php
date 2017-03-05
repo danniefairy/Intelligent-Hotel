@@ -191,28 +191,44 @@
 <h1 style="font-size:27px;">Store</h1>
 <hr>
 <!--table-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script type="text/javascript">
+	var myApplication = angular.module("myApplication", []);
 
-<table id="head">           
-<tr>
-    <th style="font-size:22px;">Ranking</th>
-</tr>        
-</table>
-<?php
-	$store_list="SELECT * FROM `shop` ORDER BY `revenue` DESC";
-	$result=mysqli_query($connect,$store_list);
+	myApplication.factory("Avengers", function() {
+  	var Avengers = {};
+  
+  	Avengers.cast = [
+  	<?php
+	  	$store_list="SELECT * FROM `shop` ORDER BY `revenue` DESC";
+		$result=mysqli_query($connect,$store_list);
 
-	echo "<table id=\"table\">";
 
-	while($row=mysqli_fetch_array($result)){
-		echo "<tr>";
-			echo "<td>";
-				echo "&nbsp&nbsp&nbsp<a href=\"$row[2]\">$row[2]</a>";
-			echo "</td>";
-		echo "</tr>";
-	}
+	  	while($row=mysqli_fetch_array($result)){
+	  	echo "{";
+	    echo "name: \"$row[2]\"";
+	  	echo "},";
+  		}
+  	?>
+  	];
+  		return Avengers;
+	});
 
-    echo "</table>";
-?>
+	AvengersCtrl = function($scope, Avengers) {
+  	$scope.avengers = Avengers;
+	};
+</script>
+
+<div ng-app="myApplication">
+  	<div ng-controller="AvengersCtrl">
+	    <input type="text" ng-model="searchfrom" placeholder="Search" />
+	    <table>
+      		<tr ng-repeat="actor in avengers.cast | orderBy:'name' | filter:searchfrom">
+        		<td ><a href="#">{{actor.name}}</a></td>
+      		</tr>
+    	</table>
+  	</div>
+</div>
 <!--table-->
 
 </div>
