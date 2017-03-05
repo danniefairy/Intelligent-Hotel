@@ -132,9 +132,9 @@
 ?>
 <img src="./store_profile/<?php echo $picture;?>">
 <br>
-<div style="background-color:#DCDCDC;">
-<h1><?php echo $information[8]; ?></h1>
-</div>
+<br>
+<h1 style="font-size:25px;"><strong>Introduction</strong></h1>
+<h1>&nbsp&nbsp<?php echo $information[8]; ?></h1>
 </div>
 
 <div class="grid_4">
