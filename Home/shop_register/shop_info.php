@@ -146,6 +146,7 @@
 
 <!--table-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<link rel="stylesheet" type="text/css" href="shop_info.css">
 <script type="text/javascript">
 	var myApplication = angular.module("myApplication", []);
 

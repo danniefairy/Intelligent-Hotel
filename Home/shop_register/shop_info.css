@@ -1,0 +1,29 @@
+input[type=text],input[type=number], select {
+          width: 100%;
+          padding: 10px 20px;
+          margin: 0px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+}
+table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #000000;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
