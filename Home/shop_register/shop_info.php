@@ -127,8 +127,10 @@
 	  	$info="SELECT * FROM `shop` WHERE `company_name`=\"$store\" ";
 	  	$info_list=mysqli_query($connect,$info);
 	  	$information=mysqli_fetch_array($info_list);
-	  	echo $information[8];
+	  	$picture=explode("/", $information[7])[3];
+	  	//echo $information[8];
 ?>
+<img src="./store_profile/<?php echo $picture;?>">
 </div>
 
 <div class="grid_4">
