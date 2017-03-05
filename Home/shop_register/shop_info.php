@@ -138,6 +138,10 @@
 <h1>&nbsp&nbsp&nbsp&nbsp<?php echo $information[8]; ?></h1>
 </div>
 
+<br>
+<br>
+<br>
+
 <div class="grid_4">
 <h1 style="font-size:27px;">Commodity</h1>
 <hr>
