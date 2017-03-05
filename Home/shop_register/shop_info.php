@@ -117,31 +117,16 @@
 			<div class="container_12">
 				<div class="banners">
 <!--=====================commodity=====================-->
-<?php
-	include "connect_db.php";
-	/*$search="SELECT * FROM `commodity` WHERE `commodity_type`=\"Food\" ORDER BY `id` DESC";
-	$result=mysqli_query($connect,$search);
-	$count=0;
-	while($row=mysqli_fetch_array($result))
-	{
-		$commodity_id[$count]=$row[0];
-		$commodity_name[$count]=$row[2];
-		$picture_url[$count]=$row[3];
-		$count=$count+1;
-		if($count>8)
-			break;
-	}*/
-?>
-
 <div class="grid_8">
 
 <h1 style="font-size:27px;"><?php echo $_GET['store']; ?></h1>
 <hr>
 <?php
+		include "connect_db.php";
   		$store=$_GET['store'];
-	  	/*$info="SELECT * FROM `shop` WHERE `company_name`=\"$store\" ";
+	  	$info="SELECT * FROM `shop` WHERE `company_name`=\"$store\" ";
 	  	$info_list=mysqli_query($connect,$info);
-	  	echo $info_list[8];*/
+	  	//echo $info_list[8];
 ?>
 </div>
 
