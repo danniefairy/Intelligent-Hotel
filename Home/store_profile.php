@@ -32,10 +32,13 @@
 			$title=$_POST['store_name'];
 			$path=$upload_dir.$_POST['store_name'].".".explode(".",$_FILES['file']['name'])[1];
 			$description=$_POST['store_description'];
+
+			echo $title."<br>".$path."<br>".$description;
+
 			include "connect_db.php";
 			$update="UPDATE `shop` SET `picture`=\"$path\",`description`= \"$description\" WHERE `company_name`=\"$title\"";
 			mysqli_query($connect,$insert);
-			header("location:index-3.php?manager=1");
+			//header("location:index-3.php?manager=1");
 		}
 		else{
 			echo "上傳失敗";
