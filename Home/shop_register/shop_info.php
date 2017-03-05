@@ -119,7 +119,7 @@
 <!--=====================commodity=====================-->
 <?php
 	include "connect_db.php";
-	$search="SELECT * FROM `commodity` WHERE `commodity_type`=\"Food\" ORDER BY `id` DESC";
+	/*$search="SELECT * FROM `commodity` WHERE `commodity_type`=\"Food\" ORDER BY `id` DESC";
 	$result=mysqli_query($connect,$search);
 	$count=0;
 	while($row=mysqli_fetch_array($result))
@@ -130,7 +130,7 @@
 		$count=$count+1;
 		if($count>8)
 			break;
-	}
+	}*/
 ?>
 
 <div class="grid_8">
@@ -139,9 +139,9 @@
 <hr>
 <?php
   		$store=$_GET['store'];
-	  	$info="SELECT * FROM `shop` WHERE `company_name`=\"$store\" ";
+	  	/*$info="SELECT * FROM `shop` WHERE `company_name`=\"$store\" ";
 	  	$info_list=mysqli_query($connect,$info);
-	  	echo $info_list[7];
+	  	echo $info_list[8];*/
 ?>
 </div>
 
