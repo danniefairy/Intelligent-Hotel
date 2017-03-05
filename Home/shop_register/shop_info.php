@@ -130,15 +130,15 @@
 	  	$picture=explode("/", $information[7])[3];
 	  	//echo $information[8];
 ?>
-<img src="./store_profile/<?php echo $picture;?>">
-<br>
-<br>
-
 <div>
 <p style="font-size:25px;"><strong>Introduction</strong></p>
 <hr>
 <h1>&nbsp&nbsp&nbsp&nbsp<?php echo $information[8]; ?></h1>
 </div>
+<img src="./store_profile/<?php echo $picture;?>">
+
+
+
 
 </div>
 
