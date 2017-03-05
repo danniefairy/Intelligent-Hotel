@@ -135,7 +135,7 @@
 
 <div class="grid_8">
 
-<h1 style="font-size:27px;">Latest Delicacy</h1>
+<h1 style="font-size:27px;"><?php echo $_GET['store']; ?></h1>
 <hr>
 
 </div>
@@ -155,7 +155,6 @@
   
   	Avengers.cast = [
   	<?php
-  		$store=$_GET['store'];
   		$id=$_GET['db_id'];
 	  	$commodity_list="SELECT * FROM `commodity` WHERE `db_id`=\"$id\"  ORDER BY `id` DESC";
 		$result=mysqli_query($connect,$commodity_list);
