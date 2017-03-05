@@ -137,7 +137,7 @@
 <br>
 <img src="./store_profile/<?php echo $picture;?>">
 
-<br>
+<br><br><br>
 
 
 </div>
