@@ -163,7 +163,8 @@
 
 	  	while($row=mysqli_fetch_array($result)){
 	  	echo "{";
-	    echo "name: \"$row[2]\"";
+	    echo "name: \"$row[2]\"".",";
+	    echo "id: \"$row[0]\"";
 	  	echo "},";
   		}
   	?>
@@ -181,7 +182,7 @@
 	    <input type="text" ng-model="searchfrom" placeholder="Search" />
 	    <table>
       		<tr ng-repeat="actor in avengers.cast | orderBy:'name' | filter:searchfrom">
-        		<td ><a href="https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store={{actor.name}}">{{actor.name}}</a></td>
+        		<td ><a href="https://danniehotel.azurewebsites.net/Home/delicacy_css/delicacy_info.php?commodity_id={{actor.id}}">{{actor.name}}</a></td>
       		</tr>
     	</table>
   	</div>
