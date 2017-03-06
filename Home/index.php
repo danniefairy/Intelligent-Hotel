@@ -195,7 +195,7 @@
 						<div class="label">
 							<div class="title">Souvenir<br><br></div>
 							<div class="price"><span></span></div>
-							<a href="#">LEARN MORE</a>
+							<a href="souvenir.php">LEARN MORE</a>
 						</div>
 					</div>
 				</div>
