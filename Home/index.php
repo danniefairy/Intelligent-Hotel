@@ -199,16 +199,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="grid_4">
-					<div class="banner">
-						<img src="images/ban_img2.jpg" alt="">
-						<div class="label">
-							<div class="title">Traffic Information</div>
-							<div class="price"><span></span></div>
-							<a href="#">LEARN MORE</a>
-						</div>
-					</div>
-				</div>
+				
 				<div class="grid_4">
 					<div class="banner">
 						<img src="images/ban_img3.jpg" alt="">
@@ -219,6 +210,18 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="grid_4">
+					<div class="banner">
+						<img src="images/ban_img2.jpg" alt="">
+						<div class="label">
+							<div class="title">Apparel Laundry</div>
+							<div class="price"><span></span></div>
+							<a href="#">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+				
 				<div class="clear"></div>
 				<!--safe place connect db-->
 				<div class="grid_12">
