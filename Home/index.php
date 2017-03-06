@@ -217,7 +217,7 @@
 						<div class="label">
 							<div class="title">Apparel Laundry</div>
 							<div class="price"><span></span></div>
-							<a href="#">LEARN MORE</a>
+							<a href="apparel_laundry.php">LEARN MORE</a>
 						</div>
 					</div>
 				</div>
