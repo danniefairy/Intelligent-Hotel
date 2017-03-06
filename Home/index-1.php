@@ -230,9 +230,9 @@
 					<div class="banner">
 						<img src="images/ban_img3.jpg" alt="">
 						<div class="label">
-							<div class="title">Mobile Payment</div>
+							<div class="title">Transportation</div>
 							<div class="price"><span></span></div>
-							<a href="#">LEARN MORE</a>
+							<a href="transportation.php">LEARN MORE</a>
 						</div>
 					</div>
 				</div>
