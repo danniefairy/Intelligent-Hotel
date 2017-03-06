@@ -224,33 +224,54 @@
 
 				<div class="clear"></div>
 				<!--safe place connect db-->
+				<?php
+					include "connect_db.php";
+					$search="SELECT * FROM `shop` ORDER BY `id` DESC";
+					$result=mysqli_query($connect,$search);
+					$count=0;
+					while($row=mysqli_fetch_array($result))
+					{
+						$title[$count]=$row[2];
+						$description[$count]=$row[8];
+						$db_id[$count]=$row[1];
+						$count=$count+1;
+						if($count>2)
+							break;
+					}
+				?>
+
+
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		
+
 				<div class="grid_12">
-					<h3 class="head1">Latest News</h3>
+					<h3 class="head1">New Member</h3>
 				</div>
 				<div class="grid_4">
 					<div class="block1">
-						<time datetime="2014-01-01">10<span>Jan</span></time>
+						<time datetime="2014-01-01"><a href="https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store=<?php echo $title[0]; ?>&db_id=<?php echo $db_id[0]; ?>"><i class="fa fa-hand-pointer-o" style="font-size:30px"></i></a></time>
 						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">Aliquam nibh</a></div>
-							Proin pharetra luctus diam, any scelerisque eros convallisumsan. Maecenas vehicula egestas
+							<div class="text1 col1"><?php echo $title[0]; ?></div>
+							<?php echo $description[0]; ?>
 						</div>
 					</div>
 				</div>
 				<div class="grid_4">
 					<div class="block1">
-						<time datetime="2014-01-01">21<span>Jan</span></time>
+						<time datetime="2014-01-01"><a href="https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store=<?php echo $title[1]; ?>&db_id=<?php echo $db_id[1]; ?>"><i class="fa fa-hand-pointer-o" style="font-size:30px"></i></a></time>
 						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">Etiam dui eros</a></div>
-							Any scelerisque eros vallisumsan. Maecenas vehicula egestas natis. Duis massa elit, auctor non
+							<div class="text1 col1"><?php echo $title[1]; ?></div>
+							<?php echo $description[1]; ?>
 						</div>
 					</div>
 				</div>
 				<div class="grid_4">
 					<div class="block1">
-						<time datetime="2014-01-01">15<span>Feb</span></time>
+						<time datetime="2014-01-01"><a href="https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store=<?php echo $title[2]; ?>&db_id=<?php echo $db_id[2]; ?>"><i class="fa fa-hand-pointer-o" style="font-size:30px"></i></a></time>
 						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">uamnibh Edeto</a></div>
-							Ros convallisumsan. Maecenas vehicula egestas venenatis. Duis massa elit, auctor non
+							<div class="text1 col1"><?php echo $title[2]; ?></div>
+							<?php echo $description[2]; ?>
 						</div>
 					</div>
 				</div>
