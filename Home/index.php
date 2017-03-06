@@ -193,7 +193,7 @@
 					<div class="banner">
 						<img src="images/ban_img1.jpg" alt="">
 						<div class="label">
-							<div class="title">Souvenir<br><br></div>
+							<div class="title">Souvenir</div>
 							<div class="price"><span></span></div>
 							<a href="souvenir.php">LEARN MORE</a>
 						</div>
@@ -204,7 +204,7 @@
 					<div class="banner">
 						<img src="images/ban_img3.jpg" alt="">
 						<div class="label">
-							<div class="title">Mobile Payment<br><br></div>
+							<div class="title">Mobile Payment</div>
 							<div class="price"><span></span></div>
 							<a href="#">LEARN MORE</a>
 						</div>
@@ -221,7 +221,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="clear"></div>
 				<!--safe place connect db-->
 				<div class="grid_12">
