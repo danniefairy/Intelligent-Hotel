@@ -136,7 +136,7 @@
 
 <div class="grid_8">
 
-<h1 style="font-size:27px;">Latest Delicacy</h1>
+<h1 style="font-size:27px;">Latest Transportation</h1>
 <hr>
 
 <!--===============使用google map查看自己的位置時要用https===============-->
