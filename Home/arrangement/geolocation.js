@@ -53,7 +53,7 @@ function loadDoc() {
             var latitude=parseFloat(lat[s]);
             var longitude=parseFloat(lng[s]);
 
-            if((Math.abs(current_lat-latitude)<0.01)&&(Math.abs(current_lng-longitude)<0.01))
+            if((Math.abs(current_lat-latitude)<0.02)&&(Math.abs(current_lng-longitude)<0.02))
             {
               //附近商家
               var company_position = new google.maps.LatLng(latitude,longitude);
