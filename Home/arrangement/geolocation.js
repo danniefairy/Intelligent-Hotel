@@ -72,12 +72,15 @@ function loadDoc(all) {
               var title=store_name[s];
               var id=db_id[s];
               //按鈕事件
-                  marker.addListener('click', function() {
-                  window.location = "https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store="+title+"&db_id="+id;
-              });
+              attachSecretMessage(marker, title,id);
               //附近商家
             }
-        
+          }
+          //按鈕事件
+          function attachSecretMessage(marker, title,id) {
+            marker.addListener('click', function() {
+              window.location = "https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store="+title+"&db_id="+id;
+            });
           }
     }
 
