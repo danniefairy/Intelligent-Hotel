@@ -18,7 +18,7 @@ function loadDoc(all) {
 
       num=JSON.parse(this.responseText).length;
     //重新整理地圖  
-  setTimeout(initMap, 100)
+    setTimeout(initMap, 100)
 
     option=all;
     }
@@ -73,11 +73,26 @@ function loadDoc(all) {
               var id=db_id[s];
               //按鈕事件
               attachSecretMessage(marker, title,id);
+
+              //優惠卷===========================================
+              if(!option){
+                var xhttp_coupon = new XMLHttpRequest();
+                xhttp_coupon.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                    //alert(this.responseText);
+                  }
+                };
+                xhttp_coupon.open("POST", "coupon.php?store_manager_id="+id, true);
+                xhttp_coupon.send();
+              }
+              
+              //優惠卷===========================================
               //附近商家
             }
           }
-          //按鈕事件
+          
           function attachSecretMessage(marker, title,id) {
+            //按鈕事件
             marker.addListener('click', function() {
               window.location = "https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store="+title+"&db_id="+id;
             });
