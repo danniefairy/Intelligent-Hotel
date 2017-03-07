@@ -142,7 +142,7 @@
 <h1 style="font-size:27px;">Nearby Stores</h1>
 <hr>
 
-<button type="button" onclick="loadDoc()">Finding nearby stores!</button>
+<button type="button" onclick="loadDoc()"><span style="font-size:20px;">Finding nearby stores</span></button>
 <figure style="text-align:center;" id="map"></figure>
 </div>
 
