@@ -56,7 +56,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Delicacy</title>
+		<title>Arrangement</title>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="../images/favicon.ico">
@@ -142,7 +142,7 @@
 <h1 style="font-size:27px;">Nearby Stores</h1>
 <hr>
 
-<button type="button" onclick="loadDoc()">Request data</button>
+<button type="button" onclick="loadDoc()">Finding nearby stores!</button>
 <figure style="text-align:center;" id="map"></figure>
 </div>
 
