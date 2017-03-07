@@ -251,7 +251,7 @@
 						<a href="#" class="fa fa-google-plus"></a>
 					</div>
 					<div class="copy">
-						Your Trip (c) 2014 | <a href="#">Privacy Policy</a> | Website Template Designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+						Intelligent Hotel System | by Dannie
 					</div>
 				</div>
 			</div>

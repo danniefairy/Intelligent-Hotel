@@ -51,7 +51,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Hot Tours</title>
+		<title>Information</title>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="../images/favicon.ico">
@@ -136,7 +136,7 @@
 								<li class="current"><a href="../index.php">Home</a></li>
 								<li><a href="../index-1.php">Room & Tour</a></li>
 								<li><a href="../index-2.php">SPECIAL OFFERS</a></li>
-								<li><a href="../shop_register/index.php">Store Management</a></li>
+								<li><a href="https://danniehotel.azurewebsites.net/Home/shop_register/index.php">Store Management</a></li>
 								<li><a href="../../credit_card/index.php">Credit Card</a></li>
 							</ul>
 						</nav>
