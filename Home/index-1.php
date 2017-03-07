@@ -207,7 +207,7 @@
 							
 							<span></span>
 						</div>
-						<a href="#">LEARN MORE</a>
+						<a href="https://danniehotel.azurewebsites.net/Home/arrangement/">LEARN MORE</a>
 					</div>
 				</div>
 			</div>
