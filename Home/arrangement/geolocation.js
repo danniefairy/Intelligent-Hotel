@@ -4,8 +4,8 @@ var db_id=new Array();
 var store_name=new Array();
 var lat=new Array();
 var lng=new Array();
-
-function loadDoc() {
+var option;
+function loadDoc(all) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -19,6 +19,8 @@ function loadDoc() {
       num=JSON.parse(this.responseText).length;
     //重新整理地圖  
   setTimeout(initMap, 100)
+
+    option=all;
     }
   };
   xhttp.open("POST", "map_search.php", true);
@@ -28,12 +30,16 @@ function loadDoc() {
 //google map=====================================================================
     function initMap() {
       
-
+     var zoom_size; 
+    if(option)
+      zoom_size=10;
+    else
+      zoom_size=15;
 
 
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 25.035915, lng: 121.563619},
-    zoom: 15
+    zoom: zoom_size
   });
 
 
@@ -53,7 +59,7 @@ function loadDoc() {
             var latitude=parseFloat(lat[s]);
             var longitude=parseFloat(lng[s]);
 
-            if((Math.abs(current_lat-latitude)<0.02)&&(Math.abs(current_lng-longitude)<0.02))
+            if(((Math.abs(current_lat-latitude)<0.01)&&(Math.abs(current_lng-longitude)<0.01))||option)
             {
               //附近商家
               var company_position = new google.maps.LatLng(latitude,longitude);
@@ -76,7 +82,7 @@ function loadDoc() {
     }
 
     //current image icon
-    var image = '../Home/images/icon_marker.png';
+    var image = '../images/icon_marker.png';
     var beachMarker = new google.maps.Marker({
         position: pos,
         map: map,

@@ -139,10 +139,12 @@
 
 <div class="grid_8">
 
-<h1 style="font-size:27px;">Nearby Stores</h1>
+<h1 style="font-size:27px;">Stores Distribution</h1>
 <hr>
 
-<button type="button" onclick="loadDoc()"><span style="font-size:20px;">Finding nearby stores</span></button>
+<button id="nearby" type="button" onclick="loadDoc(false)"><span style="font-size:20px;">Nearby </span></button>
+
+<button id="all" type="button" onclick="loadDoc(true)"><span style="font-size:20px;">All</span></button>
 <figure style="text-align:center;" id="map"></figure>
 </div>
 
