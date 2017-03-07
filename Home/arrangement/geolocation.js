@@ -22,7 +22,7 @@ function loadDoc(all) {
 
     option=all;
     if(!option)
-      alert("Congratulations! You have gotten your exclusive coupons!")
+      alert("Congratulations! You have gotten your exclusive coupons!");
     }
   };
   xhttp.open("POST", "map_search.php", true);
