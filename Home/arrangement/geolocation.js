@@ -21,6 +21,8 @@ function loadDoc(all) {
     setTimeout(initMap, 100)
 
     option=all;
+    if(!option)
+      alert("Congratulations! You have gotten your exclusive coupons!")
     }
   };
   xhttp.open("POST", "map_search.php", true);
