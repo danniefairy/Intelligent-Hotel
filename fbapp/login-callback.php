@@ -36,8 +36,8 @@ if (isset($accessToken)) {
     // When validation fails or other local issues
     echo 'Facebook SDK returned an error: ' . $e->getMessage();
   }
-  
-  echo $profile['friends'][0];
+  //endpoints 跟 permission request 用的不一樣
+  echo $profile['friends']['uid'];
   $_SESSION['fb_id']=$profile['id'];
   $_SESSION['name']=$profile['name'];
   //header('location: ../transfer.php?name='.$profile['name']."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
