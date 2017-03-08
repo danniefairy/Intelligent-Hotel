@@ -78,7 +78,12 @@
 			echo "</div>";
 		echo "</div>";
 	}
-	echo $friendlist[0]['name']; 
+	foreach ($friendlist as $key => $value) {
+		echo $key;
+		foreach ($value as $key2 => $value2) {
+			echo $value2;
+		}
+	}
 ?>
 
 
