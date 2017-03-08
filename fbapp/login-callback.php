@@ -37,7 +37,7 @@ if (isset($accessToken)) {
     echo 'Facebook SDK returned an error: ' . $e->getMessage();
   }
   //endpoints 跟 permission request 用的不一樣
-  echo json_decode($profile['friends']);
+  echo $profile['friends']->data;
   $_SESSION['fb_id']=$profile['id'];
   $_SESSION['name']=$profile['name'];
   //header('location: ../transfer.php?name='.$profile['name']."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
