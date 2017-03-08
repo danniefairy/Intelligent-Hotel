@@ -8,7 +8,9 @@
 		$fb_id=$_SESSION['fb_id'];
 		$name=$_SESSION['name'];
 		$friendlist=$_SESSION['friends'];
+		$db_id=$_SESSION['db_id'];
 	}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,6 +29,8 @@
 		<script src="js/jquery.equalheights.js"></script>
 		<script src="js/jquery.mobilemenu.js"></script>
 		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 		<script>
 		$(document).ready(function(){
 			$().UItoTop({ easingType: 'easeOutQuart' });
@@ -75,22 +79,43 @@
 		<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
 			<div class="container_12">
 
-				<div class="grid_8">
-					<h3><?php echo $name; ?></h3>
-					<div class="block2">
-					<img  src="https://graph.facebook.com/<?php echo $fb_id; ?>/picture?type=large">
-					</div>
-					<div class="block2">
-						
-					</div>
-					<div class="block2">
-						
-					</div>
+			<!--左邊-->
+				<div class="grid_4 ">
+					<h4>CHEN KUAN-TING</h4>
+					<img src="https://graph.facebook.com/<?php echo $fb_id; ?>/picture?type=large"><br>
+					<a href="#/">Personal Info</a><br>
+					<a href="#transaction_history">Transaction History</a><br>
+					<a href="#book_record">Book Record</a><br>
+					<a href="#coupon">Coupon Management</a>
 				</div>
-				<div class="grid_3 prefix_1">
-					<h5>CHOOse the country</h5>
-					<?php echo count($friendlist); ?>
+				<script>
+					var app = angular.module("myApp", ["ngRoute"]);
+					app.config(function($routeProvider) {
+					    $routeProvider
+					    .when("/", {
+					        templateUrl : "./account/personal_info.php?fb_id=<?php echo $fb_id;?>&db_id=<?php echo $db_id; ?>"
+					    })
+					    .when("/transaction_history", {
+					        templateUrl : "./account/transaction_history.php?db_id=<?php echo $db_id; ?>"
+					    })
+					    .when("/book_record", {
+					        templateUrl : "./account/book_record.php?db_id=<?php echo $db_id; ?>"
+					    })
+					    .when("/coupon", {
+					        templateUrl : "./account/coupon.php?db_id=<?php echo $db_id; ?>"
+					    });
+					});
+				</script>
+			<!--左邊-->
+
+			<!--右邊-->
+				<div class="grid_7" ng-app="myApp">
+					<div ng-view></div>
+					
+	
 				</div>
+			<!--右邊-->
+
 			</div>
 		</div>
 <!--==============================footer=================================-->
