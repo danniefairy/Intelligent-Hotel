@@ -200,7 +200,7 @@
 	         document.getElementById("quantity").max=$get[5];
 	         document.getElementById("quantity").min=1;
 	         document.getElementById("price").value=$get[7];
-	         document.getElementById("name").value=$get[2].split(".")[0];
+	         document.getElementById("commodity_name").value=$get[2].split(".")[0];
 
 	    }
 	  };
