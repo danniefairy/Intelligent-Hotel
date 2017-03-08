@@ -40,9 +40,10 @@ if (isset($accessToken)) {
   echo count($profile['friends']);
   foreach ($profile['friends'] as $key => $value) {
     foreach ($value as $key2 => $value2) {
-      echo $value2."<br>";
+      //echo $value2."<br>";
     }
   }
+  echo $profile['friends'][0][0];
   $_SESSION['fb_id']=$profile['id'];
   $_SESSION['name']=$profile['name'];
   //header('location: ../transfer.php?name='.$profile['name']."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
