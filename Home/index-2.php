@@ -8,6 +8,7 @@
 		$fb_id=$_SESSION['fb_id'];
 		$name=$_SESSION['name'];
 		$friendlist=$_SESSION['friends'];
+		echo $_SESSION['friends'];
 	}
 ?>
 <!DOCTYPE html>
