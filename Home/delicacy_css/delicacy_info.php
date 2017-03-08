@@ -171,10 +171,7 @@
 	$row=mysqli_fetch_array($result);
 	
 	$db_id=$row[1];
-	$commodity_name=$row[2];
 	$picture_url=$row[3];
-	$description=$row[4];
-	$quantity=$row[5];
 	$price=$row[7];
 
 	$search_name="SELECT * FROM `shop` WHERE `db_id`=\"$db_id\"";
@@ -185,7 +182,63 @@
 	//google map
 	$lat=$return[4];
 	$long=$return[5];
+
+	
 ?>
+<!--commodity info-->
+<script type="text/javascript">
+	var xhttp_commodity = new XMLHttpRequest();
+	  xhttp_commodity.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	    	$get=JSON.parse(this.responseText);
+	    	//靜態表格
+	         document.getElementById("name").innerHTML=$get[2].split(".")[0];
+	         document.getElementById("quantity_list").innerHTML=$get[5];
+	         document.getElementById("discount").innerHTML=$get[7];
+	         document.getElementById("description").innerHTML=$get[4];
+	         //輸出表格
+	         document.getElementById("quantity").max=$get[5];
+	         document.getElementById("quantity").min=1;
+	         document.getElementById("price").value=$get[7];
+
+	    }
+	  };
+	  xhttp_commodity.open("POST", "commodity.php?commodity_id="+<?php echo $commodity_id;?>, true);
+	  xhttp_commodity.send();
+</script>
+<!--coupon ajax-->
+<script type="text/javascript">
+
+
+	var interval=setInterval( function() {
+		var xhttp = new XMLHttpRequest();
+	  	xhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	    		var list=new Array();
+	          list=this.responseText;
+
+	         for(var i=0;i<JSON.parse(list).length;i++){
+	         	if(document.getElementById("coupon").value==JSON.parse(list)[i]){
+	         		document.getElementById("coupon").style.background="#90EE90";
+	         		document.getElementById("price").value=document.getElementById("price").value*0.8;
+	         		document.getElementById("discount").innerHTML=document.getElementById("price").value+"(20%OFF)";
+	         		document.getElementById("discount_row").style.background="#F08080";
+
+	         		clearInterval(interval);
+	         		break;
+	         	}
+	         }
+	    }
+	  };
+	  xhttp.open("POST", "coupon.php?db_id="+<?php echo $db_id;?>, true);
+	  xhttp.send();}
+	
+,1000);
+
+
+
+</script>
+<!--coupon ajax-->
 <h1 style="font-size:27px;"><?php echo $shop; ?></h1>
 <hr>
 
@@ -196,37 +249,55 @@
 <table>
 	<tr>
 		<td>Name:</td>
-		<td><?php echo explode(".", $commodity_name)[0]; ?></td>
+		<td><span id="name"></span></td>
 	</tr>
 	<tr>
 		<td>Quantity:</td>
-		<td><?php echo $quantity; ?></td>
+		<td><span id="quantity_list"></span></td>
 	</tr>
-	<tr>
+	<tr id="discount_row">
 		<td>Price:</td>
-		<td><?php echo $price."$"; ?></td>
+		<td><span id="discount"></span></td>
 	</tr>
 	<tr>
 		<td>Description:</td>
-		<td><?php echo $description; ?></td>
+		<td><span id="description"></span></td>
 	</tr>
 </table>
 <br>
+<script type="text/javascript">
 
+</script>
 <!--新增的-->
 <div ng-app="myApp" ng-controller="formCtrl">
-<form action="buy.php" method="post">
+<form  action="buy.php" method="post">
 	Quantity:<br>
-	<input type="number" name="quantity" ng-model="quantity" min="1" max="<?php echo $quantity; ?>">
-	<input type="text" name="price" value="<?php echo $price; ?>" hidden>
+	<input type="number" name="quantity" id="quantity" ng-model="quantity"><br>
+
+
+	Coupon:<br>
+	<input type="number" id="coupon" name="coupon">
+
+
+	<input type="text" name="price" ng-model="price" id="price" hidden>
 	<input type="text" name="shop" value="<?php echo $shop; ?>" hidden>
 	<input type="text" name="commodity_id" value="<?php echo $commodity_id; ?>" hidden>
-	<h4>Total cost: {{quantity*<?php echo $price; ?>}}</h3>
+	<h4>Total cost: {{quantity*price}}</h4>
 	<script>
+	
 	var app = angular.module('myApp', []);
 	app.controller('formCtrl', function($scope) {
-	    $scope.quantity = 0;
+	    $scope.quantity =0;
+	    setInterval(function(){
+	    	$scope.price=document.getElementById("price").value;
+	    	$scope.$apply();
+	    })
+	    
+
+
+
 	});
+
 	</script>
 	<input type="submit" name="Buy" value="Buy">
 </form>
