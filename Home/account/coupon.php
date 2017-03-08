@@ -3,7 +3,10 @@
 		$db_id=$_GET['db_id'];
 		session_start();
 		$friendlist=$_SESSION['friends'];
-		
+	}
+	//給予
+	if(isset($_GET['give_to'])){
+		echo 12123131321531;
 	}
 ?>
 <!DOCTYPE html>
@@ -82,6 +85,7 @@
 				$friend_name=$friendlist[$i]['name'];
 				$friend_id=$friendlist[$i]['id'];
 				echo "<a href=\"http://danniehotel.azurewebsites.net/Home/index-2.php#/coupon?give_to=$friend_id&store_id=$index&num=$row[3]\">$friend_name</a>";
+				header("Refresh:0");
 			}
 			echo "</div>";
 		echo "</div>";
