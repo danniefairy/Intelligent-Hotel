@@ -55,10 +55,10 @@
 </head>
 <body>
 <h3>Commodity History</h3>
-	
+	<p style="font-size:20px;">Sorted by date:</p>
 	<?php
 	include "../connect_db.php";
-	$search="SELECT * FROM `transaction_history` WHERE `customer_id`=\"$db_id\"";
+	$search="SELECT * FROM `transaction_history` WHERE `customer_id`=\"$db_id\" ORDER BY `date` DESC";
 	$result=mysqli_query($connect,$search);
 	while($row=mysqli_fetch_array($result)){
 		echo "<div class=\"dropdown\">";
