@@ -4,10 +4,6 @@
 		session_start();
 		$friendlist=$_SESSION['friends'];
 	}
-	//給予
-	if(isset($_GET['give_to'])){
-		echo 12123131321531;
-	}
 ?>
 <!DOCTYPE html>
 <html>
@@ -84,7 +80,7 @@
 			for($i=0;$i<$friend_count;$i++){
 				$friend_name=$friendlist[$i]['name'];
 				$friend_id=$friendlist[$i]['id'];
-				echo "<a href=\"http://danniehotel.azurewebsites.net/Home/index-2.php?give_to=$friend_id&store_id=$index&num=$row[3]#/coupon\">$friend_name</a>";
+				echo "<a href=\"send_coupon.php?give_to=$friend_id&store_id=$index&num=$row[3]\">$friend_name</a>";
 			}
 			echo "</div>";
 		echo "</div>";

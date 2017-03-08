@@ -1,0 +1,12 @@
+<?php
+	include "../connect_db.php";
+	$friend_id=$_GET['give_to'];
+	$store_manager_id=$_GET['store_id'];
+	$num=$_GET['num'];
+	$insert="INSERT INTO `coupon` (`customer_id`,`store_manager_id`,`serial_number`) VALUES (\"$friend_id\",\"$store_manager_id\",\"$num\")";
+	mysqli_query($connect,$insert);
+	echo"<script type=\"text/javascript\">
+		alert(\"Sending coupon successfully!\")
+		</script>";
+	header("location:http://danniehotel.azurewebsites.net/Home/index-2.php#/coupon");
+?>
