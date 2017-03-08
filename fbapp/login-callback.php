@@ -36,18 +36,16 @@ if (isset($accessToken)) {
     // When validation fails or other local issues
     echo 'Facebook SDK returned an error: ' . $e->getMessage();
   }
-  //endpoints 跟 permission request 用的不一樣
-  echo count($profile['friends']);
-  foreach ($profile['friends'] as $key => $value) {
-    echo "$key=".$key."<br>";
-    foreach ($value as $key2 => $value2) {
-      echo "$key2=".$key2."<br>";
-    }
-  }
+  //friends endpoints 跟 permission request 用的不一樣
+  /*
+    $profile['friends'][0]['id']
+    $profile['friends'][0]['name']
+  */
 
   $_SESSION['fb_id']=$profile['id'];
   $_SESSION['name']=$profile['name'];
-  //header('location: ../transfer.php?name='.$profile['name']."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
+  $_SESSION['friends']=$profile['friends'];
+  header('location: ../transfer.php?name='.$profile['name']."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
   exit;
 } else {
     echo "Unauthorized access!!!";

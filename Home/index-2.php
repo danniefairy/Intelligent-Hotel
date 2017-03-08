@@ -7,6 +7,7 @@
 	else{
 		$fb_id=$_SESSION['fb_id'];
 		$name=$_SESSION['name'];
+		$friendlist=$_SESSION['friends'];
 	}
 ?>
 <!DOCTYPE html>
@@ -88,7 +89,7 @@
 				</div>
 				<div class="grid_3 prefix_1">
 					<h5>CHOOse the country</h5>
-					
+					<?php $friendlist[0]['name'] ?>
 				</div>
 			</div>
 		</div>
