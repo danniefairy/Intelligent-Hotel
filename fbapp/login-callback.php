@@ -40,7 +40,7 @@ if (isset($accessToken)) {
   echo count($profile['friends']);
   foreach ($profile['friends'] as $key => $value) {
     foreach ($value as $key2 => $value2) {
-      echo $value2;
+      echo $value2."<br>";
     }
   }
   $_SESSION['fb_id']=$profile['id'];
