@@ -7,7 +7,6 @@
 	else{
 		$fb_id=$_SESSION['fb_id'];
 		$name=$_SESSION['name'];
-		$friendlist=$_SESSION['friends'];
 		$db_id=$_SESSION['db_id'];
 	}
 
@@ -102,7 +101,7 @@
 					        templateUrl : "./account/book_record.php?db_id=<?php echo $db_id; ?>"
 					    })
 					    .when("/coupon", {
-					        templateUrl : "./account/coupon.php?db_id=<?php echo $db_id; ?>&friendlist=$friendlist"
+					        templateUrl : "./account/coupon.php?db_id=<?php echo $db_id; ?>"
 					    });
 					});
 				</script>

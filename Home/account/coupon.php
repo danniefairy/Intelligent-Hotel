@@ -1,7 +1,9 @@
 <?php
 	if(isset($_GET['db_id'])){
 		$db_id=$_GET['db_id'];
-		$friendlist=$_GET['friendlist'];
+		session_start();
+		$friendlist=$_SESSION['friends'];
+		
 	}
 ?>
 <!DOCTYPE html>
