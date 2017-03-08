@@ -6,6 +6,7 @@
 	}
 	else{
 		$fb_id=$_SESSION['fb_id'];
+		$name=$_SESSION['name'];
 	}
 ?>
 <!DOCTYPE html>
@@ -74,7 +75,7 @@
 			<div class="container_12">
 
 				<div class="grid_8">
-					<h3>Special offers</h3>
+					<h3><?php echo $name; ?></h3>
 					<div class="block2">
 					<img  src="https://graph.facebook.com/<?php echo $fb_id; ?>/picture?type=large">
 					</div>
