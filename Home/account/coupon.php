@@ -80,13 +80,7 @@
 			echo "</div>";
 		echo "</div>";
 	}
-	foreach ($friendlist as $key => $value) {
-		echo $key;
-		foreach ($value as $key2 => $value2) {
-			echo $value2;
-		}
-	}
-	echo 123;
+	echo $friendlist[0]['name'];
 ?>
 
 
