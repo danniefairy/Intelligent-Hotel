@@ -4,7 +4,7 @@
 	$store_manager_id=$_GET['store_id'];
 	$num=$_GET['num'];
 
-	$search="SELECT `id` FROM `hotel` WHERE `name`=$friend_name";
+	$search="SELECT `id` FROM `hotel` WHERE `name`=\"$friend_name\"";
 	$result=mysqli_query($connect,$search);
 	$row=mysqli_fetch_array($result);
 	$friend_id=$row[0];
