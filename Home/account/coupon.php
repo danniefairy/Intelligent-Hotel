@@ -80,7 +80,7 @@
 			for($i=0;$i<$friend_count;$i++){
 				$friend_name=$friendlist[$i]['name'];
 				$friend_id=$friendlist[$i]['id'];
-				echo "<a href=\"./account/send_coupon.php?give_to=$friend_id&store_id=$index&num=$row[3]\">$friend_name</a>";
+				echo "<a href=\"./account/send_coupon.php?give_to=$friend_name&store_id=$index&num=$row[3]\">$friend_name</a>";
 			}
 			echo "</div>";
 		echo "</div>";
