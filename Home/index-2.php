@@ -1,8 +1,11 @@
 <?php
 	session_start();
 	if(!isset($_SESSION['fb_id'])){
-		echo "<a href=\"../index.php\">Please enter with facebook!</a>";
-		die();
+		//echo "<a href=\"../index.php\">Please enter with facebook!</a>";
+		//die();
+	}
+	else{
+		$fb_id=$_SESSION['fb_id'];
 	}
 ?>
 <!DOCTYPE html>
@@ -69,53 +72,22 @@
 <!--==============================Content=================================-->
 		<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
 			<div class="container_12">
+
 				<div class="grid_8">
 					<h3>Special offers</h3>
 					<div class="block2">
-						<img src="images/page3_img1.jpg" alt="" class="img_inner fleft">
-						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">Barcelona</a></div>
-							<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel
-							<br>
-							<a href="#" class="link1">LEARN MORE</a>
-						</div>
+					<img  src="https://graph.facebook.com/<?php echo $fb_id; ?>/picture?type=large">
 					</div>
 					<div class="block2">
-						<img src="images/page3_img2.jpg" alt="" class="img_inner fleft">
-						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">Moscow</a></div>
-							<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel
-							<br>
-							<a href="#" class="link1">LEARN MORE</a>
-						</div>
+						
 					</div>
 					<div class="block2">
-						<img src="images/page3_img3.jpg" alt="" class="img_inner fleft">
-						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">Thailand</a></div>
-							<p>Cras facilisis, nulla vel viverra auctor, leo gna sodales felis, quis malesuada nibh odio ut velit. Proin pharetra luctus diam, a celerisque eros convallis accumsan. </p>Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel
-							<br>
-							<a href="#" class="link1">LEARN MORE</a>
-						</div>
+						
 					</div>
 				</div>
 				<div class="grid_3 prefix_1">
 					<h5>CHOOse the country</h5>
-					<ul class="list">
-						<li><a href="#">Albania</a></li>
-						<li><a href="#">American Samoa</a></li>
-						<li><a href="#">Antarctica</a></li>
-						<li><a href="#">Argentina</a></li>
-						<li><a href="#">Armenia</a></li>
-						<li><a href="#">Australia</a></li>
-						<li><a href="#">Austria</a></li>
-						<li><a href="#">Bahrain</a></li>
-						<li><a href="#">Barbados</a></li>
-						<li><a href="#">Belgium</a></li>
-						<li><a href="#">Belize</a></li>
-						<li><a href="#">Bermudas</a></li>
-					</ul>
-					<a href="#" class="link1">VIEW A<span class="low">ll</span></a>
+					
 				</div>
 			</div>
 		</div>
