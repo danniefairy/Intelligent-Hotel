@@ -209,25 +209,29 @@
 <!--coupon ajax-->
 <script type="text/javascript">
 
-
+var flag=0;
 	var interval=setInterval( function() {
 		var xhttp = new XMLHttpRequest();
 	  	xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
 	    		var list=new Array();
 	          list=this.responseText;
-
-	         for(var i=0;i<JSON.parse(list).length;i++){
+	         if(flag==0){
+	         	for(var i=0;i<JSON.parse(list).length;i++){
 	         	if(document.getElementById("coupon").value==JSON.parse(list)[i]){
 	         		document.getElementById("coupon").style.background="#90EE90";
 	         		document.getElementById("price").value=document.getElementById("price").value*0.8;
 	         		document.getElementById("discount").innerHTML=document.getElementById("price").value+"(20%OFF)";
 	         		document.getElementById("discount_row").style.background="#F08080";
-
+	         		flag=1;
 	         		clearInterval(interval);
 	         		break;
+	         		}
 	         	}
 	         }
+	         
+
+
 	    }
 	  };
 	  xhttp.open("POST", "coupon.php?db_id="+<?php echo $db_id;?>, true);
