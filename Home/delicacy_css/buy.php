@@ -7,7 +7,7 @@
 		$commodity_name=$_POST['commodity_name'];
 		$cost=$quantity*$price;
 		session_start();
-		$db_id=$_SESION['db_id'];
+		$db_id=$_SESSION['db_id'];
 		date_default_timezone_set("Asia/Shanghai");
 		$date=date("Y-m-d h:i:sa");
 		include "../connect_db.php";
