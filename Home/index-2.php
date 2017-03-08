@@ -102,7 +102,7 @@
 					        templateUrl : "./account/book_record.php?db_id=<?php echo $db_id; ?>"
 					    })
 					    .when("/coupon", {
-					        templateUrl : "./account/coupon.php?db_id=<?php echo $db_id; ?>"
+					        templateUrl : "./account/coupon.php?db_id=<?php echo $db_id; ?>&friendlist=$friendlist"
 					    });
 					});
 				</script>

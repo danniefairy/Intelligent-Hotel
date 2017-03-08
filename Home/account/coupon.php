@@ -1,7 +1,7 @@
 <?php
 	if(isset($_GET['db_id'])){
 		$db_id=$_GET['db_id'];
-		
+		$friendlist=$_GET['friendlist'];
 	}
 ?>
 <!DOCTYPE html>
@@ -77,7 +77,8 @@
 			echo "<a href=\"https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store=$store_name[$index]&db_id=$index\" style=\" font-size:20px;\">$row[3]</a>";
 			echo "</div>";
 		echo "</div>";
-	} 
+	}
+	echo $friendlist[0]['name']; 
 ?>
 
 
