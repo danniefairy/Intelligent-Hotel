@@ -81,7 +81,7 @@
 
 			<!--左邊-->
 				<div class="grid_4 ">
-					<h4>CHEN KUAN-TING</h4>
+					<h4><?php echo $name; ?></h4>
 					<img src="https://graph.facebook.com/<?php echo $fb_id; ?>/picture?type=large"><br>
 					<a href="#/">Personal Info</a><br>
 					<a href="#transaction_history">Transaction History</a><br>
