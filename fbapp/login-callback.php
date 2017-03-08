@@ -39,11 +39,12 @@ if (isset($accessToken)) {
   //endpoints 跟 permission request 用的不一樣
   echo count($profile['friends']);
   foreach ($profile['friends'] as $key => $value) {
+    echo "$key=".$key."<br>";
     foreach ($value as $key2 => $value2) {
-      //echo $value2."<br>";
+      echo "$key2=".$key2."<br>";
     }
   }
-  echo $profile['friends'][0]['data'];
+
   $_SESSION['fb_id']=$profile['id'];
   $_SESSION['name']=$profile['name'];
   //header('location: ../transfer.php?name='.$profile['name']."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
