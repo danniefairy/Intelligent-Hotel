@@ -37,7 +37,7 @@ if (isset($accessToken)) {
     echo 'Facebook SDK returned an error: ' . $e->getMessage();
   }
   
-  echo $profile['picture'];
+  echo "picture:".$profile['picture'][0];
   $_SESSION['fb_id']=$profile['id'];
 
   //header('location: ../transfer.php?name='.$profile['name']."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
