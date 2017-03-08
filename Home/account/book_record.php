@@ -68,7 +68,9 @@
 			echo "<p style=\" font-size:20px;\">Name:$row[2]</p>";
 			echo "<p style=\" font-size:20px;\">Check-out:$row[7]</p>";
 			echo "<p style=\" font-size:20px;\">Level:$row[8]</p>";
-			echo "<p style=\" font-size:20px;\">People:$row[9]</p>";
+			$adult=explode("/", $row[9])[0];
+			$child=explode("/", $row[9])[1];
+			echo "<p style=\" font-size:20px;\">People:$adult adult $child child </p>";
 			echo "<p style=\" font-size:20px;\">Room:$row[10]</p>";
 			echo "<p style=\" font-size:20px;\">Style:$row[11]</p>";
 			echo "</div>";
