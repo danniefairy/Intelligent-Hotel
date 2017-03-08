@@ -49,7 +49,7 @@
 
 	if(isset($_GET['buy'])){
 		echo "<script type=\"text/javascript\">
-		alert(\"Successfule transaction !\")
+		alert(\"Successful transaction !\")
 		</script>";
 	}
 ?>

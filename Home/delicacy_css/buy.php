@@ -11,6 +11,7 @@
 		date_default_timezone_set("Asia/Shanghai");
 		$date=date("Y-m-d h:i:sa");
 		include "../connect_db.php";
+		echo $db_id."!".$commodity_name;
 		//存入交易紀錄
 		$history="INSERT INTO `transaction_history` (`customer_id`,`commodity_name`,`company_name`,`quantity`,`cost`,`date`) VALUES (\"$db_id\",\"$commodity_name\",\"$shop\",\"$quantity\",\"$cost\",\"$date\")";
 		mysqli_query($connect,$history);
@@ -34,7 +35,7 @@
 		$update="UPDATE `shop` SET `revenue`=\"$new_revenue\" WHERE `company_name`=\"$shop\"";
 		mysqli_query($connect,$update);
 
-		header("location:../delicacy.php?buy=1");
+		//header("location:../delicacy.php?buy=1");
 	}
 
 
