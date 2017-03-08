@@ -286,7 +286,7 @@ var flag=0;
 
 	<input type="text" name="price" ng-model="price" id="price" hidden>
 	<input type="text" name="shop" value="<?php echo $shop; ?>" hidden>
-	<input type="text" name="commodity_name" hidden>
+	<input type="text" name="commodity_name" id="commodity_name" hidden>
 	<input type="text" name="commodity_id" value="<?php echo $commodity_id; ?>" hidden>
 	<h4>Total cost: {{quantity*price}}</h4>
 	<script>
