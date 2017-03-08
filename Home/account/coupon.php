@@ -79,12 +79,14 @@
 			echo "<a href=\"https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store=$store_name[$index]&db_id=$index\" style=\" font-size:20px;\">$row[3]</a>";
 			$friend_count=count($friendlist);
 			for($i=0;$i<$friend_count;$i++){
-				echo "<a href=\"http://danniehotel.azurewebsites.net/Home/index-2.php#/coupon?give_to=$friendlist[$i]['id']&store_id=$index&num=$row[3]\">$friendlist[$i]['name']</a>";
+				$friend_name=$friendlist[$i]['name'];
+				$friend_id=$friendlist[$i]['id'];
+				echo "<a href=\"http://danniehotel.azurewebsites.net/Home/index-2.php#/coupon?give_to=$friend_id&store_id=$index&num=$row[3]\">$friend_name</a>";
 			}
 			echo "</div>";
 		echo "</div>";
 	}
-	//echo $friendlist[0]['name'];
+
 ?>
 
 
