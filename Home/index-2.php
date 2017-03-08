@@ -89,7 +89,7 @@
 				</div>
 				<div class="grid_3 prefix_1">
 					<h5>CHOOse the country</h5>
-					<?php echo $friendlist[0]['name']; ?>
+					<?php echo count($friendlist); ?>
 				</div>
 			</div>
 		</div>
