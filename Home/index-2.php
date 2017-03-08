@@ -109,7 +109,7 @@
 			<!--左邊-->
 
 			<!--右邊-->
-				<div class="grid_7" ng-app="myApp">
+				<div class="grid_8" ng-app="myApp">
 					<div ng-view></div>
 					
 	
