@@ -4,8 +4,19 @@
 		$price=$_POST['price'];
 		$shop=$_POST['shop'];
 		$commodity_id=$_POST['commodity_id'];
-
+		$commodity_name=$_POST['commodity_name'];
+		$cost=$quantity*$price;
+		session_start();
+		$db_id=$_SESION['db_id'];
+		date_default_timezone_set("Asia/Shanghai");
+		$date=date("Y-m-d h:i:sa");
 		include "../connect_db.php";
+		//存入交易紀錄
+		$history="INSERT INTO `transaction_history` (`customer_id`,`commodity_name`,`company_name`,`quantity`,`cost`,`date`) VALUES (\"$db_id\",\"$commodity_name\",\"$shop\",\"$quantity\",\"$cost\",\"$date\")";
+		mysqli_query($connect,$history);
+
+
+
 		//找到原本庫存量
 		$sql="SELECT `quantity` FROM commodity WHERE `id`=\"$commodity_id\"";
 		$result=mysqli_query($connect,$sql);
