@@ -39,7 +39,9 @@ if (isset($accessToken)) {
   //endpoints 跟 permission request 用的不一樣
   echo count($profile['friends']);
   foreach ($profile['friends'] as $key => $value) {
-    echo $value;
+    foreach ($value as $key2 => $value2) {
+      echo $value2;
+    }
   }
   $_SESSION['fb_id']=$profile['id'];
   $_SESSION['name']=$profile['name'];
