@@ -121,8 +121,8 @@
 			echo "<div class=\"dropdown-content\">";
 			echo "<a href=\"https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store=$store_name[$index]&db_id=$index\" style=\" font-size:20px;background-color:#FFA6A6; color:white;\"><i class=\"fa fa-hand-pointer-o\" style=\"font-size:24px;\"></i>$row[3]</a>";
 			
-
-			echo "<a href=\"\" id=\"call_btn\" onclick=\"myclick()\" style=\" font-size:20px;background-color:#B0E0E6; color:white;\"><i class=\"fa fa-hand-pointer-o\" style=\"font-size:24px;\"></i>Send</a>";
+			$serial_num=$row[3];
+			echo "<a href=\"\" onclick=\"myclick($serial_num,$index)\" style=\" font-size:20px;background-color:#B0E0E6; color:white;\"><i class=\"fa fa-hand-pointer-o\" style=\"font-size:24px;\"></i>Send</a>";
 			
 
 			echo "</div>";
@@ -140,11 +140,11 @@ echo "
 						    
 					echo "<p>Some text in the Modal..</p>";
 					$friend_count=count($friendlist);
+
 					for($i=0;$i<$friend_count;$i++){
-						$friend_name=
-						$friendlist[$i]['name'];
+						$friend_name=$friendlist[$i]['name'];
 						$friend_id=$friendlist[$i]['id'];
-						echo "<a href=\"./account/send_coupon.php?give_to=$friend_name&store_id=$index&num=$row[3]\">$friend_name</a><br>";
+						echo "<a  href=\"\" onclick=\"direct_url($friend_id)\">$friend_name</a><br>";
 					}
 echo " 		</div>
 		</div>";
@@ -156,6 +156,16 @@ echo " 		</div>
 
 <!--popup-->
 <script>
+var serial_num;
+var index;
+var friend_id;
+var id;
+//呼叫
+
+function myclick(serial_num,index){
+	btn.onclick(serial_num,index);
+		
+}
 
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -167,10 +177,23 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
+btn.onclick = function(serial_num,index) {
     modal.style.display = "block";
-}
+    //alert(serial_num+"@"+index);
 
+    var pop_window=setInterval(function()
+    	{ 
+    		if(typeof id!="undefined"){
+    			window.location = "./account/send_coupon.php?give_to="+id+"&store_id="+index+"&num="+serial_num;
+    			clearInterval(pop_window);
+    		}
+    		 
+    	}, 500);
+
+}
+function direct_url(friend_id){
+    	id=friend_id;
+    }
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
@@ -182,10 +205,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-//呼叫
-function myclick(){
-	btn.onclick();
-}
+
 
 </script>
 
