@@ -119,10 +119,10 @@
 			$index=$row[2];
 			echo "<button class=\"dropbtn\">$store_name[$index]</button>";
 			echo "<div class=\"dropdown-content\">";
-			echo "<a href=\"https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store=$store_name[$index]&db_id=$index\" style=\" font-size:20px;background-color:#FFA6A6; color:white;\"><i class=\"fa fa-hand-pointer-o\" style=\"font-size:24px;\"></i>$row[3]</a>";
+			echo "<a href=\"https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store=$store_name[$index]&db_id=$index\" style=\" font-size:20px;background-color:#FFA6A6; color:white;\"><i class=\"fa fa-hand-pointer-o\" style=\"font-size:24px;\"></i>&nbsp$row[3]</a>";
 			
 			$serial_num=$row[3];
-			echo "<a href=\"\" onclick=\"myclick($serial_num,$index)\" style=\" font-size:20px;background-color:#B0E0E6; color:white;\"><i class=\"fa fa-hand-pointer-o\" style=\"font-size:24px;\"></i>Send</a>";
+			echo "<a href=\"\" onclick=\"myclick($serial_num,$index)\" style=\" font-size:20px;background-color:#B0E0E6; color:white;\"><i class=\"fa fa-send-o\" style=\"font-size:24px\"></i></i>&nbspSend</a>";
 			
 
 			echo "</div>";
