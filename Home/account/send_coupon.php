@@ -15,5 +15,5 @@
 	echo"<script type=\"text/javascript\">
 		alert(\"Sending coupon successfully!\")
 		</script>";
-	//header("location:http://danniehotel.azurewebsites.net/Home/index-2.php#/coupon");
+	header("location:http://danniehotel.azurewebsites.net/Home/index-2.php#/coupon");
 ?>
