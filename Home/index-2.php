@@ -1,8 +1,8 @@
 <?php
 	session_start();
 	if(!isset($_SESSION['fb_id'])){
-		//echo "<a href=\"../index.php\">Please enter with facebook!</a>";
-		//die();
+		echo "<a href=\"../index.php\">Please enter with facebook!</a>";
+		die();
 	}
 	else{
 		$fb_id=$_SESSION['fb_id'];
