@@ -194,6 +194,7 @@ btn.onclick = function(serial_num,index) {
 }
 function direct_url(friend_name){
     	name=friend_name;
+    	alert(name);
     }
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
