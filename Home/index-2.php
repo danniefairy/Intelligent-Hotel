@@ -82,10 +82,13 @@
 				<div class="grid_4 ">
 					<h4><?php echo $name; ?></h4>
 					<img src="https://graph.facebook.com/<?php echo $fb_id; ?>/picture?type=large"><br>
-					<a href="#/">Personal Info</a><br>
-					<a href="#transaction_history">Transaction History</a><br>
-					<a href="#book_record">Book Record</a><br>
-					<a href="#coupon">Coupon Management</a>
+					<!--圖案-->
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+					<a href="#/" style="font-size:24px;"><i class="fa fa-address-card" style="font-size:24px;"></i>Personal Info</a><br>
+					<a href="#transaction_history" style="font-size:24px;"><i class="fa fa-shopping-cart" style="font-size:24px"></i>Transaction History</a><br>
+					<a href="#book_record" style="font-size:24px"><i class="fa fa-cc-visa" style="font-size:21px"></i>Book Record</a><br>
+					<a href="#coupon" style="font-size:24px;"><i class="fa fa-money" style="font-size:24px"></i>Coupon Management</a>
 				</div>
 				<script>
 					var app = angular.module("myApp", ["ngRoute"]);
