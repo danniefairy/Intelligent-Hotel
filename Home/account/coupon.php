@@ -120,34 +120,34 @@
 			echo "<button class=\"dropbtn\">$store_name[$index]</button>";
 			echo "<div class=\"dropdown-content\">";
 			echo "<a href=\"https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store=$store_name[$index]&db_id=$index\" style=\" font-size:20px;background-color:#FFA6A6; color:white;\"><i class=\"fa fa-hand-pointer-o\" style=\"font-size:24px;\"></i>$row[3]</a>";
-			$friend_count=count($friendlist);
-			for($i=0;$i<$friend_count;$i++){
-				$friend_name=$friendlist[$i]['name'];
-				$friend_id=$friendlist[$i]['id'];
-				echo "<a href=\"./account/send_coupon.php?give_to=$friend_name&store_id=$index&num=$row[3]\">$friend_name</a>";
-			}
+			
 
-
-			echo "
-					<a href=\"\" id=\"myBtn\" style=\"font-size:24px; color:white; background-color:#B0E0E6;\"><i class=\"material-icons\" style=\"font-size:24px\">send</i>Send</a>
-
-					<div id=\"myModal\" class=\"modal\">
-
-						<div class=\"modal-content\">
-						    <span class=\"close\">&times;</span>";
-			//friend list	    
-			for($i=0;$i<$friend_count;$i++){
-				$friend_name=$friendlist[$i]['name'];
-				$friend_id=$friendlist[$i]['id'];
-				echo "<a href=\"./account/send_coupon.php?give_to=$friend_name&store_id=$index&num=$row[3]\">$friend_name</a>";
-			}
-			//friend list			    
-			echo " </div>
-					</div>";
+			echo "<a href=\"\" id=\"call_btn\" onclick=\"myclick()\" style=\" font-size:20px;background-color:#B0E0E6; color:white;\"><i class=\"fa fa-hand-pointer-o\" style=\"font-size:24px;\"></i>Send</a>";
+			
 
 			echo "</div>";
 		echo "</div>";
 	}
+
+//對話框內的東西
+echo "
+		<a href=\"\" id=\"myBtn\" style=\"font-size:24px; color:white; background-color:#B0E0E6;\" hidden>Send</a>
+
+		<div id=\"myModal\" class=\"modal\">
+
+			<div class=\"modal-content\">
+				<span class=\"close\">&times;</span>";
+						    
+					echo "<p>Some text in the Modal..</p>";
+					$friend_count=count($friendlist);
+					for($i=0;$i<$friend_count;$i++){
+						$friend_name=
+						$friendlist[$i]['name'];
+						$friend_id=$friendlist[$i]['id'];
+						echo "<a href=\"./account/send_coupon.php?give_to=$friend_name&store_id=$index&num=$row[3]\">$friend_name</a><br>";
+					}
+echo " 		</div>
+		</div>";
 
 ?>
 
@@ -156,6 +156,7 @@
 
 <!--popup-->
 <script>
+
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -181,6 +182,11 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+//呼叫
+function myclick(){
+	btn.onclick();
+}
+
 </script>
 
 
