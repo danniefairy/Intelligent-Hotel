@@ -53,11 +53,14 @@
 		    background-color: #3e8e41;
 		}
 	</style>
+
 </head>
 <body>
 <h3>Coupon Management</h3>
 	<p style="font-size:15px;">You can click the number and go to the store and use those serial number for your discount!</p>
 	<p style="font-size:20px;">Sorted by stores:</p>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<?php
 	include "../connect_db.php";
 
@@ -75,7 +78,7 @@
 			$index=$row[2];
 			echo "<button class=\"dropbtn\">$store_name[$index]</button>";
 			echo "<div class=\"dropdown-content\">";
-			echo "<a href=\"https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store=$store_name[$index]&db_id=$index\" style=\" font-size:20px;\">$row[3]</a>";
+			echo "<a href=\"https://danniehotel.azurewebsites.net/Home/shop_register/shop_info.php?store=$store_name[$index]&db_id=$index\" style=\" font-size:20px;background-color:#FFA6A6; color:white;\"><i class=\"fa fa-hand-pointer-o\" style=\"font-size:24px;\"></i>$row[3]</a>";
 			$friend_count=count($friendlist);
 			for($i=0;$i<$friend_count;$i++){
 				$friend_name=$friendlist[$i]['name'];
@@ -87,7 +90,6 @@
 	}
 
 ?>
-
 
 
 
