@@ -105,7 +105,7 @@
 				</div>
 				<div class="grid_12">
 					<h1>
-						<a href="index.php">
+						<a href="#">
 							<img src="images/logo.png" alt="Your Happy Family">
 						</a>
 					</h1>
