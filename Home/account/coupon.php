@@ -144,7 +144,7 @@ echo "
 					for($i=0;$i<$friend_count;$i++){
 						$friend_name=$friendlist[$i]['name'];
 						$friend_id=$friendlist[$i]['id'];
-						echo "<a  href=\"\" onclick=\"direct_url($friend_id)\">$friend_name</a><br>";
+						echo "<a  href=\"\" onclick=\"direct_url($friend_name)\">$friend_name</a><br>";
 					}
 echo " 		</div>
 		</div>";
