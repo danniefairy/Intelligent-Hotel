@@ -158,8 +158,8 @@ echo " 		</div>
 <script>
 var serial_num;
 var index;
-var friend_name;
-var name;
+var friend_id;
+var id;
 //呼叫
 
 function myclick(serial_num,index){
@@ -183,18 +183,17 @@ btn.onclick = function(serial_num,index) {
 
     var pop_window=setInterval(function()
     	{ 
-    		if(typeof name!="undefined"){
-    			alert(name);
-    			//window.location = "./account/send_coupon.php?give_to="+name+"&store_id="+index+"&num="+serial_num;
+    		if(typeof id!="undefined"){
+    			alert(id.toString()+"tostring");
+    			window.location = "./account/send_coupon.php?give_to="+id.toString()+"&store_id="+index+"&num="+serial_num;
     			clearInterval(pop_window);
     		}
     		 
     	}, 500);
 
 }
-function direct_url(friend_name){
-    	name=friend_name;
-    	alert(name);
+function direct_url(friend_id){
+    	id=friend_id;
     }
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
