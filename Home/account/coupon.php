@@ -185,7 +185,7 @@ btn.onclick = function(serial_num,index) {
     	{ 
     		if(typeof id!="undefined"){
     			alert(id);
-    			window.location = "./account/send_coupon.php?give_to="+id+"&store_id="+index+"&num="+serial_num;
+    			window.location = "./account/send_coupon.php?give_to="+id.toString()+"&store_id="+index+"&num="+serial_num;
     			clearInterval(pop_window);
     		}
     		 
