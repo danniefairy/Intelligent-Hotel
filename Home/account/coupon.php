@@ -54,6 +54,47 @@
 		}
 	</style>
 
+<!--popup-->
+<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
 </head>
 <body>
 <h3>Coupon Management</h3>
@@ -85,12 +126,62 @@
 				$friend_id=$friendlist[$i]['id'];
 				echo "<a href=\"./account/send_coupon.php?give_to=$friend_name&store_id=$index&num=$row[3]\">$friend_name</a>";
 			}
+
+
+			echo "
+					<a href=\"\" id=\"myBtn\" style=\"font-size:24px; color:white; background-color:#B0E0E6;\"><i class=\"material-icons\" style=\"font-size:24px\">send</i>Send</a>
+
+					<div id=\"myModal\" class=\"modal\">
+
+						<div class=\"modal-content\">
+						    <span class=\"close\">&times;</span>";
+			//friend list	    
+			for($i=0;$i<$friend_count;$i++){
+				$friend_name=$friendlist[$i]['name'];
+				$friend_id=$friendlist[$i]['id'];
+				echo "<a href=\"./account/send_coupon.php?give_to=$friend_name&store_id=$index&num=$row[3]\">$friend_name</a>";
+			}
+			//friend list			    
+			echo " </div>
+					</div>";
+
 			echo "</div>";
 		echo "</div>";
 	}
 
 ?>
 
+
+
+
+<!--popup-->
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 
 </body>
