@@ -144,7 +144,7 @@ echo "
 					for($i=0;$i<$friend_count;$i++){
 						$friend_name=$friendlist[$i]['name'];
 						$friend_id=$friendlist[$i]['id'];
-						echo "<a  href=\"\" onclick=\"direct_url($friend_id)\">$friend_name</a><br>";
+						echo "<a  href=\"\" onclick=\"direct_url($friend_name)\">$friend_name</a><br>";
 					}
 echo " 		</div>
 		</div>";
@@ -183,7 +183,8 @@ btn.onclick = function(serial_num,index) {
 
     var pop_window=setInterval(function()
     	{ 
-    		if(typeof id!="undefined"){
+    		//if(typeof id!="undefined"){
+    		if(id!=""){
     			alert(id.toString()+"tostring");
     			window.location = "./account/send_coupon.php?give_to="+id.toString()+"&store_id="+index+"&num="+serial_num;
     			clearInterval(pop_window);
