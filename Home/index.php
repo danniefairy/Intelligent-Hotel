@@ -246,7 +246,7 @@
 		
 
 				<div class="grid_12">
-					<h3 class="head1">New Member</h3>
+					<h3 class="head1">New Store</h3>
 				</div>
 				<div class="grid_4">
 					<div class="block1">
