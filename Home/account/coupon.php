@@ -94,6 +94,12 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+td a {
+  display: block;
+  height:100%;
+  width:100%;
+}
 </style>
 </head>
 <body>
@@ -138,15 +144,21 @@ echo "
 			<div class=\"modal-content\">
 				<span class=\"close\">&times;</span>";
 						    
-					echo "<p>Some text in the Modal..</p>";
+					echo "<p style=\"font-size:20px; text-align:center;\">Click your friend to send the coupon!</p>";
 					$friend_count=count($friendlist);
 
+					echo "<table style=\"width:100%;\">";
 					for($i=0;$i<$friend_count;$i++){
+						echo "<tr style=\"background-color:#D9D9F7; border-style:solid; border-width:2px; border-color:white; height:30px;\">";
+						echo "<td style=\"text-align:center; \">";
 						$friend_name=$friendlist[$i]['name'];
 						$friend_id=$friendlist[$i]['id'];
 						//使用onclick傳送string記得加''
-						echo "<a  href=\"\" onclick=\"direct_url('$friend_name')\">$friend_name</a><br>";
+						echo "<a  href=\"\" style=\"font-size:27px;\" onclick=\"direct_url('$friend_name')\">$friend_name</a>";
+						echo "</td>";
+						echo "</tr>";
 					}
+					echo "</table>";
 echo " 		</div>
 		</div>";
 
