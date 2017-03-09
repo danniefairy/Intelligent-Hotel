@@ -68,7 +68,7 @@
 		<script src="../js/superfish.js"></script>
 		<script src="../js/jquery.ui.totop.js"></script>
 		<script src="../js/jquery.equalheights.js"></script>
-		<script src="../../js/jquery.mobilemenu.js"></script>
+		<script src="../js/jquery.mobilemenu.js"></script>
 		<script src="../js/jquery.easing.1.3.js"></script>
 		<script>
 		$(document).ready(function(){
