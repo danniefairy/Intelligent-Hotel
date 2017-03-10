@@ -35,7 +35,7 @@
 			$fb_id=$_GET['fb_id'];
 			session_start();
 			$_SESSION['db_id']=$id;
-			//header("Location: ./Home/index.php?fb_id=".$fb_id."&db_id=".$id);
+			header("Location: ./Home/index.php?fb_id=".$fb_id."&db_id=".$id);
 			die();
 		}
 	?>
