@@ -54,9 +54,12 @@ if (isset($accessToken)) {
   $_SESSION['name']=$profile['name'];
   $_SESSION['friends']=$profile['friends'];
   $name=$profile['name'];
+  $fb_id=$profile['id'];
+  $gender=$profile['gender'];
+  $email=$profile['email'];
   //header('location: ../transfer.php?name='.$name."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
 //------------------
-$q="name=$name&fb_id=$profile['id']&gender=$profile['gender']&email=$profile['email']";
+$q="name=$name&fb_id=$fb_id&gender=$gender&email=$emai;";
   echo "<script>
       var url=\"../transfer.php?\"+\"{$q}\";
       window.setTimeout(\"self.location='\"+url+\"';\",50);
