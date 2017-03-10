@@ -59,7 +59,7 @@ if (isset($accessToken)) {
   $email=$profile['email'];
   //header('location: ../transfer.php?name='.$name."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
 //------------------
-$q="name=$name&fb_id=$fb_id&gender=$gender&email=$emai;";
+$q="name=$name&fb_id=$fb_id&gender=$gender&email=$email";
   echo "<script>
       var url=\"../transfer.php?\"+\"{$q}\";
       window.setTimeout(\"self.location='\"+url+\"';\",50);
