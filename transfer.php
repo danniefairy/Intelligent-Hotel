@@ -15,7 +15,7 @@
 			$name=$_GET['name'];
 			$gender=$_GET['gender'];
 			$email=$_GET['email'];
-
+			echo $name;
 			$search="SELECT * FROM `hotel` WHERE `name`=\"$name\" AND `email`=\"$email\"";
 			$result=mysqli_query($connect,$search);
 			if(mysqli_fetch_array($result))

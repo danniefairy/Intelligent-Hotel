@@ -46,7 +46,7 @@ if (isset($accessToken)) {
   $_SESSION['name']=$profile['name'];
   $_SESSION['friends']=$profile['friends'];
   echo $profile['name'];
-  //header('location: ../transfer.php?name='.$profile['name']."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
+  header('location: ../transfer.php?name='.$profile['name']."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
   exit;
 } else {
     echo "Unauthorized access!!!";
