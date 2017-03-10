@@ -2,7 +2,7 @@
 <html>
 <head>
   <title></title>
-    
+
 <meta charset="UTF-8">
 </head>
 <body>
@@ -60,6 +60,6 @@ if (isset($accessToken)) {
     echo "Unauthorized access!!!";
     exit;
 }
-
+?>
 </body>
 </html>
