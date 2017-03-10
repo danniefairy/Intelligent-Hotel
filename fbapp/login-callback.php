@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+    
+<meta charset="UTF-8">
+</head>
+<body>
 <?php
 header("Content-Type:text/html; charset=utf-8");
 
@@ -45,10 +53,13 @@ if (isset($accessToken)) {
   $_SESSION['fb_id']=$profile['id'];
   $_SESSION['name']=$profile['name'];
   $_SESSION['friends']=$profile['friends'];
-  echo $profile['name'];
-  header('location: ../transfer.php?name='.$profile['name']."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
+  $name=$profile['name'];
+  header('location: ../transfer.php?name='.$name."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
   exit;
 } else {
     echo "Unauthorized access!!!";
     exit;
 }
+
+</body>
+</html>
