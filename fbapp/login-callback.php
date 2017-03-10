@@ -54,7 +54,15 @@ if (isset($accessToken)) {
   $_SESSION['name']=$profile['name'];
   $_SESSION['friends']=$profile['friends'];
   $name=$profile['name'];
-  header('location: ../transfer.php?name='.$name."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
+  //header('location: ../transfer.php?name='.$name."&fb_id=".$profile['id']."&gender=".$profile['gender']."&email=".$profile['email']);
+//------------------
+$q="name=$name&fb_id=$profile['id']&gender=$profile['gender']&email=$profile['email']";
+  echo "<script>
+      var url=\"../transfer.php?\"+\"{$q}\";
+      window.setTimeout(\"self.location='\"+url+\"';\",50);
+    </script>";
+//-------------------
+
   exit;
 } else {
     echo "Unauthorized access!!!";
