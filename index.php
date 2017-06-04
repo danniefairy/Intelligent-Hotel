@@ -19,7 +19,7 @@
       <div class="material-button alt-2"><span class="shape"></span></div>
 
       <div class="title"  style="text-align:center;">
-        <h2 style="font-size:47px;padding-top:130px; ">Ready for your journey</h2>
+        <!--<h2 style="font-size:47px;padding-top:130px; ">Ready for your journey</h2>-->
         <h2 style="font-size:30px ;">Let's login and fulfill your dream!</h2>
         <!--FB登入-->
         <script type="text/javascript" src="./fbapp/fb.js"></script>
