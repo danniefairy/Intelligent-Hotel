@@ -45,7 +45,7 @@ body{
   float: right;
   color: #fff;
   font-family: 'Exo', sans-serif;
-  font-size: 400%;
+  font-size: 600%;
   font-weight: 200;
 
 -webkit-animation-name: fadeIn; /*动画名称*/
@@ -60,15 +60,15 @@ body{
 
 .login{
   position: absolute;
-  top: calc(50% - 65px);
-  left: calc(52% );
+  top: calc(60%);
+  left: calc(42% );
   height: 150px;
   width: 350px;
   padding: 10px;
   z-index: 2;
 
 -webkit-animation-name: fadeIn; /*动画名称*/
-    -webkit-animation-duration: 5s; /*动画持续时间*/
+    -webkit-animation-duration: 7s; /*动画持续时间*/
     -webkit-animation-iteration-count: 1; /*动画次数*/
     -webkit-animation-delay: 0s; /*延迟时间*/
 }
@@ -95,21 +95,21 @@ body{
 
 
 
-hr { width: 170%; transition:width 1s;
+hr { width: 100%; transition:width 1s;
 -webkit-animation-name: long; /*动画名称*/
-    -webkit-animation-duration: 3s; /*动画持续时间*/
+    -webkit-animation-duration: 5s; /*动画持续时间*/
     -webkit-animation-iteration-count: 1; /*动画次数*/
-    -webkit-animation-delay: 1s; /*延迟时间*/ }
+    -webkit-animation-delay: 0s; /*延迟时间*/ }
 
 @-webkit-keyframes long {
     0% {
-        width: 0%; /*初始状态 透明度为0*/
+        width: 0%; 
     }
     50% {
-        width: 100%; /*中间状态 透明度为0*/
+        width: 0%; 
     }
     100% {
-        width: 170%; /*结尾状态 透明度为1*/
+        width: 100%; 
     }
 }
 </style>
@@ -117,14 +117,14 @@ hr { width: 170%; transition:width 1s;
   <div class="body"></div>
 
   <div class="header">
-    <div>Travel<span>Smart</span><hr></div>
+    <div>Travel<span>Smart</span></div><hr>
   </div>
 
   <div class="login">
       <br>
       <br>
       <script type="text/javascript" src="./fbapp/fb.js"></script>
-      <fb:login-button data-scope="public_profile,email,user_friends" onlogin="checkLoginState();" data-size="xlarge" size="xlarge" >Login</fb:login-button>
+      <fb:login-button data-scope="public_profile,email,user_friends" onlogin="checkLoginState();" data-size="xlarge" size="xlarge" >Let's go</fb:login-button>
     
   </div>
 
