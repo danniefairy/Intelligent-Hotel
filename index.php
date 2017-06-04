@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="./login/login.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./login/login.js"></script>
+  <title>Login</title>
 </head>
+<style type="text/css">
+  html { 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/slider-2.jpg) no-repeat center center fixed ; 
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+img{
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+#login-button{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 100px;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(3,3,3,.8);
+  overflow: hidden;
+  opacity: 0.9;
+  box-shadow: 10px 10px 30px #000;}
+
+
+
+
+
+
+</style>
 <body>
-<div class="materialContainer">
-   <div class="box">
-        <div class="title">Intelligent Hotel Service</div>
-            <h2>&nbsp</h2><br>
-            <img style="float:right; height:300px;" src="./login/icon.JPG" >
-            <h2 style="font-size:1.5vw;">I.H.S provide every traveler the most convinent and diversified vacation. Without any annoying preparation for your itinerary, I.H.S can help you schedule your tour and give you a unforgettable memory.</h2><br>            
-    </div>
-
-   <div class="overbox" style="top-margin:150%;">
-      <div class="material-button alt-2"><span class="shape"></span></div>
-
-      <div class="title"  style="text-align:center;">
-        <h2 style="font-size:47px;padding-top:130px; ">Ready for your journey</h2>
-        <h2 style="font-size:30px ;">Let's login and fulfill your dream!</h2>
-        <!--FB登入-->
-        <script type="text/javascript" src="./fbapp/fb.js"></script>
-        <fb:login-button data-scope="public_profile,email,user_friends" onlogin="checkLoginState();" data-size="xlarge" size="xlarge" >Login with Facebook</fb:login-button>
-      </div>
-   </div>
-
+<div id="login-button">
+  <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+  </img>
+  <script type="text/javascript" src="./fbapp/fb.js"></script>
+        <fb:login-button data-scope="public_profile,email,user_friends" onlogin="checkLoginState();" data-size="xlarge" size="xlarge" ></fb:login-button>
 </div>
+
+
+
+
 </body>
 </html>
