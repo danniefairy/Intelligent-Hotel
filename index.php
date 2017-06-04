@@ -1,59 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login</title>
+  <title></title>
 </head>
 <style type="text/css">
-  html { 
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/slider-2.jpg) no-repeat center center fixed ; 
+  @import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: hidden;
+body{
+  margin: 0;
+  padding: 0;
+  background: #fff;
+
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
 }
 
-img{
-  display: block;
-  margin: auto;
-  width: 100%;
-  height: auto;
-}
-
-#login-button{
-  cursor: pointer;
+.body{
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 100px;
-  margin: auto;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: rgba(3,3,3,.8);
-  overflow: hidden;
-  opacity: 0.9;
-  box-shadow: 10px 10px 30px #000;}
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background-image: url(http://farm8.staticflickr.com/7244/7195625944_5a47ddbbef_b.jpg);
+  background-size: cover;
+  -webkit-filter: blur(2px);
+  z-index: 0;
+}
+
+
+.header{
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 240px);
+  z-index: 2;
+
+
+}
+
+.header div{
+  float: right;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 280%;
+  font-weight: 200;
+
+-webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 3s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+
+.header div span{
+  color: #5379fa !important;
+}
+
+.login{
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 50px);
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+  z-index: 2;
+
+-webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 5s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+
+  @-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+        opacity: 0; /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
 
 
 
+hr { width: 170%; transition:width 1s;
+-webkit-animation-name: long; /*动画名称*/
+    -webkit-animation-duration: 3s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 1s; /*延迟时间*/ }
 
-
-
+@-webkit-keyframes long {
+    0% {
+        width: 0%; /*初始状态 透明度为0*/
+    }
+    50% {
+        width: 100%; /*中间状态 透明度为0*/
+    }
+    100% {
+        width: 170%; /*结尾状态 透明度为1*/
+    }
+}
 </style>
 <body>
-<div id="login-button">
-  <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
-  </img>
-  <script type="text/javascript" src="./fbapp/fb.js"></script>
-        <fb:login-button data-scope="public_profile,email,user_friends" onlogin="checkLoginState();" data-size="xlarge" size="xlarge" ></fb:login-button>
-</div>
+  <div class="body"></div>
 
+  <div class="header">
+    <div>Travel<span>Smart</span><hr></div>
+  </div>
 
-
+  <div class="login">
+      <br>
+      <br>
+      <script type="text/javascript" src="./fbapp/fb.js"></script>
+      <fb:login-button data-scope="public_profile,email,user_friends" onlogin="checkLoginState();" data-size="xlarge" size="xlarge" >Login</fb:login-button>
+    
+  </div>
 
 </body>
 </html>
