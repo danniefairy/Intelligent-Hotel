@@ -45,7 +45,7 @@ body{
   float: right;
   color: #fff;
   font-family: 'Exo', sans-serif;
-  font-size: 280%;
+  font-size: 400%;
   font-weight: 200;
 
 -webkit-animation-name: fadeIn; /*动画名称*/
@@ -60,8 +60,8 @@ body{
 
 .login{
   position: absolute;
-  top: calc(50% - 75px);
-  left: calc(50% - 50px);
+  top: calc(50% - 65px);
+  left: calc(52% );
   height: 150px;
   width: 350px;
   padding: 10px;
