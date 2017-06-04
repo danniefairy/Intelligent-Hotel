@@ -121,8 +121,7 @@ hr { width: 100%; transition:width 1s;
   </div>
 
   <div class="login">
-      <br>
-      <br>
+
       <script type="text/javascript" src="./fbapp/fb.js"></script>
       <fb:login-button data-scope="public_profile,email,user_friends" onlogin="checkLoginState();" data-size="xlarge" size="xlarge" >Let's go</fb:login-button>
     
