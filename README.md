@@ -1,3 +1,14 @@
-Description
-===
-The purpose of this porject is to build a demo website of the paper which is talking about using SoLoMo and Big Data on one platform and make three-way win for customers, hotel and local store.
+2017ML Final Report
+========
+
+Report.pdf
+--------
+我們這組的期末報告
+
+src資料夾
+--------
+|------/data
+|        |------train_data.csv
+|		 |------train_label.csv
+|		 |------test_data.csv
+|		 |______SubmissionFormat.csv 
