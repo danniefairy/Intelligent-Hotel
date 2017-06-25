@@ -7,7 +7,7 @@ Report.pdf
 
 src資料夾
 --------
-![](https://github.com/danniefairy/image/blob/master/structure.png)
+![](https://github.com/danniefairy/image/blob/master/structure.png =100)
 
 Reporduct best score on DataDriven
 --------
