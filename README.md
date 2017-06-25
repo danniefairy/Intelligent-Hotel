@@ -7,8 +7,4 @@ Report.pdf
 
 src資料夾
 --------
-|------/data
-|        |------train_data.csv
-|		 |------train_label.csv
-|		 |------test_data.csv
-|		 |______SubmissionFormat.csv 
+![](https://www.dropbox.com/s/571iudittu9cqlu/structure.png?dl=0)
